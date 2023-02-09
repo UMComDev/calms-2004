@@ -1,0 +1,268 @@
+
+<script language="JavaScript" src="flash_detect.js"></script>
+<script language="JavaScript">
+	var varSubmitForm = "False";
+	function hp_redirect(js_NextURL, js_QS1, js_QS2 ) {
+		// js_NextURL: the target URL		
+		// js_QS1	 : QueryString that is sent thru ct_save.asp
+		//         	   Omit the following vars to avoid errors: chid, mid, section, layout, edit, aid
+		//
+		// js_QS2	 : QueryString for normal redirect. Include ALL vars needed to make the target page work.	
+		if (varSubmitForm == "True") {
+			document.all.Rtn2editor.value 	= "1";
+			document.all.NextURL.value 		= js_NextURL;
+			document.all.NextQuery.value 	= "&" + js_QS1;
+			//alert(js_NextURL + ".asp?"+ js_QS1);
+			document.fHtmlEditor.submit();		
+		}else{
+			location = js_NextURL + ".asp?"+ js_QS2;
+		}
+	}
+</script>
+
+<!-- INCLUDE VIRTUAL="include_redirect.asp" -->
+
+<html>
+<head>
+<title>Annual Conference Publications</title>
+<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">-->
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta name="robots" content="noindex">
+
+<META NAME="description" CONTENT="A list of newspapers and publications published by United Methodist annual conferences.">
+<META NAME="keywords" CONTENT="publication, newspaper, conference">
+<link href="global.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" src="global.js"></script>
+
+
+<!-- GOOGLE AD SERVICE - ADDED 2010-04-14 -->
+<script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'> 
+</script> 
+<script type='text/javascript'> 
+GS_googleAddAdSenseService("ca-pub-5286074780767328"); 
+GS_googleEnableAllServices(); 
+</script> 
+<script type='text/javascript'> 
+GA_googleAddSlot("ca-pub-5286074780767328", "Interpreter_175_146"); 
+</script> 
+<script type='text/javascript'> 
+GA_googleFetchAds(); 
+</script> 
+
+
+
+
+</head>
+
+<body bgcolor="#FFFFFF" link="#FF0000" vlink="#FF0000" alink="#FF0000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onLoad="MM_preloadImages('/images/sec_nav_questions_over.gif','/images/sec_nav_glossary_over.gif','/images/sec_nav_press_over.gif','/images/sec_nav_jobs_over.gif','/images/sec_nav_calendar_over.gif','/images/sec_nav_korean_trans_over.jpg','/images/sec_nav_contact_over.gif','/images/sec_nav_friend_over.gif','/images/sec_nav_search_over.gif','/images/nav_about_over.jpg','/images/nav_spirit_over.jpg','/images/nav_news_over.jpg','/images/nav_faith_over.jpg','/images/nav_tools_over.jpg','/images/nav_directory_over.jpg','/images/article_print_over.gif','/images/article_email_over.gif','/images/article_bookmark_over.gif')">
+<!--<script language="JavaScript" src="popUpMsg.js"></script>-->
+
+<!-- TOP BANNER INCLUDE STARTS HERE -->
+
+
+<link href="stylesheets/1_styleNav.css" rel="stylesheet" type="text/css">
+
+<body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0">
+
+<table align="center" height=29 width="778" background="stylesheets/tcimg/tcbg.gif">
+<tr><td><img border="0" src="stylesheets/tcimg/tcimg_01.gif" width="142" height="23"><a href="http://umc.org"><img border="0" src="stylesheets/tcimg/tcimg_02.gif" width="105" height="23"></a><a href="http://www.umc.org/site/c.lwL4KnN1LtH/b.1716943/k.EEBB/Directory.htm"><img border="0" src="stylesheets/tcimg/tcimg_03.gif" width="84" height="23"></a><a href="http://archives.umc.org/Directory/ChurchDirectory.asp?ptid=1&mid=222"><img border="0" src="stylesheets/tcimg/tcimg_04.gif" width="92" height="23"></a><a href="http://google.umc.org/search?access=p&output=xml_no_dtd&site=UMCom_UMCorg_Collection&ie=UTF-8&y=1&client=UMCom_UMCorg_2007_Frontend&oe=UTF-8&proxystylesheet=UMCom_UMCorg_2007_Frontend"><img border="0" src="stylesheets/tcimg/tcimg_05.gif" width="51" height="23"></a></td></tr>
+
+</table> 
+ 
+<table width="778" border="0" align="center" cellspacing="0" cellpadding="0" bgcolor=#C6CB93>
+	  <tr class=MainNavTR> 
+	    <td><table width=100% CELLPADDING=0  cellspacing=0 border=0 align=center><tr class=MainNavTR>	<td nowrap class=MainNavTD align=center>
+          <a href="http://www.kintera.org/site/lookup.asp?c=lwL4KnN1LtH&b=1355347">
+          <img border="0" src="uploads/images/newmenu_ourchurch_192x23.gif" width="192" height="23"></a></td>
+	<td nowrap class=MainNavTD align=center>
+          <a href="http://www.kintera.org/site/lookup.asp?c=lwL4KnN1LtH&b=1355349">
+          <img border="0" src="uploads/images/newmenu_ourfaith_192x23.gif" width="192" height="23"></a></td>
+	<td nowrap class=MainNavTD align=center>
+          <a href="http://www.kintera.org/site/lookup.asp?c=lwL4KnN1LtH&b=1355351">
+          <img border="0" src="uploads/images/newmenu_ourpeople_192x23.gif" width="192" height="23"></a></td>
+	<td nowrap class=MainNavTD align=center>
+          <a href="http://www.kintera.org/site/lookup.asp?c=lwL4KnN1LtH&b=1355355">
+          <img border="0" src="uploads/images/newmenu_ourworld_192x23.gif" width="192" height="23"></a></td>
+	</table></td>
+	  </tr>
+	</table><table width="778" border="0" align="center" cellspacing="0" cellpadding="0">
+	  <tr class=ContainerDivider> 
+	    <td><img src="images/spacer.gif" width=1 height=2></td>
+	  </tr>
+	</table>
+<table width="778" border="0" align="center" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><img src="images/banners/hp_banner_directory2.jpg" width="778" border="0" usemap="#map2home">
+
+	
+	<map name="map2home">
+	    
+			<area shape="rect" coords="0,0,360,40" href="http://www.umc.org/" alt="LINK: UMC.org Home" title="LINK: UMC.org Home">
+		
+	</map>
+	
+
+	</td>
+  </tr>
+</table>
+<table width="778" border="0" align="center" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><img src="images/white_spacer.jpg" width="30" height="9"></td>
+  </tr>
+</table>
+<!-- TOP BANNER INCLUDE ENDS HERE -->
+
+
+
+<!-- SUBNAVIGATION AND MAIN BODY CONTENT -->
+<table width="778" height="50%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+  <tr>
+    <!-- LEFT SIDE INCLUDE: Dynamic section navigation will appear in this cell. -->
+    <td width="175" valign="top" rowspan="2"> 
+      <table width="175" border="0" cellpadding="0" cellspacing="0" class=ContainerTD>
+          <tr> 
+            <td width="1" background="images/keyline.gif"><img src="images/spacer.gif" width="1" height="1"></td>
+            <td width="174" valign="top">
+<!-- Left Side Nav: Start -->
+
+<table width=174 cellpadding=0 cellspacing=0 border=0 class=containerTD><tr class=ContainerHeader>
+<td valign=top width=13 class=ContainerHeader><img name=157 id=157 src="images/spacer.gif">
+</td><td valign=middle width=154 class=ContainerHeader><a href="interior.asp@ptid=1&amp;mid=157.html" class=WLeftNav>
+Directory</a></td><td width=7 valign=top background="images/menu_title_right_bg.gif" ><img src="images/menu_title_right.gif" width=7 height=24></td></tr></table><table width=174 cellpadding=0 cellspacing=0 border=0><tr class=ContainerTD><td valign=top width="167"><img src="images/spacer.gif" width=167 height=5></td><td width=7><img src="images/menu_right.gif" width=7 height=5></td></tr></table>
+<table width=174 cellpadding=0 cellspacing=0 border=0 class=containerTD><tr class=ContainerTD>
+<td valign=top width=7 class=ContainerTD>
+<img src="images/spacer.gif" width=7 height=1 border=0></td>
+<td valign=top width=13 class=ContainerTD><img name=222 id=222 src="images/nav_closed.gif">
+</td><td valign=top width=147 class=ContainerTD><a href="interior.asp@ptid=1&amp;mid=222.html" class=SecondaryNav>
+Find-A-Church</a></td><td width=7 valign=top background="images/menu_right.gif" ><img src="images/menu_right.gif" width=7 height=13></td></tr></table>
+<table width=174 cellpadding=0 cellspacing=0 border=0 class=containerTD><tr class=ContainerTD>
+<td valign=top width=7 class=ContainerTD>
+<img src="images/spacer.gif" width=7 height=1 border=0></td>
+<td valign=top width=13 class=ContainerTD><img name=556 id=556 src="images/nav_closed.gif">
+</td><td valign=top width=147 class=ContainerTD><a href="interior.asp@ptid=1&amp;mid=556.html" class=SecondaryNav>
+Regional Offices</a></td><td width=7 valign=top background="images/menu_right.gif" ><img src="images/menu_right.gif" width=7 height=13></td></tr></table>
+<table width=174 cellpadding=0 cellspacing=0 border=0 class=containerTD><tr class=ContainerTD>
+<td valign=top width=7 class=ContainerTD>
+<img src="images/spacer.gif" width=7 height=1 border=0></td>
+<td valign=top width=13 class=ContainerTD><img name=528 id=528 src="images/nav_closed.gif">
+</td><td valign=top width=147 class=ContainerTD><a href="interior.asp@ptid=1&amp;mid=528.html" class=SecondaryNav>
+Ministries</a></td><td width=7 valign=top background="images/menu_right.gif" ><img src="images/menu_right.gif" width=7 height=13></td></tr></table>
+<table width=174 cellpadding=0 cellspacing=0 border=0 class=containerTD><tr class=ContainerTD>
+<td valign=top width=7 class=ContainerTD>
+<img src="images/spacer.gif" width=7 height=1 border=0></td>
+<td valign=top width=13 class=ContainerTD><img name=2650 id=2650 src="images/nav_closed.gif">
+</td><td valign=top width=147 class=ContainerTD><a href="interior.asp@ptid=1&amp;mid=2650.html" class=SecondaryNav>
+General Agencies</a></td><td width=7 valign=top background="images/menu_right.gif" ><img src="images/menu_right.gif" width=7 height=13></td></tr></table>
+
+
+<!-- Left Side Nav: End -->
+			</td>
+
+          </tr>
+        </table>
+		<table width=175 border=0 cellpadding=0 cellspacing=0 class=ContainerTD>
+          <tr>
+		    <td width="1" background="images/keyline.gif"><img src="images/spacer.gif" width="1" height="1"></td>
+            
+          <td width=167><img src="images/spacer.gif" width="167" height="10"></td>
+            <td><img src="images/menu_right.gif" width="7" height="13"></td>
+		  </tr>
+		</table>
+        <table width="175" height="7" border="0" cellpadding="0" cellspacing="0">
+          <tr> 
+            <td colspan=2 class=ContainerTD><img src="images/menu_bottom.gif" width="175" height="10"></td>
+          </tr>
+        </table>
+        
+		<br clear="all">
+<!-- Left Side HP Containers: Start -->
+
+<!-- Left Side HP Containers: End   -->
+ 
+    </td>
+<!-- END LEFT SIDE INCLUDE -->
+
+<!-- START OF MAIN BODY AREA -->
+			
+    <td width="597" valign="top">
+
+        <table width="100%" height="16" border="0" cellpadding="0" cellspacing="0">
+
+          <tr> 
+		  	<td valign="top" width=14><img src="images/spacer.gif" width="14" height="16"></td>
+            <td valign="top" class="NewsText">
+
+<!-- DYNAMIC BREAD CRUMB NAVIGATION STARTS HERE -->
+           
+        <span class=ThirdLinks><a href="http://umc.org" class=ThirdLinks>Home</a>&nbsp;&gt;&nbsp;<a href="interior.asp@ptid=1&amp;mid=157.html" class=ThirdLinks>Directory</a>&nbsp;&gt;&nbsp;<a href="interior.asp@ptid=1&amp;mid=528.html" class=ThirdLinks>Ministries</a>&nbsp;&gt;&nbsp;Annual Conference Publications</span>
+			<!--'add "Logged in " message -->
+			
+<!-- DYNAMIC BREAD CRUMB NAVIGATION ENDS HERE -->
+                </td>
+				
+
+                
+              </tr>
+
+            </table>
+
+       <table width="100%" border="0" cellspacing="0" cellpadding="0" valign=top>
+	    <tr>
+          <td valign=top colspan=2><img src="images/spacer.gif" width="1" height="6"></td>
+		</tr>
+        <tr>
+          <td valign=top width=10><img src="images/spacer.gif" width="10" height="1"></td> 
+          <td valign=top>
+          	 
+            <!-- DYNAMIC CONTENT IS OUTPUTTED HERE -->
+            <font size=2 face="Arial"> 
+            <P><FONT face="Arial, Helvetica, sans-serif" size=2><A href="http://www.moumethodist.org/um_connection.asp"></A>tIf you do not see your conference listed, please contact your conference office for information.</FONT><FONT face="Arial, Helvetica, sans-serif"><FONT face="Arial, Helvetica, sans-serif"><FONT face="Arial, Helvetica, sans-serif"><FONT face="Arial, Helvetica, sans-serif"><BR></P><MAP name=FPMap0><AREA shape=POLY coords=498,66,451,107,441,142,438,161,453,165,468,149,484,155,523,105,528,73,512,55 href="interior.asp@ptid=1&amp;mid=6546.html#Northeastern"><AREA shape=POLY coords=422,160,404,172,390,198,384,223,399,246,438,247,463,278,483,265,472,221,502,181,485,157,474,153,461,153,454,165,447,167 href="interior.asp@ptid=1&amp;mid=6546.html#Southeastern"><AREA shape=POLY coords=406,75,343,67,296,66,293,129,320,131,339,136,354,151,371,152,387,170,411,163,435,151,442,129 href="interior.asp@ptid=1&amp;mid=6546.html#North"><AREA shape=POLY coords=296,181,258,177,253,227,285,257,334,284,399,259,401,244,389,230,385,220,395,192,390,175,377,159,359,149,351,147,336,135,306,130,293,132,296,140 href="interior.asp@ptid=1&amp;mid=6546.html#South"><AREA shape=POLY coords=269,68,42,3,13,62,39,179,142,255,188,229,247,220,254,174,295,179,298,138,290,133,291,75 href="interior.asp@ptid=1&amp;mid=6546.html#Western"></MAP><P align=center><IMG height=310 src="uploads/images/US_Map_REVISED_2_550x400.jpg" width=529 useMap=#FPMap0 border=0><BR><FONT size=2><FONT face="Arial, Helvetica, sans-serif"><A href="interior.asp@ptid=1&amp;mid=6546.html#Western">Western Jurisdiction</A>&nbsp;|&nbsp;<A href="interior.asp@ptid=1&amp;mid=6546.html#North">North Central Jurisdiction</A> |&nbsp;<A href="interior.asp@ptid=1&amp;mid=6546.html#Northeastern">Northeastern Jurisdiction</A>&nbsp;|&nbsp;<A href="interior.asp@ptid=1&amp;mid=6546.html#South">South Central Jurisdiction</A></FONT><FONT face="Arial, Helvetica, sans-serif"> |&nbsp;<A href="interior.asp@ptid=1&amp;mid=6546.html#Southeastern">Southeastern Jurisdiction</A></FONT></FONT></FONT></FONT></FONT></FONT></P><P></P><P align=left><FONT face="Arial, Helvetica, sans-serif"><FONT face="Arial, Helvetica, sans-serif"><FONT face="Arial, Helvetica, sans-serif"><FONT face="Arial, Helvetica, sans-serif"><FONT face="Arial, Helvetica, sans-serif"><STRONG><FONT face="Arial, Helvetica, sans-serif" size=3>Jurisdiction</FONT></STRONG></FONT><BR></FONT></FONT><BR></FONT></FONT><FONT face="Arial, Helvetica, sans-serif"><FONT face="Arial, Helvetica, sans-serif"><FONT face="Arial, Helvetica, sans-serif"><FONT face="Arial, Helvetica, sans-serif"><FONT face="Arial, Helvetica, sans-serif"><STRONG><A name=Western></A>Western Jurisdiction</STRONG></FONT><BR><BR><FONT face="Arial, Helvetica, sans-serif" size=2>California-Nevada Conference<BR></FONT><A href="http://www.cnumc.org/page.asp?PKValue=1047" target=_blank><FONT size=2>Connection</FONT></A><BR><BR><FONT face="Arial, Helvetica, sans-serif" size=2>California-Pacific Conference<BR></FONT><A href="http://www.cal-pac.org/con_CircuitWest.cfm" target=_blank>Circuit West United Methodist Review</A></FONT></FONT></FONT></FONT><FONT face="Arial, Helvetica, sans-serif"><FONT face="Arial, Helvetica, sans-serif"><FONT face="Arial, Helvetica, sans-serif"><FONT face="Arial, Helvetica, sans-serif"><BR><A href="http://calpac.atom.sonikserver.com/con_News_Conference.cfm">Cal-Pac News</A></FONT></FONT></FONT></FONT></P><P align=left><FONT face="Arial, Helvetica, sans-serif"><FONT face="Arial, Helvetica, sans-serif"><FONT face="Arial, Helvetica, sans-serif"><FONT face="Arial, Helvetica, sans-serif"><FONT face="Arial, Helvetica, sans-serif" size=2>Desert Southwest Conference<BR></FONT><A href="http://desertsouthwestconference.org/churchmembers/news_and_notes/desertconnection/">The Desert Connection</A></FONT></FONT></FONT></FONT></P><P align=left><FONT face="Arial, Helvetica, sans-serif"><FONT face="Arial, Helvetica, sans-serif"><FONT face="Arial, Helvetica, sans-serif"><FONT face="Arial, Helvetica, sans-serif"><FONT face="Arial, Helvetica, sans-serif" size=2>Oregon-Idaho Conference<BR></FONT><A href="http://www.umoi.net/artman/publish/umpublication.shtml" target=_blank>United Methodist Online</A><BR><BR><FONT face="Arial, Helvetica, sans-serif" size=2>Pacific Northwest Conference<BR></FONT><A href="http://www.pnwumc.org/news/methodistsinthenews.html" target=_blank>Channels</A><BR><A href="http://www.pnwumc.org/news/methodistsinthenews.html" target=_blank>PNW News Digest </A><BR></FONT></FONT></FONT></FONT><FONT face="Arial, Helvetica, sans-serif"><FONT face="Arial, Helvetica, sans-serif"><FONT face="Arial, Helvetica, sans-serif"><FONT face="Arial, Helvetica, sans-serif"><FONT face="Arial, Helvetica, sans-serif"><BR><FONT face="Arial, Helvetica, sans-serif" size=2>Rocky Mountain Conference<BR></FONT><A href="http://www.rmcumc.org/News/Communications/news.htm" target=_blank><FONT face="Arial, Helvetica, sans-serif" size=2>RMC News</FONT></A><BR><A href="http://www.rmcumc.org/News/Vision/" target=_blank><FONT face="Arial, Helvetica, sans-serif" size=2>The New Vision</FONT></A><BR><BR><FONT face="Arial, Helvetica, sans-serif"><FONT face="Arial, Helvetica, sans-serif" size=2>Yellowstone Conference<BR></FONT><FONT face="Arial, Helvetica, sans-serif"><A href="http://www.yacumc.org/The_Connection/" target=_blank><FONT size=2>The Yellowstone Connection</FONT></A></FONT></FONT></FONT></FONT></FONT></FONT></FONT></P><P align=left><FONT face="Arial, Helvetica, sans-serif"><FONT face="Arial, Helvetica, sans-serif"><FONT face="Arial, Helvetica, sans-serif"><FONT face="Arial, Helvetica, sans-serif"><FONT face="Arial, Helvetica, sans-serif"><FONT face="Arial, Helvetica, sans-serif"><FONT face="Arial, Helvetica, sans-serif"><HR><P></P><P></P><P><FONT face="Arial, Helvetica, sans-serif"><STRONG><A name=North></A>North Central Jurisdiction</STRONG></FONT><BR><BR><FONT face="Arial, Helvetica, sans-serif" size=2>Dakotas Conference<BR></FONT><FONT face="Arial, Helvetica, sans-serif" size=2><A href="http://www.dakotasumc.nonprofitoffice.com/index.asp?Type=B_BASIC&amp;SEC={05C3CD10-4C4F-4947-B129-AE403587E5AC}" target=_blank>Today's News</A><BR><BR>Detroit Conference/West Michigan Conference<BR></FONT><FONT face="Arial, Helvetica, sans-serif" size=2><A href="http://www.mcadvocate.org/" target=_blank>Michigan Christian Advocate</A></FONT><BR><BR><FONT face="Arial, Helvetica, sans-serif" size=2>East Ohio Conference<BR><A href="http://www.eocumc.com/joininghands/about.html" target=_blank>East Ohio Joining Hands</A></FONT><FONT face="Arial, Helvetica, sans-serif" size=2><BR></FONT><FONT face="Arial, Helvetica, sans-serif" size=2><A href="http://www.eocumc.com/joininghands/about.html" target=_blank></A><A href="http://www.eocumc.com/communications/about_us.html" target=_blank>East Ohio E-News</A></FONT><BR><BR><FONT face="Arial, Helvetica, sans-serif" size=2>Illinois Great Rivers Conference<BR><A href="http://www.igrc.org/Communications/The-Current.aspx" target=_blank>The Current</A><BR></FONT><A href="http://www.igrc.org/Communications/The-Current.aspx" target=_blank></A><A href="http://www.igrc.org/Communications/The-Current-Week-in-Review.aspx" target=_blank>The Current Week in Review</A><BR><BR><FONT face="Arial, Helvetica, sans-serif" size=2>Indiana Area (North Indiana Conference/South Indiana Conference)<BR></FONT><A href="http://www.inareaumc.org/together.htm" target=_blank><FONT face="Arial, Helvetica, sans-serif" size=2>Hoosier United Methodists Together</FONT></A><BR><A href="http://www.inareaumc.org/e-hum.htm" target=_blank><FONT face="Arial, Helvetica, sans-serif" size=2>e-HUM</FONT></A><BR><BR><FONT face="Arial, Helvetica, sans-serif" size=2>Iowa Conference<BR></FONT><A href="http://www.iaumc.org/reporter.asp" target=_blank>Iowa Conference Edition of The United Methodist Reporter</A><BR><BR><FONT face="Arial, Helvetica, sans-serif" size=2>Minnesota Conference<BR></FONT><A href="http://minnesotaumc.org/ME2/Audiences/Default.asp?AudID=B565C868094F4C8B9AC89AE6CFB944C6" target=_blank>Northern Bytes</A><BR><BR><FONT face="Arial, Helvetica, sans-serif" size=2>Northern Illinois Conference<BR></FONT><A href="http://www.gbgm-umc.org/nillconf/News.htm" target=_blank>The Reporter</A><BR><BR><FONT face="Arial, Helvetica, sans-serif" size=2>West Michigan Conference/Detroit Conference<BR></FONT><A href="http://www.mcadvocate.org/" target=_blank>Michigan Christian Advocate</A><BR><BR><FONT face="Arial, Helvetica, sans-serif" size=2>West Ohio Conference<BR></FONT><FONT face="Arial, Helvetica, sans-serif" size=2><A href="http://www.westohioumc.org/page.asp?PKValue=1134" target=_blank>NewsNET</A><BR></FONT><BR><FONT face="Arial, Helvetica, sans-serif" size=2>Wisconsin Conference<BR></FONT><A href="http://www.wisconsinumc.org/WhatsNewConference.html" target=_blank><FONT face="Arial, Helvetica, sans-serif" size=2>Conference News &amp; Events</FONT></A><BR><BR><BR><HR><P></P><P></P></FONT></FONT></FONT><P><FONT face="Arial, Helvetica, sans-serif"><STRONG><A name=Northeastern></A>Northeastern Jurisdiction</STRONG></FONT><BR><BR></FONT></FONT></FONT></FONT><FONT face="Arial, Helvetica, sans-serif" size=2>Baltimore-Washington Conference<BR></FONT><FONT face="Arial, Helvetica, sans-serif" size=2><A href="http://beta.bwcumc.org/content/news" target=_blank>UMConnection</A><BR><BR>Central Pennsylvania Conference<BR><A href="http://www.cpclink.org/" target=_blank>Link</A><BR><BR></P></FONT><P><FONT face="Arial, Helvetica, sans-serif" size=2>Eastern Pennsylvania<BR><A href="http://www.epaumc.org/NvSubscribeNS.asp" target=_blank>NEWSpirit</A><BR><BR>Greater New Jersey Conference<BR><A href="http://www.umrelay.org/" target=_blank>The Relay Online</A><BR><BR>New England Conference<BR><A href="http://www.neumc.org/page.asp?PKValue=44" target=_blank>SpiritNET</A></FONT></P><P><FONT face="Arial, Helvetica, sans-serif" size=2>New York Conference<BR><A href="http://www.nyac.com/um_connection.asp" target=_blank>The Vision</A><BR><A href="http://www.nyac.com/um_connection.asp" target=_blank></A><BR>North Central New York Conference<BR><A href="http://www.ncnyumc.org/connections.html" target=_blank>Connections</A><BR><BR>Peninsula-Delaware Conference<BR><A href="http://www.pen-del.org/communicator.asp" target=_blank>Communicator</A><BR><BR>Troy Conference<BR><A href="http://www.troyac.org/page.asp?PKValue=1048" target=_blank>The Connection</A><BR></FONT><FONT face="Arial, Helvetica, sans-serif" size=2><BR>West Virginia Conference<BR><A href="http://wvumc.org/news.shtml" target=_blank>The West Virginia United Methodist</A></FONT></P><P><FONT face="Arial, Helvetica, sans-serif" size=2>Western New York Conference<BR><A href="http://www.wnyumc.org/um_connection.asp" target=_blank>Western New York United Methodist Spectrum</A>&nbsp;<BR><BR>Western Pennsylvania Conference<BR><A href="http://www.wpaumc.org/resources/interlink.php" target=_blank>InterLink</A><BR></FONT><FONT face="Arial, Helvetica, sans-serif" size=2><A href="http://www.wpaumc.org/resources/cross_flame.php" target=_blank>Cross &amp; Flame</A><BR></FONT><FONT face="Arial, Helvetica, sans-serif" size=2><BR>Wyoming Conference<BR></FONT><FONT face="Arial, Helvetica, sans-serif" size=2><A href="http://www.wyomingconference.org/page.asp?PKValue=976" target=_blank>Connections</A><BR></P><HR><P><FONT face="Arial, Helvetica, sans-serif" size=3><FONT face="Arial, Helvetica, sans-serif" size=3><FONT face="Arial, Helvetica, sans-serif" size=2><STRONG><A name=South></A>South Central Jurisdiction</STRONG></FONT></FONT></FONT><BR><BR>Arkansas Conference<BR><A href="http://www.arumc.org/news_enews_top.asp" target=_blank>E-News In Review</A><BR><BR>Central Texas Conference<BR><A href="http://www.ctcumc.org/page.asp?PKValue=936" target=_blank>The Central Link</A></P><P><FONT face="Arial, Helvetica, sans-serif">Kansas West Conference<BR><A href="http://www.kswestumc.org/news_top.asp?sid=2" target=_blank>Connection</A><BR><BR></FONT>Louisiana Conference<BR><A href="http://www.la-umc.org/lanow/" target=_blank>Louisiana NOW!</A><BR><BR>Missouri Conference<BR><A href="http://www.moumethodist.org/um_connection.asp" target=_blank>The Missouri Conference Review</A><BR><A href="http://mosite.brickriver.com/page.asp?PKValue=721" target=_blank>Bridges</A><BR><BR>Nebraska Conference<BR><A href="http://www.umcneb.org/communication/um_connect/" target=_blank>UMConnect</A><BR><BR>New Mexico Area Conference<BR><A href="http://www.nmconfum.com/">New Mexico United Methodist Reporter</A><BR><BR>North Texas Conference<BR><A href="http://www.ntcumc.org/um_connection.asp" target=_blank>North Texas United Methodist Reporter</A></P><P>Northwest Texas Conference<BR><A href="http://www.nwtxconf.org/newsletter_find.asp" target=_blank>eCONNECT</A><BR><A href="http://nwtxconf.org/page.asp?PKValue=689" target=_blank>Northwest Texas United Methodist Review</A><BR><BR><FONT face="Arial, Helvetica, sans-serif">Oklahoma Conference<BR><A href="http://www.okumcministries.org/contact.htm" target=_blank>The Oklahoma United Methodist Contact</A></FONT></P><P><FONT face="Arial, Helvetica, sans-serif">Oklahoma Indian Missionary Conference<BR><A href="http://www.umc-oimc.org/" target=_blank>The Advocate</A><BR><BR>Rio Grande Conference<BR></FONT><A href="http://www.riograndeconference.org/multipage.php" target=_blank>The Rio Grande Record</A><BR><BR>Southwest Texas Conference<BR><A href="http://www.umcswtx.org/witness-online.html?&amp;Redirected#Section3587692" target=_blank>United Methodist Witness</A><BR><BR>Texas Conference<BR><A href="http://www.txcumc.org/page.asp?PKValue=384" target=_blank>Cross Connection</A><BR><HR></FONT><P><FONT face="Arial, Helvetica, sans-serif" size=2><FONT face="Arial, Helvetica, sans-serif" size=3><FONT face="Arial, Helvetica, sans-serif" size=3><FONT face="Arial, Helvetica, sans-serif" size=2><STRONG><A name=Southeastern></A>Southeastern Jurisdiction</STRONG></FONT><BR></FONT></FONT></FONT><FONT face="Arial, Helvetica, sans-serif" size=2><BR>Alabama-West Florida Conference<BR><A href="http://www.awfumc.org/page.asp?PKValue=42" target=_blank>NewsCONNECTION</A><BR><A href="http://www.awfumc.org/page.asp?PKValue=101" target=_blank>The Narrator</A><BR><BR>Florida Conference<BR><A href="http://www.flumc.info/" target=_blank>Florida United Methodist e-Review</A><BR><BR>Holston Conference<BR><A href="http://holstonconference.com/thecall/" target=_blank>The Call</A><BR><BR>Kentucky Conference<BR><A href="http://www.kyumc.org/page.asp?PKValue=1248" target=_blank>NetNews</A><BR><BR>Memphis Conference<BR><A href="http://www.memphis-umc.org/reporter/2006/index.html" target=_blank>Memphis United Methodist Reporter</A><BR><BR>Mississippi Conference<BR><A href="http://www.mississippi-umc.org/um_connection.asp" target=_blank>Mississippi United Methodist Advocate</A><BR><BR>North Alabama Conference<BR><A href="http://www.northalabamaumc.org/newsletter_find.asp" target=_blank>e-Voice</A><BR><BR>North Carolina Conference/Western North Carolina Conference<BR><A href="http://www.wnccumc.org/pub/newsletters.htm" target=_blank>Vital Signs and Missions Alive!</A><BR><A href="http://www.nccumc.org/publications.htm" target=_blank>Newsbriefs</A><BR></FONT><FONT face="Arial, Helvetica, sans-serif" size=2><A href="http://www.nccumc.org/advocate/advocatehome.htm" target=_blank>North Carolina Conference Christian Advocate</A><BR><A href="http://www.wnccumc.org/pub/publications.htm" target=_blank>Connections for Ministry</A><BR><BR>North Georgia Conference/South Georgia Conference<BR><A href="http://www.ngumc.org/communications/newsletters/" target=_blank>Monday Morning in North Georgia</A><BR><A href="http://www.wcadvocate.org/" target=_blank>Wesleyan Christian Advocate</A></FONT></P><P><FONT face="Arial, Helvetica, sans-serif" size=2>Red Bird Missionary Conference<BR><A href="http://www.redbirdconference.org/cardinal-on-line.htm" target=_blank>The Cardinal</A><BR><BR>South Carolina Conference<BR><A href="http://www.scadvocate-online.org/" target=_blank>South Carolina United Methodist Advocate</A><BR><BR>South Georgia Conference/North Georgia Conference<BR><A href="http://www.ngumc.org/communications/newsletters/" target=_blank>Monday Morning in North Georgia</A><BR><A href="http://www.sgaumc.com/sganew/link/index.htm" target=_blank>The Link</A><BR><A href="http://www.wcadvocate.org/" target=_blank>Wesleyan Christian Advocate</A><BR><BR>Tennessee Conference<BR><A href="http://www.tnumc.org/News_%26_Info/" target=_blank>News &amp; Info</A><BR><A href="http://www.tnumc.org/News_%26_Info/Tennessee_Conference_Review_%28Newspaper%29/" target=_blank>Tennessee Conference Review</A><BR><BR>Virginia Conference<BR><A href="http://www.vaumc.org/index.cfm/fa/content.view/menuID/514.htm" target=_blank>Publications (all)</A><BR><BR>Western North Carolina Conference/North Carolina Conference<BR><A href="http://www.wnccumc.org/pub/newsletters.htm" target=_blank>Vital Signs and Missions Alive</A><BR><A href="http://www.wnccumc.org/pub/publications.htm" target=_blank>Connections for Ministry</A></P></FONT>
+            
+			<BR clear=all>
+			<br clear="all"><br><div align="right"><a href="http://backup.calms2012.umc.org/interior_print.asp?ptid=1&amp;mid=6546&amp;pagemode=print" target="_blank" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('toolbar_print','','images/article_print_over.gif',1)"><img src="images/article_print.gif" alt="Click for a printer friendly version of this page" name="toolbar_print" width="83" height="19" border="0"></a><a href="interior.asp@mid=453.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('toolbar_email','','images/article_email_over.gif',1)"><img src="images/article_email.gif" alt="Click to email someone a link to this page" name="toolbar_email" width="83" height="19" border="0"></a></div>
+            </font><br>
+            <br> 
+            <!-- DYNAMIC CONTENT ENDS HERE -->
+          </td>
+        </tr>
+      </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+	
+
+<!-- FOOTER INCLUDE BEGINS HERE -->
+<div align="center">
+  <table width=778 border=0 cellspacing=0 cellpadding=4>
+	<tr>
+		<td width=778 valign=top bgcolor="#F2F1E1">
+		<p class=first align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">
+		<span><b>Site Tools:</b>&nbsp;</span>
+		<a style="text-decoration: none; color: #5575a1" href="http://www.umc.org/site/c.lwL4KnN1LtH/b.1355413/k.D5E5/Site_Map/apps/sitemap/sitemap.asp">Site Map</a>&nbsp;|&nbsp;
+		<a href="http://archives.umc.org/interior.asp?ptid=1&mid=258" style="text-decoration: none; color: #5575a1">Glossary</a>&nbsp;|&nbsp;
+		<a href="http://www.umc.org/site/c.lwL4KnN1LtH/b.1716943/k.EEBB/Directory.htm" style="text-decoration: none; color: #5575a1">Directory</a>&nbsp;|&nbsp;<a href="http://archives.umc.org/interior.asp?mid=375" style="text-decoration: none; color: #5575a1">Calendar</a>&nbsp;
+        <span>
+        <span class="inner"><b>Content Tools</b>:</span>&nbsp;</span><a href="http://archives.umc.org/interior.asp?ptid=2&mid=2758" style="text-decoration: none; color: #5575a1">Email Updates</a>&nbsp;|&nbsp;<a  href="http://www.umc.org/site/c.lwL4KnN1LtH/b.2106139/k.1170/Still_in_Production.htm" info="This feature is still in development. Please check back in the coming weeks." style="text-decoration: none; color: #5575a1">Syndication</a>&nbsp;|&nbsp;<a  href="http://www.umc.org/site/c.lwL4KnN1LtH/b.2106139/k.1170/Still_in_Production.htm" info="This feature is still in development. Please check back in the coming weeks." style="text-decoration: none; color: #5575a1">RSS Feed</a><br>
+        <br>
+        <a  href="http://www.umc.org/site/c.lwL4KnN1LtH/b.2247173/k.8A06/About_UMCorg/apps/ka/ct/contactcustom.asp" style="text-decoration: none; color: #5575a1">About UMC.org</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a info="This feature is still in development. Please check back in the coming weeks." style="text-decoration: none; color: #5575a1" href="http://www.umc.org/site/c.lwL4KnN1LtH/b.2267689/k.9997/Press_Center.htm">Press Center</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://archives.umc.org/interior.asp?ptid=1&mid=287" style="text-decoration: none; color: #5575a1">Jobs</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a  href="http://www.umc.org/site/c.lwL4KnN1LtH/b.2106139/k.1170/Still_in_Production.htm" info="This feature is still in development. Please check back in the coming weeks." style="text-decoration: none; color: #5575a1">&#160;</a>
+		<a href="http://www.korean.umc.org/" style="text-decoration: none; color: #5575a1"><img alt="Image Link Title" src="http://www.umc.org/atf/cf/{DB6A45E4-C446-4248-82C8-E131B6424741}/koreanumc.gif" border="0" /></a>&#160;<a href="http://www.korean.umc.org/" style="text-decoration: none; color: #5575a1">Korean UMC</a></font></p>
+</td>
+	</tr>
+</table>
+</div>
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-1387816-2";
+urchinTracker();
+</script>
+
+
+
+<!-- FOOTER INCLUDE ENDS HERE -->
+</body>
+</html>

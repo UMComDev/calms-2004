@@ -1,0 +1,1006 @@
+
+<script language="JavaScript" src="flash_detect.js"></script>
+<script language="JavaScript">
+	var varSubmitForm = "False";
+	function hp_redirect(js_NextURL, js_QS1, js_QS2 ) {
+		// js_NextURL: the target URL		
+		// js_QS1	 : QueryString that is sent thru ct_save.asp
+		//         	   Omit the following vars to avoid errors: chid, mid, section, layout, edit, aid
+		//
+		// js_QS2	 : QueryString for normal redirect. Include ALL vars needed to make the target page work.	
+		if (varSubmitForm == "True") {
+			document.all.Rtn2editor.value 	= "1";
+			document.all.NextURL.value 		= js_NextURL;
+			document.all.NextQuery.value 	= "&" + js_QS1;
+			//alert(js_NextURL + ".asp?"+ js_QS1);
+			document.fHtmlEditor.submit();		
+		}else{
+			location = js_NextURL + ".asp?"+ js_QS2;
+		}
+	}
+</script>
+
+<!-- INCLUDE VIRTUAL="include_redirect.asp" -->
+
+<html>
+<head>
+<title>Volunteer Opportunities</title>
+<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">-->
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta name="robots" content="noindex">
+
+<META NAME="description" CONTENT="">
+<META NAME="keywords" CONTENT="volunteer mission">
+<link href="global.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" src="global.js"></script>
+
+
+<!-- GOOGLE AD SERVICE - ADDED 2010-04-14 -->
+<script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'> 
+</script> 
+<script type='text/javascript'> 
+GS_googleAddAdSenseService("ca-pub-5286074780767328"); 
+GS_googleEnableAllServices(); 
+</script> 
+<script type='text/javascript'> 
+GA_googleAddSlot("ca-pub-5286074780767328", "Interpreter_175_146"); 
+</script> 
+<script type='text/javascript'> 
+GA_googleFetchAds(); 
+</script> 
+
+
+
+
+</head>
+
+<body bgcolor="#FFFFFF" link="#FF0000" vlink="#FF0000" alink="#FF0000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onLoad="MM_preloadImages('/images/sec_nav_questions_over.gif','/images/sec_nav_glossary_over.gif','/images/sec_nav_press_over.gif','/images/sec_nav_jobs_over.gif','/images/sec_nav_calendar_over.gif','/images/sec_nav_korean_trans_over.jpg','/images/sec_nav_contact_over.gif','/images/sec_nav_friend_over.gif','/images/sec_nav_search_over.gif','/images/nav_about_over.jpg','/images/nav_spirit_over.jpg','/images/nav_news_over.jpg','/images/nav_faith_over.jpg','/images/nav_tools_over.jpg','/images/nav_directory_over.jpg','/images/article_print_over.gif','/images/article_email_over.gif','/images/article_bookmark_over.gif')">
+<!--<script language="JavaScript" src="popUpMsg.js"></script>-->
+
+<!-- TOP BANNER INCLUDE STARTS HERE -->
+
+
+<link href="stylesheets/1_styleNav.css" rel="stylesheet" type="text/css">
+
+<body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0">
+
+<table align="center" height=29 width="778" background="stylesheets/tcimg/tcbg.gif">
+<tr><td><img border="0" src="stylesheets/tcimg/tcimg_01.gif" width="142" height="23"><a href="http://umc.org"><img border="0" src="stylesheets/tcimg/tcimg_02.gif" width="105" height="23"></a><a href="http://www.umc.org/site/c.lwL4KnN1LtH/b.1716943/k.EEBB/Directory.htm"><img border="0" src="stylesheets/tcimg/tcimg_03.gif" width="84" height="23"></a><a href="http://archives.umc.org/Directory/ChurchDirectory.asp?ptid=1&mid=222"><img border="0" src="stylesheets/tcimg/tcimg_04.gif" width="92" height="23"></a><a href="http://google.umc.org/search?access=p&output=xml_no_dtd&site=UMCom_UMCorg_Collection&ie=UTF-8&y=1&client=UMCom_UMCorg_2007_Frontend&oe=UTF-8&proxystylesheet=UMCom_UMCorg_2007_Frontend"><img border="0" src="stylesheets/tcimg/tcimg_05.gif" width="51" height="23"></a></td></tr>
+
+</table> 
+ 
+<table width="778" border="0" align="center" cellspacing="0" cellpadding="0" bgcolor=#C6CB93>
+	  <tr class=MainNavTR> 
+	    <td><table width=100% CELLPADDING=0  cellspacing=0 border=0 align=center><tr class=MainNavTR>	<td nowrap class=MainNavTD align=center>
+          <a href="http://www.kintera.org/site/lookup.asp?c=lwL4KnN1LtH&b=1355347">
+          <img border="0" src="uploads/images/newmenu_ourchurch_192x23.gif" width="192" height="23"></a></td>
+	<td nowrap class=MainNavTD align=center>
+          <a href="http://www.kintera.org/site/lookup.asp?c=lwL4KnN1LtH&b=1355349">
+          <img border="0" src="uploads/images/newmenu_ourfaith_192x23.gif" width="192" height="23"></a></td>
+	<td nowrap class=MainNavTD align=center>
+          <a href="http://www.kintera.org/site/lookup.asp?c=lwL4KnN1LtH&b=1355351">
+          <img border="0" src="uploads/images/newmenu_ourpeople_192x23.gif" width="192" height="23"></a></td>
+	<td nowrap class=MainNavTD align=center>
+          <a href="http://www.kintera.org/site/lookup.asp?c=lwL4KnN1LtH&b=1355355">
+          <img border="0" src="uploads/images/newmenu_ourworld_192x23.gif" width="192" height="23"></a></td>
+	</table></td>
+	  </tr>
+	</table><table width="778" border="0" align="center" cellspacing="0" cellpadding="0">
+	  <tr class=ContainerDivider> 
+	    <td><img src="images/spacer.gif" width=1 height=2></td>
+	  </tr>
+	</table>
+<table width="778" border="0" align="center" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><img src="images/banners/hp_banner_faith1.jpg" width="778" border="0" usemap="#map2home">
+
+	
+	<map name="map2home">
+	    
+			<area shape="rect" coords="0,0,360,40" href="http://www.umc.org/" alt="LINK: UMC.org Home" title="LINK: UMC.org Home">
+		
+	</map>
+	
+
+	</td>
+  </tr>
+</table>
+<table width="778" border="0" align="center" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><img src="images/white_spacer.jpg" width="30" height="9"></td>
+  </tr>
+</table>
+<!-- TOP BANNER INCLUDE ENDS HERE -->
+
+
+
+<!-- SUBNAVIGATION AND MAIN BODY CONTENT -->
+<table width="778" height="50%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+  <tr>
+    <!-- LEFT SIDE INCLUDE: Dynamic section navigation will appear in this cell. -->
+    <td width="175" valign="top" rowspan="2"> 
+      <table width="175" border="0" cellpadding="0" cellspacing="0" class=ContainerTD>
+          <tr> 
+            <td width="1" background="images/keyline.gif"><img src="images/spacer.gif" width="1" height="1"></td>
+            <td width="174" valign="top">
+<!-- Left Side Nav: Start -->
+
+<table width=174 cellpadding=0 cellspacing=0 border=0 class=containerTD><tr class=ContainerHeader>
+<td valign=top width=13 class=ContainerHeader><img name=158 id=158 src="images/spacer.gif">
+</td><td valign=middle width=154 class=ContainerHeader><a href="interior.asp@ptid=1&amp;mid=158.html" class=WLeftNav>
+Faith in Action</a></td><td width=7 valign=top background="images/menu_title_right_bg.gif" ><img src="images/menu_title_right.gif" width=7 height=24></td></tr></table><table width=174 cellpadding=0 cellspacing=0 border=0><tr class=ContainerTD><td valign=top width="167"><img src="images/spacer.gif" width=167 height=5></td><td width=7><img src="images/menu_right.gif" width=7 height=5></td></tr></table>
+<table width=174 cellpadding=0 cellspacing=0 border=0 class=containerTD><tr class=ContainerTD>
+<td valign=top width=7 class=ContainerTD>
+<img src="images/spacer.gif" width=7 height=1 border=0></td>
+<td valign=top width=13 class=ContainerTD><img name=372 id=372 src="images/nav_closed.gif">
+</td><td valign=top width=147 class=ContainerTD><a href="interior.asp@ptid=1&amp;mid=372.html" class=SecondaryNav>
+Volunteer Opportunities</a></td><td width=7 valign=top background="images/menu_right.gif" ><img src="images/menu_right.gif" width=7 height=13></td></tr></table>
+<table width=174 cellpadding=0 cellspacing=0 border=0 class=containerTD><tr class=ContainerTD>
+<td valign=top width=7 class=ContainerTD>
+<img src="images/spacer.gif" width=7 height=1 border=0></td>
+<td valign=top width=13 class=ContainerTD><img name=4849 id=4849 src="images/nav_closed.gif">
+</td><td valign=top width=147 class=ContainerTD><a href="interior.asp@ptid=1&amp;mid=4849.html" class=SecondaryNav>
+Faith in Action Archive</a></td><td width=7 valign=top background="images/menu_right.gif" ><img src="images/menu_right.gif" width=7 height=13></td></tr></table>
+
+
+<!-- Left Side Nav: End -->
+			</td>
+
+          </tr>
+        </table>
+		<table width=175 border=0 cellpadding=0 cellspacing=0 class=ContainerTD>
+          <tr>
+		    <td width="1" background="images/keyline.gif"><img src="images/spacer.gif" width="1" height="1"></td>
+            
+          <td width=167><img src="images/spacer.gif" width="167" height="10"></td>
+            <td><img src="images/menu_right.gif" width="7" height="13"></td>
+		  </tr>
+		</table>
+        <table width="175" height="7" border="0" cellpadding="0" cellspacing="0">
+          <tr> 
+            <td colspan=2 class=ContainerTD><img src="images/menu_bottom.gif" width="175" height="10"></td>
+          </tr>
+        </table>
+        
+		<br clear="all">
+<!-- Left Side HP Containers: Start -->
+
+<!-- Left Side HP Containers: End   -->
+ 
+    </td>
+<!-- END LEFT SIDE INCLUDE -->
+
+<!-- START OF MAIN BODY AREA -->
+			
+    <td width="597" valign="top">
+
+        <table width="100%" height="16" border="0" cellpadding="0" cellspacing="0">
+
+          <tr> 
+		  	<td valign="top" width=14><img src="images/spacer.gif" width="14" height="16"></td>
+            <td valign="top" class="NewsText">
+
+<!-- DYNAMIC BREAD CRUMB NAVIGATION STARTS HERE -->
+           
+        <span class=ThirdLinks><a href="http://umc.org" class=ThirdLinks>Home</a>&nbsp;&gt;&nbsp;<a href="interior.asp@ptid=1&amp;mid=158.html" class=ThirdLinks>Faith in Action</a>&nbsp;&gt;&nbsp;Volunteer Opportunities</span>
+			<!--'add "Logged in " message -->
+			
+<!-- DYNAMIC BREAD CRUMB NAVIGATION ENDS HERE -->
+                </td>
+				
+
+                
+              </tr>
+
+            </table>
+
+       <table width="100%" border="0" cellspacing="0" cellpadding="0" valign=top>
+	    <tr>
+          <td valign=top colspan=2><img src="images/spacer.gif" width="1" height="6"></td>
+		</tr>
+        <tr>
+          <td valign=top width=10><img src="images/spacer.gif" width="10" height="1"></td> 
+          <td valign=top>
+          	 
+            <!-- DYNAMIC CONTENT IS OUTPUTTED HERE -->
+            <font size=2 face="Arial"> 
+            <font size="2" face="Arial, Helvetica, sans-serif">The Volunteer Opportunity Board allows you to put local needs in front of an interested audience in your area. Your volunteer opportunity should be a specific activity within your local church community. <br><br>Your volunteer opportunity must have a designated event coordinator and be sponsored by an officially recognized United Methodist organization. All submissions are subject to verification and approval by UMC.org.<br> <br>If you have questions or need to make revisions, please contact: <a href="mailto:volunteers@umc.org">volunteers@umc.org</a><br><br><b>If you want to submit a volunteer opportunity for United Methodist Volunteers in Mission, please contact your <a href="http://gbgm-umc.org/vim/vimcoords.htm" target=blank>UMVIM Coordinator.</a></b></font><br><br>
+<table width="560" border="1" cellPadding="2" cellSpacing="0" bordercolor="#000000" bordercolorlight="#000000" bordercolordark="#FFFFFF">
+  <form action="http://backup.calms2012.umc.org/interior.asp?act=doadd&amp;mid=372" METHOD="POST" name="VolOpps" onSubmit="return formValid();">
+    <tr> 
+      <td colspan="2" valign="top" bgcolor="#DADFAE">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr> 
+            <td width="58%"><font size="2" face="Arial, Helvetica, sans-serif"><b>&gt;&gt; 
+              Add A Volunteer Opportunity:</b></font></td>
+            <td width="42%" align="right"><font size="2" face="Arial, Helvetica, sans-serif">*required 
+              fields</font></td>
+          </tr>
+        </table></td>
+    </tr>
+    <tr bgcolor="#FFFFFF"> 
+      <td align="right" valign="top"><font size="2" face="Arial, Helvetica, sans-serif">Your 
+        Email*:</font></td>
+      <td><input name="PublicSubmitEmail" type="text" id="PublicSubmitEmail" size="40"> 
+        <br>
+        <font size="1" face="Arial, Helvetica, sans-serif">(You must enter your 
+        email address to receive notification of approval of your volunteer opportunity 
+        for viewing on the website.)</font></td>
+    </tr>
+    <tr> 
+      <td width="34%" align="right" valign="top" bgcolor="#FFFFFF"><font size="2" face="Arial, Helvetica, sans-serif"> 
+        Give this volunteer<br> 
+        opportunity a name*:</font></td>
+      <td width="66%" bgcolor="#FFFFFF"> <textarea name="VolOpp_Name" cols="35" rows="3" wrap="VIRTUAL"></textarea> 
+      </td>
+    </tr>
+    <tr> 
+      <td align="right" valign="top" bgcolor="#FFFFFF"><font size="2" face="Arial, Helvetica, sans-serif"> 
+        Describe the volunteer<br> 
+      opportunity*:</font></td>
+      <td bgcolor="#FFFFFF"> <textarea name="VolOpp_Description" cols="35" rows="8" wrap="VIRTUAL"></textarea> 
+      </td>
+    </tr>
+    <tr> 
+      <td align="right" valign="top" bgcolor="#FFFFFF"><font size="2" face="Arial, Helvetica, sans-serif"> 
+        Describe the skills 
+      required 
+      of<br>
+      volunteers or any other requirements:</font></td>
+      <td bgcolor="#FFFFFF"> <textarea name="VolOpp_Skills" cols="35" rows="8" wrap="VIRTUAL"></textarea> 
+      </td>
+    </tr>
+    <tr>
+      <td align="right" valign="top" bgcolor="#FFFFFF"><font size="2" face="Arial, Helvetica, sans-serif">When
+          does this volunteer<br> 
+        opportunity take place?<br>
+Date(s) &amp; Time(s):</font></td>
+      <td bgcolor="#FFFFFF"><textarea name="VolOpp_Dates" cols="35" rows="8" wrap="VIRTUAL"></textarea>
+      </td>
+    </tr>
+    <tr> 
+      <td align="right" bgcolor="#FFFFFF"><font size="2" face="Arial, Helvetica, sans-serif"> 
+        Pick 
+      a category that 
+      best<br>
+      describes this opportunity*:</font></td>
+      <td valign="top" bgcolor="#FFFFFF"><select size="1" name="VolOpp_Type">
+<option value="0">- - Select Opportunity Type - -
+<option value="10">Clean Up/Maintenance/Repair
+<option value="5">Community outreach
+<option value="2">Construction project
+<option value="9">Education/teaching
+<option value="11">Hunger/Homelessness
+<option value="7">Other
+</select></td>
+    </tr>
+  <tr> 
+    <td align="right" nowrap bgcolor="#FFFFFF" valign=top><font size="2" face="Arial, Helvetica, sans-serif">Associate Theme(s):</font></td>
+    <td bgcolor="#FFFFFF"><SELECT multiple name="theme_id" size="10" style="font: 9.9px verdana; color: #000000;"><option value="0">-- Select themes --	  <OPTION value="">CATEGORY: About Our Church Themes
+	  <OPTION value=152>&nbsp;&nbsp;&nbsp;-Appointments
+	  <OPTION value=121>&nbsp;&nbsp;&nbsp;-Church Structure
+	  <OPTION value=178>&nbsp;&nbsp;&nbsp;-Church Trials
+	  <OPTION value=109>&nbsp;&nbsp;&nbsp;-Colin Test
+	  <OPTION value=118>&nbsp;&nbsp;&nbsp;-Communion
+	  <OPTION value=120>&nbsp;&nbsp;&nbsp;-Homosexuality
+	  <OPTION value=100>&nbsp;&nbsp;&nbsp;-Local Church Committees
+	  <OPTION value=208>&nbsp;&nbsp;&nbsp;-Quick Facts
+	  <option value="">	  <OPTION value="">CATEGORY: Contact Information
+	  <OPTION value=183>&nbsp;&nbsp;&nbsp;-Affiliated Groups
+	  <OPTION value=195>&nbsp;&nbsp;&nbsp;-Annual Conferences
+	  <OPTION value=186>&nbsp;&nbsp;&nbsp;-Bishops
+	  <OPTION value=200>&nbsp;&nbsp;&nbsp;-Boards & Agencies
+	  <OPTION value=184>&nbsp;&nbsp;&nbsp;-Camping Ministries
+	  <OPTION value=185>&nbsp;&nbsp;&nbsp;-Campus Ministries
+	  <OPTION value=203>&nbsp;&nbsp;&nbsp;-Child/Youth/Family
+	  <OPTION value=204>&nbsp;&nbsp;&nbsp;-Community Service
+	  <OPTION value=205>&nbsp;&nbsp;&nbsp;-Conf. Publications
+	  <OPTION value=196>&nbsp;&nbsp;&nbsp;-District Offices
+	  <OPTION value=187>&nbsp;&nbsp;&nbsp;-Ecumenical Groups
+	  <OPTION value=188>&nbsp;&nbsp;&nbsp;-Foundations
+	  <OPTION value=190>&nbsp;&nbsp;&nbsp;-Health Care System
+	  <OPTION value=189>&nbsp;&nbsp;&nbsp;-Hospitals
+	  <OPTION value=199>&nbsp;&nbsp;&nbsp;-Intern. Churches
+	  <OPTION value=197>&nbsp;&nbsp;&nbsp;-Jurisdictions
+	  <OPTION value=198>&nbsp;&nbsp;&nbsp;-Local Churches
+	  <OPTION value=191>&nbsp;&nbsp;&nbsp;-Media Centers
+	  <OPTION value=206>&nbsp;&nbsp;&nbsp;-Publications
+	  <OPTION value=192>&nbsp;&nbsp;&nbsp;-Retreat Centers
+	  <OPTION value=193>&nbsp;&nbsp;&nbsp;-School/University
+	  <OPTION value=194>&nbsp;&nbsp;&nbsp;-Theology Schools
+	  <option value="">	  <OPTION value="">CATEGORY: CRT Online Guidebook
+	  <OPTION value=223>&nbsp;&nbsp;&nbsp;-Annual Conference
+	  <OPTION value=236>&nbsp;&nbsp;&nbsp;-AudioVid Examples
+	  <OPTION value=239>&nbsp;&nbsp;&nbsp;-Changing Newsrooms
+	  <OPTION value=235>&nbsp;&nbsp;&nbsp;-Cheap Vid Producti
+	  <OPTION value=227>&nbsp;&nbsp;&nbsp;-Comm. Goals
+	  <OPTION value=230>&nbsp;&nbsp;&nbsp;-Copyright Guidelin
+	  <OPTION value=225>&nbsp;&nbsp;&nbsp;-Crisis Techniques
+	  <OPTION value=238>&nbsp;&nbsp;&nbsp;-Design & Layout
+	  <OPTION value=233>&nbsp;&nbsp;&nbsp;-Ezekiel Web Hostin
+	  <OPTION value=237>&nbsp;&nbsp;&nbsp;-Headline Writing
+	  <OPTION value=222>&nbsp;&nbsp;&nbsp;-Hot Links
+	  <OPTION value=228>&nbsp;&nbsp;&nbsp;-Job Descriptions
+	  <OPTION value=226>&nbsp;&nbsp;&nbsp;-Lawsuits
+	  <OPTION value=229>&nbsp;&nbsp;&nbsp;-Newspaper Policies
+	  <OPTION value=231>&nbsp;&nbsp;&nbsp;-Podium Photography
+	  <OPTION value=224>&nbsp;&nbsp;&nbsp;-Survival Tips
+	  <OPTION value=234>&nbsp;&nbsp;&nbsp;-Video Streaming
+	  <OPTION value=232>&nbsp;&nbsp;&nbsp;-Web Ministry
+	  <option value="">	  <OPTION value="">CATEGORY: Directory Themes
+	  <OPTION value=207>&nbsp;&nbsp;&nbsp;-Adult Facilities
+	  <option value="">	  <OPTION value="">CATEGORY: Faith in Action Archive
+	  <OPTION value=156>&nbsp;&nbsp;&nbsp;-Faith in Action
+	  <option value="">	  <OPTION value="">CATEGORY: Faith in Action Themes
+	  <OPTION value=60>&nbsp;&nbsp;&nbsp;-AIDS
+	  <OPTION value=175>&nbsp;&nbsp;&nbsp;-Church & Politics
+	  <OPTION value=113>&nbsp;&nbsp;&nbsp;-Church Committees
+	  <OPTION value=61>&nbsp;&nbsp;&nbsp;-Civil Rights
+	  <OPTION value=68>&nbsp;&nbsp;&nbsp;-Consumerism
+	  <OPTION value=107>&nbsp;&nbsp;&nbsp;-Corporate Resp.
+	  <OPTION value=76>&nbsp;&nbsp;&nbsp;-Death Penalty
+	  <OPTION value=179>&nbsp;&nbsp;&nbsp;-Disaster Relief
+	  <OPTION value=74>&nbsp;&nbsp;&nbsp;-Economic Justice
+	  <OPTION value=106>&nbsp;&nbsp;&nbsp;-Environment
+	  <OPTION value=66>&nbsp;&nbsp;&nbsp;-Farming
+	  <OPTION value=114>&nbsp;&nbsp;&nbsp;-Funding
+	  <OPTION value=67>&nbsp;&nbsp;&nbsp;-Gambling
+	  <OPTION value=177>&nbsp;&nbsp;&nbsp;-Health Care
+	  <OPTION value=65>&nbsp;&nbsp;&nbsp;-Homelessness
+	  <OPTION value=63>&nbsp;&nbsp;&nbsp;-Human Rights
+	  <OPTION value=64>&nbsp;&nbsp;&nbsp;-Hunger
+	  <OPTION value=75>&nbsp;&nbsp;&nbsp;-Immigration
+	  <OPTION value=174>&nbsp;&nbsp;&nbsp;-Iraq
+	  <OPTION value=70>&nbsp;&nbsp;&nbsp;-Mass Media
+	  <OPTION value=180>&nbsp;&nbsp;&nbsp;-Middle East
+	  <OPTION value=72>&nbsp;&nbsp;&nbsp;-Nuclear Issues
+	  <OPTION value=71>&nbsp;&nbsp;&nbsp;-Peace
+	  <OPTION value=77>&nbsp;&nbsp;&nbsp;-Restorative Justice
+	  <OPTION value=73>&nbsp;&nbsp;&nbsp;-Rural/Urban Issues
+	  <OPTION value=201>&nbsp;&nbsp;&nbsp;-Tsunami Headlines
+	  <OPTION value=69>&nbsp;&nbsp;&nbsp;-War
+	  <option value="">	  <OPTION value="">CATEGORY: FAQ Themes Pages
+	  <OPTION value=102>&nbsp;&nbsp;&nbsp;-Creation and Evolution
+	  <OPTION value=104>&nbsp;&nbsp;&nbsp;-Pastoral Appointments
+	  <OPTION value=101>&nbsp;&nbsp;&nbsp;-Sexual Ethics
+	  <OPTION value=99>&nbsp;&nbsp;&nbsp;-Sources of Funding
+	  <OPTION value=103>&nbsp;&nbsp;&nbsp;-Stem Cell Research and Cloning
+	  <OPTION value=98>&nbsp;&nbsp;&nbsp;-Women Clergy
+	  <option value="">	  <OPTION value="">CATEGORY: General Conference
+	  <OPTION value=137>&nbsp;&nbsp;&nbsp;-Africa University
+	  <OPTION value=130>&nbsp;&nbsp;&nbsp;-Agency Location
+	  <OPTION value=126>&nbsp;&nbsp;&nbsp;-Bioethics
+	  <OPTION value=136>&nbsp;&nbsp;&nbsp;-Central Conference
+	  <OPTION value=128>&nbsp;&nbsp;&nbsp;-Church & State
+	  <OPTION value=131>&nbsp;&nbsp;&nbsp;-Collaboration
+	  <OPTION value=129>&nbsp;&nbsp;&nbsp;-Death Penalty
+	  <OPTION value=140>&nbsp;&nbsp;&nbsp;-Ethnic Ministries
+	  <OPTION value=134>&nbsp;&nbsp;&nbsp;-Funding Missions
+	  <OPTION value=132>&nbsp;&nbsp;&nbsp;-General Budget
+	  <OPTION value=138>&nbsp;&nbsp;&nbsp;-Global Education
+	  <OPTION value=141>&nbsp;&nbsp;&nbsp;-Holy Communion
+	  <OPTION value=135>&nbsp;&nbsp;&nbsp;-Igniting Ministry
+	  <OPTION value=147>&nbsp;&nbsp;&nbsp;-Men & The Church
+	  <OPTION value=143>&nbsp;&nbsp;&nbsp;-Ordering Ministry
+	  <OPTION value=146>&nbsp;&nbsp;&nbsp;-Pensions
+	  <OPTION value=127>&nbsp;&nbsp;&nbsp;-Science & Theology
+	  <OPTION value=125>&nbsp;&nbsp;&nbsp;-Sexuality
+	  <OPTION value=145>&nbsp;&nbsp;&nbsp;-Special Programs
+	  <OPTION value=144>&nbsp;&nbsp;&nbsp;-Town & Country
+	  <OPTION value=133>&nbsp;&nbsp;&nbsp;-U.S. Bishops
+	  <OPTION value=124>&nbsp;&nbsp;&nbsp;-War
+	  <OPTION value=142>&nbsp;&nbsp;&nbsp;-Women In Mission
+	  <OPTION value=139>&nbsp;&nbsp;&nbsp;-Young People
+	  <option value="">	  <OPTION value="">CATEGORY: General Conference People
+	  <OPTION value=148>&nbsp;&nbsp;&nbsp;-Delegate
+	  <OPTION value=151>&nbsp;&nbsp;&nbsp;-First Time Visitor
+	  <OPTION value=149>&nbsp;&nbsp;&nbsp;-Journalist
+	  <OPTION value=150>&nbsp;&nbsp;&nbsp;-Member
+	  <option value="">	  <OPTION value="">CATEGORY: Interpreter Magazine
+	  <OPTION value=241>&nbsp;&nbsp;&nbsp;-Featured Stories
+	  <OPTION value=210>&nbsp;&nbsp;&nbsp;-Idea Mart
+	  <OPTION value=243>&nbsp;&nbsp;&nbsp;-Interpreter Web Ex
+	  <OPTION value=244>&nbsp;&nbsp;&nbsp;-Interpreter Wholly
+	  <OPTION value=211>&nbsp;&nbsp;&nbsp;-It Worked for Us!
+	  <OPTION value=209>&nbsp;&nbsp;&nbsp;-Jumpstarts
+	  <OPTION value=212>&nbsp;&nbsp;&nbsp;-One of Us
+	  <OPTION value=213>&nbsp;&nbsp;&nbsp;-The Real World
+	  <OPTION value=242>&nbsp;&nbsp;&nbsp;-Wholly Bible
+	  <option value="">	  <OPTION value="">CATEGORY: Interpreter Resources
+	  <OPTION value=220>&nbsp;&nbsp;&nbsp;-Adult Leader
+	  <OPTION value=217>&nbsp;&nbsp;&nbsp;-Christian Educator
+	  <OPTION value=214>&nbsp;&nbsp;&nbsp;-Lay Leader
+	  <OPTION value=218>&nbsp;&nbsp;&nbsp;-Music Leader
+	  <OPTION value=221>&nbsp;&nbsp;&nbsp;-Pastor
+	  <OPTION value=219>&nbsp;&nbsp;&nbsp;-Young Adult Leader
+	  <OPTION value=215>&nbsp;&nbsp;&nbsp;-Youth Leader
+	  <option value="">	  <OPTION value="">CATEGORY: My Spiritual Journey Archives
+	  <OPTION value=157>&nbsp;&nbsp;&nbsp;-My Spiritual Journey
+	  <option value="">	  <OPTION value="">CATEGORY: My Spiritual Journey Themes
+	  <OPTION value=55>&nbsp;&nbsp;&nbsp;-Adolescence
+	  <OPTION value=159>&nbsp;&nbsp;&nbsp;-Adoption
+	  <OPTION value=58>&nbsp;&nbsp;&nbsp;-Affluence
+	  <OPTION value=56>&nbsp;&nbsp;&nbsp;-Aging
+	  <OPTION value=31>&nbsp;&nbsp;&nbsp;-Alcoholism
+	  <OPTION value=182>&nbsp;&nbsp;&nbsp;-Alzheimer's
+	  <OPTION value=45>&nbsp;&nbsp;&nbsp;-Baptism
+	  <OPTION value=42>&nbsp;&nbsp;&nbsp;-Birth of a Child
+	  <OPTION value=169>&nbsp;&nbsp;&nbsp;-Cancer
+	  <OPTION value=111>&nbsp;&nbsp;&nbsp;-Cloning
+	  <OPTION value=117>&nbsp;&nbsp;&nbsp;-Communion
+	  <OPTION value=44>&nbsp;&nbsp;&nbsp;-Confirmation
+	  <OPTION value=35>&nbsp;&nbsp;&nbsp;-Death and Dying
+	  <OPTION value=43>&nbsp;&nbsp;&nbsp;-Depression
+	  <OPTION value=49>&nbsp;&nbsp;&nbsp;-Disability
+	  <OPTION value=29>&nbsp;&nbsp;&nbsp;-Divorce
+	  <OPTION value=30>&nbsp;&nbsp;&nbsp;-Drug Addiction
+	  <OPTION value=32>&nbsp;&nbsp;&nbsp;-Eating Disorder
+	  <OPTION value=112>&nbsp;&nbsp;&nbsp;-Evolution
+	  <OPTION value=37>&nbsp;&nbsp;&nbsp;-Financial Stress
+	  <OPTION value=202>&nbsp;&nbsp;&nbsp;-Forgiveness
+	  <OPTION value=34>&nbsp;&nbsp;&nbsp;-Gambling
+	  <OPTION value=170>&nbsp;&nbsp;&nbsp;-Gun Control
+	  <OPTION value=59>&nbsp;&nbsp;&nbsp;-Homelessness
+	  <OPTION value=36>&nbsp;&nbsp;&nbsp;-Illness
+	  <OPTION value=39>&nbsp;&nbsp;&nbsp;-Job Loss
+	  <OPTION value=41>&nbsp;&nbsp;&nbsp;-Marriage
+	  <OPTION value=47>&nbsp;&nbsp;&nbsp;-Meditation
+	  <OPTION value=38>&nbsp;&nbsp;&nbsp;-Mental Illness
+	  <OPTION value=40>&nbsp;&nbsp;&nbsp;-Military
+	  <OPTION value=57>&nbsp;&nbsp;&nbsp;-Poverty
+	  <OPTION value=46>&nbsp;&nbsp;&nbsp;-Prayer
+	  <OPTION value=50>&nbsp;&nbsp;&nbsp;-Racism
+	  <OPTION value=116>&nbsp;&nbsp;&nbsp;-Sexual Ethics
+	  <OPTION value=54>&nbsp;&nbsp;&nbsp;-Sexuality
+	  <OPTION value=48>&nbsp;&nbsp;&nbsp;-Suicide
+	  <OPTION value=52>&nbsp;&nbsp;&nbsp;-Tithing
+	  <OPTION value=51>&nbsp;&nbsp;&nbsp;-Violence
+	  <OPTION value=53>&nbsp;&nbsp;&nbsp;-Volunteering
+	  <OPTION value=110>&nbsp;&nbsp;&nbsp;-Women Clergy
+	  <option value="">	  <OPTION value="">CATEGORY: Test Theme Category
+	  <OPTION value=240>&nbsp;&nbsp;&nbsp;-Test Theme
+	  <option value="">	  <OPTION value="">CATEGORY: Tools for Ministry Archives
+	  <OPTION value=158>&nbsp;&nbsp;&nbsp;-Tools for Ministry
+	  <option value="">	  <OPTION value="">CATEGORY: Tools for Ministry Themes
+	  <OPTION value=94>&nbsp;&nbsp;&nbsp;-Archivist
+	  <OPTION value=85>&nbsp;&nbsp;&nbsp;-Church Secretary
+	  <OPTION value=122>&nbsp;&nbsp;&nbsp;-Civil Discourse
+	  <OPTION value=83>&nbsp;&nbsp;&nbsp;-Committee Member
+	  <OPTION value=81>&nbsp;&nbsp;&nbsp;-Communicator
+	  <OPTION value=123>&nbsp;&nbsp;&nbsp;-Financial Aid
+	  <OPTION value=115>&nbsp;&nbsp;&nbsp;-Funding
+	  <OPTION value=82>&nbsp;&nbsp;&nbsp;-Lay Leader
+	  <OPTION value=119>&nbsp;&nbsp;&nbsp;-Lent & Easter
+	  <OPTION value=168>&nbsp;&nbsp;&nbsp;-Media in Worship
+	  <OPTION value=93>&nbsp;&nbsp;&nbsp;-Music Leader
+	  <OPTION value=88>&nbsp;&nbsp;&nbsp;-Parish Nurse
+	  <OPTION value=80>&nbsp;&nbsp;&nbsp;-Pastor
+	  <OPTION value=92>&nbsp;&nbsp;&nbsp;-Scout Leader
+	  <OPTION value=105>&nbsp;&nbsp;&nbsp;-Sources of Funding
+	  <OPTION value=79>&nbsp;&nbsp;&nbsp;-Sunday School
+	  <OPTION value=89>&nbsp;&nbsp;&nbsp;-Treasurer
+	  <OPTION value=91>&nbsp;&nbsp;&nbsp;-United Methodist Man
+	  <OPTION value=90>&nbsp;&nbsp;&nbsp;-United Methodist Woman
+	  <OPTION value=84>&nbsp;&nbsp;&nbsp;-Volunteer
+	  <OPTION value=108>&nbsp;&nbsp;&nbsp;-Web Min. Archives
+	  <OPTION value=78>&nbsp;&nbsp;&nbsp;-Webmaster
+	  <OPTION value=176>&nbsp;&nbsp;&nbsp;-Welcoming
+	  <OPTION value=181>&nbsp;&nbsp;&nbsp;-World AIDS Day
+	  <OPTION value=87>&nbsp;&nbsp;&nbsp;-Young Adult Leader
+	  <OPTION value=97>&nbsp;&nbsp;&nbsp;-Youth Leader
+	  <OPTION value=86>&nbsp;&nbsp;&nbsp;-Youth Leader
+	  <option value="">	  <OPTION value="">CATEGORY: Training Center
+	  <OPTION value=27>&nbsp;&nbsp;&nbsp;-Christian Communicator Certification
+	  <OPTION value=26>&nbsp;&nbsp;&nbsp;-Crisis Planning
+	  <OPTION value=25>&nbsp;&nbsp;&nbsp;-Newsletters
+	  <option value="">	  <OPTION value="">CATEGORY: United Methodist Men
+	  <OPTION value=173>&nbsp;&nbsp;&nbsp;-Conference Leader
+	  <OPTION value=172>&nbsp;&nbsp;&nbsp;-District Leader
+	  <OPTION value=163>&nbsp;&nbsp;&nbsp;-Foundation
+	  <OPTION value=162>&nbsp;&nbsp;&nbsp;-History
+	  <OPTION value=166>&nbsp;&nbsp;&nbsp;-Hunger Relief
+	  <OPTION value=171>&nbsp;&nbsp;&nbsp;-Local Leader
+	  <OPTION value=164>&nbsp;&nbsp;&nbsp;-NACP
+	  <OPTION value=167>&nbsp;&nbsp;&nbsp;-Prayer Ministry
+	  <OPTION value=161>&nbsp;&nbsp;&nbsp;-Purpose
+	  <OPTION value=165>&nbsp;&nbsp;&nbsp;-Scouting
+	  <OPTION value=160>&nbsp;&nbsp;&nbsp;-Staff
+	  <option value="">	  <OPTION value="">CATEGORY: Volunteer Opportunity Types
+	  <OPTION value=17>&nbsp;&nbsp;&nbsp;-Construction projects
+	  <option value="">	  <OPTION value="">CATEGORY: Who are you?
+	  <OPTION value=8>&nbsp;&nbsp;&nbsp;-Church Leader
+	  <OPTION value=15>&nbsp;&nbsp;&nbsp;-Church Member
+	  <OPTION value=16>&nbsp;&nbsp;&nbsp;-Church Volunteer
+	  <OPTION value=14>&nbsp;&nbsp;&nbsp;-Pastor
+	  <OPTION value=9>&nbsp;&nbsp;&nbsp;-Visitor
+</select>
+	<br>
+	<font size="1" face="Arial, Helvetica, sans-serif">(Use CTRL + Click to select
+	multiple items or to deselect an item)
+    </font></td>
+  </tr>
+    <tr bgcolor="#DADFAE"> 
+      <td colspan="2" > <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="26%" valign="top" nowrap><font size="2" face="Arial, Helvetica, sans-serif"><b>&gt;&gt; Location
+            Information:&nbsp;</b></font></td>
+          <td width="74%"><strong><font size="2" face="Arial, Helvetica, sans-serif"><i>Provide
+                  this information if volunteers can participate WITHOUT contacting
+            the sponsor.</i></font></strong></td>
+        </tr>
+      </table>        
+      </td>
+    </tr>
+    <tr>
+      <td align="right" valign="top"><font size="2" face="Arial, Helvetica, sans-serif">Contact
+          phone number<br>
+  during volunteer opportunity:</font></td> 
+      <td valign="top" bgcolor="#FFFFFF"> <input name="VolOpp_PhoneDuring" type="text" id="VolOpp_PhoneDuring" size="20">
+        <br>
+      <font size="1">Optional on-site phone number of sponsor organization.</font>      </td>
+    </tr>
+    <tr>
+      <td align="right" valign="top"><font size="2" face="Arial, Helvetica, sans-serif">Address
+          of volunteer
+  opportunity:</font></td> 
+      <td bgcolor="#FFFFFF"><input type="text" name="VolOpp_SiteAddress" size="35">
+        <br>
+        <font size="1">Optional street location of the volunteer opportunity</font></td>
+    </tr>
+    <tr>
+      <td align="right" valign="top"><font size="2" face="Arial, Helvetica, sans-serif">Driving
+          directions: </font></td> 
+      <td bgcolor="#FFFFFF"><textarea name="VolOpp_Directions" cols="35" rows="8" wrap="VIRTUAL"></textarea></td>
+    </tr>
+    <tr bgcolor="#DADFAE">
+      <td colspan="2" > <font size="2" face="Arial, Helvetica, sans-serif"><b>&gt;&gt; </b><b>Contact
+            Information<strong><font size="2" face="Arial, Helvetica, sans-serif">: <i>This
+            information will appear on the Web site.</i></font></strong></b></font></td>
+    </tr>
+    <tr>
+      <td align="right" valign="top" bgcolor="#FFFFFF"><font size="2" face="Arial, Helvetica, sans-serif">City:</font></td>
+      <td bgcolor="#FFFFFF">
+        <input type="text" name="VolOpp_City" size="20">
+        <br>
+      <font size="1">Optional - location of volunteer opportunity </font></td>
+    </tr>
+    <tr>
+      <td align="right" valign="top" bgcolor="#FFFFFF"><font size="2" face="Arial, Helvetica, sans-serif">State/Province:</font></td>
+      <td bgcolor="#FFFFFF"><select size="1" name="VolOpp_State">
+<option value="0">- - Select State/Province - -
+<option value="1">Alabama (AL)
+<option value="2">Alaska (AK)
+<option value="3">Arizona (AZ)
+<option value="4">Arkansas (AR)
+<option value="5">California (CA)
+<option value="6">Colorado (CO)
+<option value="7">Connecticut (CT)
+<option value="8">Delaware (DE)
+<option value="9">District of Columbia (DC)
+<option value="10">Florida (FL)
+<option value="11">Georgia (GA)
+<option value="12">Hawaii (HI)
+<option value="13">Idaho (ID)
+<option value="14">Illinois (IL)
+<option value="15">Indiana (IN)
+<option value="16">Iowa (IA)
+<option value="17">Kansas (KS)
+<option value="18">Kentucky (KY)
+<option value="19">Louisiana (LA)
+<option value="20">Maine (ME)
+<option value="21">Maryland (MD)
+<option value="22">Massachusetts (MA)
+<option value="23">Michigan (MI)
+<option value="24">Minnesota (MN)
+<option value="25">Mississippi (MS)
+<option value="26">Missouri (MO)
+<option value="27">Montana (MT)
+<option value="28">Nebraska (NE)
+<option value="29">Nevada (NV)
+<option value="30">New Hampshire (NH)
+<option value="31">New Jersey (NJ)
+<option value="32">New Mexico (NM)
+<option value="33">New York (NY)
+<option value="34">North Carolina (NC)
+<option value="35">North Dakota (ND)
+<option value="36">Ohio (OH)
+<option value="37">Oklahoma (OK)
+<option value="38">Oregon (OR)
+<option value="39">Pennsylvania (PA)
+<option value="40">Rhode Island (RI)
+<option value="41">South Carolina (SC)
+<option value="42">South Dakota (SD)
+<option value="43">Tennessee (TN)
+<option value="44">Texas (TX)
+<option value="45">Utah (UT)
+<option value="46">Vermont (VT)
+<option value="47">Virginia (VA)
+<option value="48">Washington (WA)
+<option value="49">West Virginia (WV)
+<option value="73">Wisconsin (WI)
+<option value="51">Wyoming (WY)
+</select>
+        <br>
+        <font size="1">Optional - Volunteers can search for opportunities by
+      State</font></td>
+    </tr>
+    <tr>
+      <td align="right" valign="top" bgcolor="#FFFFFF"><font size="2" face="Arial, Helvetica, sans-serif">Annual
+          conference:</font></td>
+      <td bgcolor="#FFFFFF"><select size="1" name="VolOpp_Conference">
+<option value="0">- - Select Conference - -
+<option value="69">Alabama -West Florida Annual Conference
+<option value="12">Alaska Missionary Annual Conference
+<option value="51">Arkansas Annual Conference
+<option value="128">Austria Provisional Annual Conference
+<option value="78">Baltimore-Washington Annual Conference
+<option value="121">Bicol Philippines Provisional Annual Conference
+<option value="122">Bulacan Philippines Annual Conference
+<option value="129">Bulgaria Provisional Annual Conference
+<option value="15">California-Nevada Annual Conference
+<option value="16">California-Pacific Annual Conference
+<option value="97">Central Congo Annual Conference
+<option value="109">Central Luzon Philippines Annual Conference
+<option value="148">Central Russia Annual Conference
+<option value="44">Central Texas Annual Conference
+<option value="130">Czech and Slovak Republics Annual Conference
+<option value="36">Dakotas Annual Conference
+<option value="142">Denmark Annual Conference
+<option value="55">Desert Southwest Annual Conference
+<option value="54">Detroit Annual Conference
+<option value="91">East Africa Annual Conference
+<option value="98">East Congo Annual Conference
+<option value="115">East Mindanao Philippines Annual Conference
+<option value="61">East Ohio Annual Conference
+<option value="95">East Zimbabwe Annual Conference
+<option value="92">Eastern Angola Annual Conference
+<option value="86">Eastern Pennsylvania Annual Conference
+<option value="160">Eastern Russia & Central Asia Provisional Annual Conference
+<option value="143">Estonia Annual Conference
+<option value="144">Finland-Finnish Provisional Annual Conference
+<option value="145">Finland-Swedish Provisional Annual Conference
+<option value="72">Florida Annual Conference
+<option value="138">Germany East Annual Conference
+<option value="139">Germany North Annual Conference
+<option value="140">Germany South Annual Conference
+<option value="80">Greater New Jersey Annual Conference
+<option value="66">Holston Annual Conference
+<option value="132">Hungary Provisional Annual Conference
+<option value="58">Illinois Great Rivers Annual Conference
+<option value="49">Iowa Annual Conference
+<option value="39">Kansas East Annual Conference
+<option value="38">Kansas West Annual Conference
+<option value="164">Kasai Provisional Annual Conference
+<option value="62">Kentucky Annual Conference
+<option value="163">Kivu Provisional Annual Conference
+<option value="106">Liberia Annual Conference
+<option value="53">Louisiana Annual Conference
+<option value="167">Lukoshi Annual Conference
+<option value="64">Memphis Annual Conference
+<option value="124">Middle Philippines Annual Conference
+<option value="116">Mindanao Philippines Annual Conference
+<option value="48">Minnesota Annual Conference
+<option value="67">Mississippi Annual Conference
+<option value="50">Missouri Annual Conference
+<option value="93">Mozambique North Annual Conference
+<option value="153">Mozambique South Annual Conference
+<option value="37">Nebraska Annual Conference
+<option value="89">New England Annual Conference
+<option value="35">New Mexico Annual Conference
+<option value="87">New York Annual Conference
+<option value="107">Nigeria Annual Conference
+<option value="68">North Alabama Annual Conference
+<option value="75">North Carolina Annual Conference
+<option value="84">North Central New York Annual Conference
+<option value="110">North Central Philippines Annual Conference
+<option value="70">North Georgia Annual Conference
+<option value="8">North Indiana Annual Conference
+<option value="101">North Katanga Annual Conference
+<option value="43">North Texas Annual Conference
+<option value="105">North-West Katanga Annual Conference
+<option value="166">Northeast Luzon Phillipines Annual Conference
+<option value="111">Northeast Philippines Annual Conference
+<option value="57">Northern Illinois Annual Conference
+<option value="112">Northern Philippines Annual Conference
+<option value="117">Northwest Mindanao Annual Conference
+<option value="113">Northwest Philippines Annual Conference
+<option value="42">Northwest Texas Annual Conference
+<option value="146">Norway Annual Conference
+<option value="40">Oklahoma Annual Conference
+<option value="41">Oklahoma Indian Missionary Annual Conference
+<option value="14">Oregon-Idaho Annual Conference
+<option value="99">Oriental and Equator Congo Annual Conference
+<option value="13">Pacific Northwest Annual Conference
+<option value="118">Palawan Philippines Provisional Annual Conference
+<option value="169">Pampango Philippines Annual Conference
+<option value="162">Pangasinan Philippines Annual Conference
+<option value="79">Peninsula-Delaware Annual Conference
+<option value="168">Pero Nigeria Annual Conference
+<option value="125">Philippines Annual Conference
+<option value="123">Philippines East Annual Conference
+<option value="135">Poland Annual Conference
+<option value="63">Red Bird Missionary Annual Conference
+<option value="47">Rio Grande Annual Conference
+<option value="34">Rocky Mountain Annual Conference
+<option value="133">Serbia-Macedonia Provisional Annual Conference
+<option value="108">Sierra Leone Annual Conference
+<option value="96">South Africa Provisional Annual Conference
+<option value="73">South Carolina Annual Conference
+<option value="103">South Congo Annual Conference
+<option value="71">South Georgia Annual Conference
+<option value="9">South Indiana Annual Conference
+<option value="104">South-West Katanga Annual Conference
+<option value="161">Southern Russia Provisional Annual Conference
+<option value="119">Southwest Philippines Annual Conference
+<option value="45">Southwest Texas Annual Conference
+<option value="82">Susquehanna Annual Conference
+<option value="147">Sweden Annual Conference
+<option value="136">Switzerland - France Annual Conference
+<option value="102">Tanganyika/Tanzania Annual Conference
+<option value="165">Tarlac Phillipines Annual Conference
+<option value="65">Tennessee Annual Conference
+<option value="46">Texas Annual Conference
+<option value="88">Troy Annual Conference
+<option value="172">Upper New York Annual Conference
+<option value="76">Virginia Annual Conference
+<option value="120">Visayas Philippines Annual Conference
+<option value="100">West Congo Annual Conference
+<option value="59">West Michigan Annual Conference
+<option value="127">West Middle Philippines Annual Conference
+<option value="60">West Ohio Annual Conference
+<option value="77">West Virginia Annual Conference
+<option value="156">West Zimbabwe Annual Conference
+<option value="94">Western Angola Annual Conference
+<option value="83">Western New York Annual Conference
+<option value="74">Western North Carolina Annual Conference
+<option value="81">Western Pennsylvania Annual Conference
+<option value="56">Wisconsin Annual Conference
+<option value="85">Wyoming Annual Conference
+<option value="33">Yellowstone Annual Conference
+</select>
+        <br><font size="1">Optional - Volunteers can search for opportunities
+      by Annual Conference</font> </td>
+    </tr>
+    <tr>
+      <td align="right" valign="top" bgcolor="#FFFFFF"><font size="2" face="Arial, Helvetica, sans-serif">Country:&nbsp;</font></td>
+      <td bgcolor="#FFFFFF"><select size="1" name="Event_Country">
+<option value="0">- - Select Country - -
+<option value="16">Angola
+<option value="26">Austria
+<option value="27">Bulgaria
+<option value="11">Burundi
+<option value="52">Chad
+<option value="28">Czech Republic
+<option value="50">Democratic Republic of the Con
+<option value="37">Denmark
+<option value="38">Estonia
+<option value="41">Finland
+<option value="35">France
+<option value="51">Georgia
+<option value="36">Germany
+<option value="53">Ghana
+<option value="9">Guam
+<option value="30">Hungary
+<option value="12">Kenya
+<option value="6">Korea
+<option value="39">Latvia
+<option value="22">Liberia
+<option value="40">Lithuania
+<option value="31">Macedonia
+<option value="17">Mozambique
+<option value="23">Nigeria
+<option value="47">North Korea
+<option value="10">Northern Mariana Islands
+<option value="42">Norway
+<option value="25">Philippines
+<option value="33">Poland
+<option value="44">Russia
+<option value="13">Rwanda
+<option value="49">Serbia
+<option value="24">Sierra Leone
+<option value="29">Slovakia
+<option value="19">South Africa
+<option value="46">South Korea
+<option value="5">Spain
+<option value="14">Sudan
+<option value="43">Sweden
+<option value="34">Switzerland
+<option value="21">Tanzania
+<option value="15">Uganda
+<option value="45">Ukraine
+<option value="48">United Kingdom
+<option value="1">USA
+<option value="54">Zambia
+<option value="18">Zimbabwe
+</select>
+        <br>
+        <font size="1">Optional - Volunteers can search for opportunities outside
+      of the US</font> </td>
+    </tr>
+    <tr> 
+      <td align="right" bgcolor="#FFFFFF"><font size="2" face="Arial, Helvetica, sans-serif">Sponsoring
+        organization*:</font></td>
+      <td valign="top" bgcolor="#FFFFFF"><input name="volOpp_User_Org" type="text" id="volOpp_User_Org" value="" size="30"> 
+      </td>
+    </tr>
+    <tr> 
+      <td align="right" bgcolor="#FFFFFF"><font size="2" face="Arial, Helvetica, sans-serif">Contact
+      first name*:</font></td>
+      <td bgcolor="#FFFFFF"> <input type="text" name="VolOpp_ContactFname" size="20"> 
+      </td>
+    </tr>
+    <tr> 
+      <td align="right" bgcolor="#FFFFFF"><font size="2" face="Arial, Helvetica, sans-serif">Contact
+      last name*:</font></td>
+      <td bgcolor="#FFFFFF"> <input type="text" name="VolOpp_ContactLname" size="20"> 
+      </td>
+    </tr>
+    <tr> 
+      <td align="right" valign="top" bgcolor="#FFFFFF"><font size="2" face="Arial, Helvetica, sans-serif">Contact
+      street address:</font></td>
+      <td bgcolor="#FFFFFF"> <input type="text" name="VolOpp_ContactAddress" size="40">
+      <br>
+      <font size="1" face="Arial, Helvetica, sans-serif">Optional</font></td>
+    </tr>
+    <tr> 
+      <td align="right" bgcolor="#FFFFFF"><font size="2" face="Arial, Helvetica, sans-serif">Contact
+      phone*:</font></td>
+      <td bgcolor="#FFFFFF"> <input name="VolOpp_ContactPhone" type="text" id="event_phone" size="20"> 
+      </td>
+    </tr>
+    <tr> 
+      <td align="right" valign="top" bgcolor="#FFFFFF"><font size="2" face="Arial, Helvetica, sans-serif">Contact
+      email:</font></td>
+      <td bgcolor="#FFFFFF"> <input type="text" name="VolOpp_ContactEmail" size="30">
+        <br>
+      <font size="1" face="Arial, Helvetica, sans-serif">Optional</font>      </td>
+    </tr>
+    <tr bgcolor="#DADFAE"> 
+      <td colspan="2" > <font size="2" face="Arial, Helvetica, sans-serif"><b>&gt;&gt; 
+        Date Information:</b></font></td>
+    </tr>
+    <tr>
+      <td align="right" bgcolor="#FFFFFF"><font size="2" face="Arial, Helvetica, sans-serif">Display
+      on website permanently?</font></td> 
+      <td valign="top" bgcolor="#FFFFFF"> <input type="radio" name="VolOpp_Ongoing" value="1">
+        Yes&nbsp;&nbsp;&nbsp;
+        <input type="radio" name="VolOpp_Ongoing" value="0">
+      No - <i> <font size="1" face="Verdana">if NO, select start and end display
+      dates below</font></i></td>
+    </tr>
+    <tr>
+      <td align="right" bgcolor="#FFFFFF"><font size="2" face="Arial, Helvetica, sans-serif">Start
+      display on website:</font></td> 
+      <td valign="top" bgcolor="#FFFFFF"> <input type="text" name="VolOpp_DisplayStart" size="10">        
+        <script language='javascript'>
+		<!--
+			if (!document.layers) {
+				document.write("<input type=button onclick='popUpCalendar(this, VolOpps.VolOpp_DisplayStart, \"mm/dd/yyyy\")' value='Select Date'  style='font-size:12px; font-weight:bold; color:#FFFFFF; background:#C18445'>")
+			}
+		//-->
+		</script>
+        <font class="NewsText">(enter in mm/dd/yyyy format)</font></td>
+    </tr>
+    <tr>
+      <td align="right" bgcolor="#FFFFFF"><font size="2" face="Arial, Helvetica, sans-serif">End
+      display on website:</font></td> 
+      <td valign="top" bgcolor="#FFFFFF"> <input type="text" name="VolOpp_DisplayEnd" size="10">
+        <script language='javascript'>
+		<!--
+			if (!document.layers) {
+				document.write("<input type=button onclick='popUpCalendar(this, VolOpps.VolOpp_DisplayEnd, \"mm/dd/yyyy\")' value='Select Date' style='font-size:12px; font-weight:bold; color:#FFFFFF; background:#C18445'>")
+			}
+		//-->
+		</script>
+        <font class="NewsText">(enter in mm/dd/yyyy format)</font></td>
+    </tr>
+    <tr bgcolor="#DADFAE"> 
+      <td colspan="2" valign="top" > 
+        <input type="submit" name="Action" value="Submit Opportunity" style="font-size:12px; font-weight:bold; color:#FFFFFF; background:#C18445">
+        &nbsp; <input type="button" name="Cancel" value="Cancel Submission" style="font-size:12px; font-weight:bold; color:#FFFFFF; background:#C18445" onClick="location.href='/interior.asp?mid=372';"> 
+      </td>
+    </tr>
+  </form>
+</table>
+<br>
+<font size="2" face="Arial, Helvetica, sans-serif"></font>
+<SCRIPT LANGUAGE="javascript">
+<!--
+function formValid(){
+	with (document.VolOpps) {
+	if (PublicSubmitEmail.value == ""){
+		alert("Please enter your email address.");
+		PublicSubmitEmail.focus();
+		return false;
+	}
+	else if (VolOpp_Name.value == ""){
+		alert("Please enter the name of the opportunity.");
+		VolOpp_Name.focus();
+		return false;
+	}
+	else if (VolOpp_Description.value == ""){
+		alert("Please enter a description of the opportunity.");
+		VolOpp_Description.focus();
+		return false;
+	}
+	else if (VolOpp_Type.value == ""){
+		alert("Please select an opportunity type.");
+		VolOpp_Type.focus();
+		return false;
+	}
+	else if (volOpp_User_Org.value == ""){
+		alert("Please enter the sponsoring organization.");
+		volOpp_User_Org.focus();
+		return false;
+	}
+	else if (VolOpp_ContactFname.value == ""){
+		alert("Please enter a contact first name.");
+		VolOpp_ContactFname.focus();
+		return false;
+	}
+	else if (VolOpp_ContactLname.value == ""){
+		alert("Please enter a contact last name.");
+		VolOpp_ContactLname.focus();
+		return false;
+	}
+	else if (VolOpp_ContactPhone.value == ""){
+		alert("Please enter a contact phone number.");
+		VolOpp_ContactPhone.focus();
+		return false;
+	}
+	else return true;
+	}
+	return false;
+}
+//-->
+</script>
+
+            
+			<BR clear=all>
+			<br clear="all"><br><div align="right"><a href="http://backup.calms2012.umc.org/dr_volunteer.asp?act=addform&amp;mid=372&amp;pagemode=print" target="_blank" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('toolbar_print','','images/article_print_over.gif',1)"><img src="images/article_print.gif" alt="Click for a printer friendly version of this page" name="toolbar_print" width="83" height="19" border="0"></a><a href="interior.asp@mid=453.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('toolbar_email','','images/article_email_over.gif',1)"><img src="images/article_email.gif" alt="Click to email someone a link to this page" name="toolbar_email" width="83" height="19" border="0"></a></div>
+            </font><br>
+            <br> 
+            <!-- DYNAMIC CONTENT ENDS HERE -->
+          </td>
+        </tr>
+      </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+	
+
+<!-- FOOTER INCLUDE BEGINS HERE -->
+<div align="center">
+  <table width=778 border=0 cellspacing=0 cellpadding=4>
+	<tr>
+		<td width=778 valign=top bgcolor="#F2F1E1">
+		<p class=first align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">
+		<span><b>Site Tools:</b>&nbsp;</span>
+		<a style="text-decoration: none; color: #5575a1" href="http://www.umc.org/site/c.lwL4KnN1LtH/b.1355413/k.D5E5/Site_Map/apps/sitemap/sitemap.asp">Site Map</a>&nbsp;|&nbsp;
+		<a href="http://archives.umc.org/interior.asp?ptid=1&mid=258" style="text-decoration: none; color: #5575a1">Glossary</a>&nbsp;|&nbsp;
+		<a href="http://www.umc.org/site/c.lwL4KnN1LtH/b.1716943/k.EEBB/Directory.htm" style="text-decoration: none; color: #5575a1">Directory</a>&nbsp;|&nbsp;<a href="http://archives.umc.org/interior.asp?mid=375" style="text-decoration: none; color: #5575a1">Calendar</a>&nbsp;
+        <span>
+        <span class="inner"><b>Content Tools</b>:</span>&nbsp;</span><a href="http://archives.umc.org/interior.asp?ptid=2&mid=2758" style="text-decoration: none; color: #5575a1">Email Updates</a>&nbsp;|&nbsp;<a  href="http://www.umc.org/site/c.lwL4KnN1LtH/b.2106139/k.1170/Still_in_Production.htm" info="This feature is still in development. Please check back in the coming weeks." style="text-decoration: none; color: #5575a1">Syndication</a>&nbsp;|&nbsp;<a  href="http://www.umc.org/site/c.lwL4KnN1LtH/b.2106139/k.1170/Still_in_Production.htm" info="This feature is still in development. Please check back in the coming weeks." style="text-decoration: none; color: #5575a1">RSS Feed</a><br>
+        <br>
+        <a  href="http://www.umc.org/site/c.lwL4KnN1LtH/b.2247173/k.8A06/About_UMCorg/apps/ka/ct/contactcustom.asp" style="text-decoration: none; color: #5575a1">About UMC.org</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a info="This feature is still in development. Please check back in the coming weeks." style="text-decoration: none; color: #5575a1" href="http://www.umc.org/site/c.lwL4KnN1LtH/b.2267689/k.9997/Press_Center.htm">Press Center</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://archives.umc.org/interior.asp?ptid=1&mid=287" style="text-decoration: none; color: #5575a1">Jobs</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a  href="http://www.umc.org/site/c.lwL4KnN1LtH/b.2106139/k.1170/Still_in_Production.htm" info="This feature is still in development. Please check back in the coming weeks." style="text-decoration: none; color: #5575a1">&#160;</a>
+		<a href="http://www.korean.umc.org/" style="text-decoration: none; color: #5575a1"><img alt="Image Link Title" src="http://www.umc.org/atf/cf/{DB6A45E4-C446-4248-82C8-E131B6424741}/koreanumc.gif" border="0" /></a>&#160;<a href="http://www.korean.umc.org/" style="text-decoration: none; color: #5575a1">Korean UMC</a></font></p>
+</td>
+	</tr>
+</table>
+</div>
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-1387816-2";
+urchinTracker();
+</script>
+
+
+
+<!-- FOOTER INCLUDE ENDS HERE -->
+</body>
+</html>

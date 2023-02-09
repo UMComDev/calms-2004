@@ -1,0 +1,187 @@
+
+<script language="JavaScript" src="flash_detect.js"></script>
+<script language="JavaScript">
+	var varSubmitForm = "False";
+	function hp_redirect(js_NextURL, js_QS1, js_QS2 ) {
+		// js_NextURL: the target URL		
+		// js_QS1	 : QueryString that is sent thru ct_save.asp
+		//         	   Omit the following vars to avoid errors: chid, mid, section, layout, edit, aid
+		//
+		// js_QS2	 : QueryString for normal redirect. Include ALL vars needed to make the target page work.	
+		if (varSubmitForm == "True") {
+			document.all.Rtn2editor.value 	= "1";
+			document.all.NextURL.value 		= js_NextURL;
+			document.all.NextQuery.value 	= "&" + js_QS1;
+			//alert(js_NextURL + ".asp?"+ js_QS1);
+			document.fHtmlEditor.submit();		
+		}else{
+			location = js_NextURL + ".asp?"+ js_QS2;
+		}
+	}
+</script>
+
+<html>
+<head>
+<title>UMC.org Archives</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<META NAME="description" CONTENT="The page you are looking for was not found. You may have used an outdated link or may have typed the address (URL) incorrectly. First, please use our search engine to locate your page.">
+<META NAME="keywords" CONTENT="file not found, 404 page">
+<link href="global.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" src="global.js"></script>
+<base href="">
+</head>
+
+<body bgcolor="#FFFFFF" link="#FF0000" vlink="#FF0000" alink="#FF0000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onLoad="MM_preloadImages('/images/sec_nav_questions_over.gif','/images/sec_nav_glossary_over.gif','/images/sec_nav_press_over.gif','/images/sec_nav_jobs_over.gif','/images/sec_nav_calendar_over.gif','/images/sec_nav_korean_trans_over.jpg','/images/sec_nav_contact_over.gif','/images/sec_nav_friend_over.gif','/images/sec_nav_search_over.gif','/images/nav_about_over.jpg','/images/nav_spirit_over.jpg','/images/nav_news_over.jpg','/images/nav_faith_over.jpg','/images/nav_tools_over.jpg','/images/nav_directory_over.jpg','/images/article_print_over.gif','/images/article_email_over.gif','/images/article_bookmark_over.gif')">
+
+<!-- TOP BANNER INCLUDE STARTS HERE -->
+<link href="http://archives.umc.org/stylesheets/_styleNav.css" rel="stylesheet" type="text/css">
+<table width="778" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr> 
+    <td width="463" bgcolor="#7B96AD"><img src="http://archives.umc.org/images/sec_nav_fill.gif" width="3" height="12"><a href="http://archives.umc.org/interior.asp?mid=1244" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image73','','/images/sec_nav_questions_over.gif',1)"><img src="http://archives.umc.org/images/sec_nav_questions.gif" name="Image73" width="63" height="12" border="0"></a><img src="http://archives.umc.org/images/sec_nav_dot.gif" width="16" height="11"><a href="http://archives.umc.org/interior.asp?mid=258" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image74','','/images/sec_nav_glossary_over.gif',1)"><img src="http://archives.umc.org/images/sec_nav_glossary.gif" name="Image74" width="52" height="12" border="0"></a><img src="http://archives.umc.org/images/sec_nav_dot.gif" width="16" height="11"><a href="http://archives.umc.org/interior.asp?ptid=6&amp;mid=715" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image75','','/images/sec_nav_press_over.gif',1)"><img src="http://archives.umc.org/images/sec_nav_press.gif" name="Image75" width="75" height="12" border="0"></a><img src="http://archives.umc.org/images/sec_nav_dot.gif" width="16" height="11"><a href="http://archives.umc.org/interior.asp?mid=287" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image76','','/images/sec_nav_jobs_over.gif',1)"><img src="http://archives.umc.org/images/sec_nav_jobs.gif" name="Image76" width="24" height="12" border="0"></a><img src="http://archives.umc.org/images/sec_nav_dot.gif" width="16" height="11"><a href="http://archives.umc.org/interior.asp?mid=375" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image78','','/images/sec_nav_calendar_over.gif',1)"><img src="http://archives.umc.org/images/sec_nav_calendar.gif" name="Image78" width="51" height="12" border="0"></a><img src="http://archives.umc.org/images/sec_nav_dot.gif" width="16" height="11"><a href="http://archives.umc.org/interior.asp?ptid=5&amp;mid=229" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image77','','/images/sec_nav_korean_trans_over.jpg',1)"><img src="http://archives.umc.org/images/sec_nav_korean_trans.jpg" name="Image77" width="91" height="12" border="0"></a></td>
+    <td width="80" bgcolor="#7B96AD"><img src="http://archives.umc.org/images/sec_nav_fill.gif" width="80" height="8"></td>
+    <td width="235" align="right" bgcolor="#7B96AD"><a href="http://archives.umc.org/interior.asp?mid=457" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image79','','/images/sec_nav_contact_over.gif',1)"><img src="http://archives.umc.org/images/sec_nav_contact.gif" name="Image79" width="57" height="12" border="0" alt="LINK: Contact Us"></a><img src="http://archives.umc.org/images/sec_nav_dot.gif" width="16" height="11"><a href="http://archives.umc.org/interior.asp?mid=453" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image80','','/images/sec_nav_friend_over.gif',1)"><img src="http://archives.umc.org/images/sec_nav_friend.gif" name="Image80" width="88" height="12" border="0" alt="LINK: Send to a Friend"></a><img src="http://archives.umc.org/images/sec_nav_dot.gif" width="16" height="11"><a href="http://search.umc.org:8765" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image81','','/images/sec_nav_search_over.gif',1)"><img src="http://archives.umc.org/images/sec_nav_search.gif" name="Image81" width="39" height="12" border="0" alt="LINK: Site Search"></a><img src="http://archives.umc.org/images/sec_nav_fill.gif" width="3" height="12"></td>
+  </tr>
+</table>
+<table width="778" border="0" align="center" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td align="center" background="http://archives.umc.org/images/nav_fill.gif"><a href="http://archives.umc.org/interior.asp?mid=166" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image63','','/images/nav_about_over.jpg',1)"><img src="http://archives.umc.org/images/nav_about.jpg" name="Image63" width="141" height="23" border="0" alt="LINK: About Our Church"></a><img src="http://archives.umc.org/images/nav_fill.gif" width="17" height="23"><a href="http://archives.umc.org/interior.asp?mid=155" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image65','','/images/nav_spirit_over.jpg',1)"><img src="http://archives.umc.org/images/nav_spirit.jpg" name="Image65" width="163" height="23" border="0" alt="LINK: My Spiritual Journey"></a><img src="http://archives.umc.org/images/nav_fill.gif" width="17" height="23"><a href="http://archives.umc.org/interior.asp?ptid=2&amp;mid=156" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image66','','/images/nav_news_over.jpg',1)"><img src="http://archives.umc.org/images/nav_news.jpg" name="Image66" width="40" height="23" border="0" alt="LINK: News"></a><img src="http://archives.umc.org/images/nav_fill.gif" width="17" height="23"><a href="http://archives.umc.org/interior.asp?mid=158" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image68','','/images/nav_faith_over.jpg',1)"><img src="http://archives.umc.org/images/nav_faith.jpg" name="Image68" width="113" height="23" border="0" alt="LINK: Faith in Action"></a><img src="http://archives.umc.org/images/nav_fill.gif" width="17" height="23"><a href="http://archives.umc.org/interior.asp?mid=154" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image70','','/images/nav_tools_over.jpg',1)"><img src="http://archives.umc.org/images/nav_tools.jpg" name="Image70" width="147" height="23" border="0" alt="LINK: Tools for Ministry"></a><img src="http://archives.umc.org/images/nav_fill.gif" width="17" height="23"><a href="http://archives.umc.org/interior.asp?mid=157" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image72','','/images/nav_directory_over.jpg',1)"><img src="http://archives.umc.org/images/nav_directory.jpg" name="Image72" width="77" height="23" border="0" alt="LINK: Directory"></a></td>
+  </tr>
+</table>
+<table width="778" border="0" align="center" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><img src="http://archives.umc.org/images/banners/secondary_questions_header.jpg" width="778" height="45" border="0" usemap="#map2home">
+<map name="map2home">
+        <area shape="rect" coords="0,0,360,40" href="http://umc.org" alt="LINK: UMC.org Home" title="LINK: UMC.org Home">
+    </map></td>
+  </tr>
+</table>
+<table width="778" border="0" align="center" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><img src="http://archives.umc.org/images/white_spacer.jpg" width="30" height="9"></td>
+  </tr>
+</table>
+<!-- TOP BANNER INCLUDE ENDS HERE -->
+
+<!-- SUBNAVIGATION AND MAIN BODY CONTENT -->
+<table width="778" height="50%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+  <tr>
+    <!-- LEFT SIDE INCLUDE: Dynamic section navigation will appear in this cell. -->
+    <td width="175" valign="top"> 
+      <table width="175" border="0" cellpadding="0" cellspacing="0" bgcolor="#C7CC96">
+          <tr> 
+            <td width="1" background="http://archives.umc.org/images/keyline.gif"><img src="http://archives.umc.org/images/spacer.gif" width="1" height="1"></td>
+            <td width="174" valign="top">
+<!-- Left Side Nav: Start -->
+<table width=174 cellpadding=0 cellspacing=0 border=0 class=containerTD><tr class=ContainerHeader>
+<td valign=top width=13 class=ContainerHeader><img name=437 id=437 src="http://archives.umc.org/images/spacer.gif">
+</td><td valign=middle width=154 class=ContainerHeader><a href="http://archives.umc.org/interior.asp?ptid=1&amp;mid=437" class=WLeftNav>
+Utilities</a></td><td width=7 valign=top background="http://archives.umc.org/images/menu_title_right_bg.gif" ><img src="http://archives.umc.org/images/menu_title_right.gif" width=7 height=24></td></tr></table><table width=174 cellpadding=0 cellspacing=0 border=0><tr class=ContainerTD><td valign=top width="167"><img src="http://archives.umc.org/images/spacer.gif" width=167 height=5></td><td width=7><img src="http://archives.umc.org/images/menu_right.gif" width=7 height=5></td></tr></table>
+<table width=174 cellpadding=0 cellspacing=0 border=0 class=containerTD><tr class=ContainerTD>
+<td valign=top width=7 class=ContainerTD>
+<img src="http://archives.umc.org/images/spacer.gif" width=7 height=1 border=0></td>
+<td valign=top width=13 class=ContainerTD><img name=438 id=438 src="http://archives.umc.org/images/nav_closed.gif">
+</td><td valign=top width=147 class=ContainerTD><a href="http://archives.umc.org/interior.asp?ptid=1&amp;mid=438" class=SecondaryNav>
+Terms of Service</a></td><td width=7 valign=top background="http://archives.umc.org/images/menu_right.gif" ><img src="http://archives.umc.org/images/menu_right.gif" width=7 height=13></td></tr></table>
+<table width=174 cellpadding=0 cellspacing=0 border=0 class=containerTD><tr class=ContainerTD>
+<td valign=top width=7 class=ContainerTD>
+<img src="http://archives.umc.org/images/spacer.gif" width=7 height=1 border=0></td>
+<td valign=top width=13 class=ContainerTD><img name=452 id=452 src="http://archives.umc.org/images/nav_closed.gif">
+</td><td valign=top width=147 class=ContainerTD><a href="http://archives.umc.org/interior.asp?ptid=1&amp;mid=452" class=SecondaryNav>
+About UMC.org</a></td><td width=7 valign=top background="http://archives.umc.org/images/menu_right.gif" ><img src="http://archives.umc.org/images/menu_right.gif" width=7 height=13></td></tr></table>
+<table width=174 cellpadding=0 cellspacing=0 border=0 class=containerTD><tr class=ContainerTD>
+<td valign=top width=7 class=ContainerTD>
+<img src="http://archives.umc.org/images/spacer.gif" width=7 height=1 border=0></td>
+<td valign=top width=13 class=ContainerTD><img name=457 id=457 src="http://archives.umc.org/images/nav_closed.gif">
+</td><td valign=top width=147 class=ContainerTD><a href="http://archives.umc.org/interior.asp?ptid=1&amp;mid=457" class=SecondaryNav>
+Contact Us</a></td><td width=7 valign=top background="http://archives.umc.org/images/menu_right.gif" ><img src="http://archives.umc.org/images/menu_right.gif" width=7 height=13></td></tr></table>
+
+<!-- Left Side Nav: End -->
+			</td>
+          </tr>
+        </table>
+		<table width=175 border=0 cellpadding=0 cellspacing=0 bgcolor="#C7CC96">
+          <tr>
+		    <td width="1" background="http://archives.umc.org/images/keyline.gif"><img src="http://archives.umc.org/images/spacer.gif" width="1" height="1"></td>
+            
+          <td width=167><img src="http://archives.umc.org/images/spacer.gif" width=167 height=10></td>
+            <td><img src="http://archives.umc.org/images/menu_right.gif" width=7 height=13></td>
+		  </tr>
+		</table>
+        <table width="175" height="7" border="0" cellpadding="0" cellspacing="0">
+          <tr> 
+            <td colspan=2><img src="http://archives.umc.org/images/menu_bottom.gif" width="175" height="10"></td>
+          </tr>
+        </table>
+		<br clear="all">
+<!-- Left Side HP Containers: Start -->
+
+<!-- Left Side HP Containers: End   -->		
+    </td>
+<!-- END LEFT SIDE INCLUDE -->
+
+<!-- START OF MAIN BODY AREA -->
+    <td width="597" valign="top"> 
+        <table width="100%" height="16" border="0" cellpadding="0" cellspacing="0">
+          <tr> 
+		  	<td valign="top" width=14><img src="http://archives.umc.org/images/spacer.gif" width="14" height="16"></td>
+            <td valign="top" class="NewsText">
+
+<!-- DYNAMIC BREAD CRUMB NAVIGATION STARTS HERE -->
+            
+<span class=ThirdLinks><a href="http://umc.org" class=ThirdLinks>Home</a>&nbsp;&gt;&nbsp;<a href="http://archives.umc.org/interior.asp?ptid=1&amp;mid=437" class=ThirdLinks>Utilities</a>&nbsp;&gt;&nbsp;<a href="http://archives.umc.org/interior.asp?ptid=1&amp;mid=2771" class=ThirdLinks>UMC.org Archives</a></span>
+
+<!-- DYNAMIC BREAD CRUMB NAVIGATION ENDS HERE -->
+                </td>
+              </tr>
+            </table>
+       <table width="100%" border="0" cellspacing="0" cellpadding="0" valign=top>
+	    <tr>
+          <td valign=top colspan=2><img src="http://archives.umc.org/images/spacer.gif" width="1" height="6"></td>
+		</tr>
+        <tr>
+          <td valign=top width=10><img src="http://archives.umc.org/images/spacer.gif" width="10" height="1"></td> 
+          <td valign=top>
+          	 
+            <!-- DYNAMIC CONTENT IS OUTPUTTED HERE -->
+            <font size=2 face="Arial"> 
+            <P><FONT size=4 face="Arial, Helvetica, sans-serif"><STRONG>UMC.org Archives</STRONG></FONT></P><!--<P style="MARGIN: 0in 0in 0pt" class=MsoNormal><FONT size=4 face=Arial><SPAN style="FONT-FAMILY: Arial; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt"><STRONG><A href="/site/c.gjJTJbMUIuE/b.865523" target=_blank>Special Notice: Regarding Changes to UMC.org Links and Site Syndication</A></STRONG></SPAN></FONT></P>--><P>UMC.org, the official Web site of The United Methodist Church, recently&nbsp;upgraded its database and management system to offer you more dependable service.&nbsp;You have accessed the UMC.org Archives. You may have used an outdated link or may have typed the address (URL) incorrectly.&nbsp;</P><P>Please use the following links to go to the main sections of the site:</P><P><A href="http://www.umc.org/">UMC.org home page</A></P><UL><LI><A href="http://www.umc.org/ourfaith">Our Faith</A></LI><LI><A href="http://www.umc.org/ourchurch">Our Church</A></LI><LI><A href="http://www.umns.umc.org/">United Methodist News Service</A></LI><LI><A href="http://www.umc.org/video">Video Stories</A></LI><LI><A href="http://www.umc.org/fac">Find-A-Church</A></LI><LI><A href="http://www.infoserv.umc.org/">Ask InfoServ</A></LI><LI><A href="http://www.umc.org/presscenter">Press Center</A></LI></UL><!--<p><if you="" are="" still="" unable="" to="" locate="" what="" you’re="" seeking,="" please="" try="" the="" following="" areas="" of="" site:="" <="" font=""></if></p><p><a href="/site/c.gjJTJbMUIuE/b.484771/k.7BD7/UMCorg_The_official_online_ministry_of_The_United_Methodist_Church.htm">UMC.org Home Page</a></p><p class="MsoNormal" style="MARGIN: 0in 0in 0pt"><font face="Arial" size="2"><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-bidi-font-size: 12.0pt"><o:p></o:p></span></font>&nbsp;</p><p class="MsoNormal" style="MARGIN: 0in 0in 0pt"><font face="Arial" size="2"><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-bidi-font-size: 12.0pt"><o:p></o:p></span></font>&nbsp;</p><p class="MsoNormal" style="MARGIN: 0in 0in 0pt"><font face="Arial" size="2"><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-bidi-font-size: 12.0pt"><o:p><a href="http://archives.umc.org/interior.asp?ptid=16&amp;mid=1244">Questions?</a></o:p></span></font></p><p class="MsoNormal" style="MARGIN: 0in 0in 0pt"><font face="Arial" size="2"><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-bidi-font-size: 12.0pt"><o:p></o:p></span></font>&nbsp;</p><p class="MsoNormal" style="MARGIN: 0in 0in 0pt"><font face="Arial" size="2"><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-bidi-font-size: 12.0pt"><o:p></o:p></span></font>&nbsp;</p><p class="MsoNormal" style="MARGIN: 0in 0in 0pt"><font face="Arial" size="2"><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-bidi-font-size: 12.0pt"><o:p><a href="/site/c.gjJTJbMUIuE/b.505357/k.98B7/About_Our_Church.htm">About Our Church</a></o:p></span></font></p><blockquote dir="ltr" style="MARGIN-RIGHT: 0px"><p class="MsoNormal" style="MARGIN: 0in 0in 0pt"><font face="Arial" size="2"><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-bidi-font-size: 12.0pt"><o:p><a href="http://archives.umc.org/interior_judicial.asp?mid=263">Judicial Council Decisions</a></o:p></span></font></p><p class="MsoNormal" style="MARGIN: 0in 0in 0pt"><font face="Arial" size="2"><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-bidi-font-size: 12.0pt"><o:p><a href="http://archives.umc.org/interior.asp?ptid=1&amp;mid=287">Job Listings</a></o:p></span></font></p><p class="MsoNormal" style="MARGIN: 0in 0in 0pt"><font face="Arial" size="2"><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-bidi-font-size: 12.0pt"><o:p><a href="http://archives.umc.org/interior.asp?ptid=1&amp;mid=461">The Conference Connection</a></o:p></span></font></p><p class="MsoNormal" style="MARGIN: 0in 0in 0pt"><font face="Arial" size="2"><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-bidi-font-size: 12.0pt"><o:p><a href="http://archives.umc.org/interior.asp?ptid=1&amp;mid=375">Calendar</a></o:p></span></font></p><p class="MsoNormal" style="MARGIN: 0in 0in 0pt"><font face="Arial" size="2"><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-bidi-font-size: 12.0pt"><o:p><a href="http://archives.umc.org/interior.asp?ptid=1&amp;mid=346">History of the Church</a></o:p></span></font></p><p class="MsoNormal" style="MARGIN: 0in 0in 0pt"><font face="Arial" size="2"><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-bidi-font-size: 12.0pt"><o:p><a href="http://archives.umc.org/interior.asp?ptid=1&amp;mid=518">The Constitution</a></o:p></span></font></p><p class="MsoNormal" style="MARGIN: 0in 0in 0pt"><font face="Arial" size="2"><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-bidi-font-size: 12.0pt"><o:p><a href="http://archives.umc.org/interior.asp?ptid=1&amp;mid=519">What We Believe</a></o:p></span></font></p><p class="MsoNormal" style="MARGIN: 0in 0in 0pt"><font face="Arial" size="2"><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-bidi-font-size: 12.0pt"><o:p><a href="http://archives.umc.org/interior.asp?ptid=21&amp;mid=5855">Council of Bishops</a></o:p></span></font></p></blockquote><p class="MsoNormal" dir="ltr" style="MARGIN: 0in 0in 0pt"><font face="Arial" size="2"><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-bidi-font-size: 12.0pt"><o:p></o:p></span></font>&nbsp;</p><p class="MsoNormal" dir="ltr" style="MARGIN: 0in 0in 0pt"><font face="Arial" size="2"><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-bidi-font-size: 12.0pt"><o:p><a href="http://archives.umc.org/interior.asp?ptid=21&amp;mid=5855">My Spiritual Journey</a></o:p></span></font></p><blockquote dir="ltr" style="MARGIN-RIGHT: 0px"><p class="MsoNormal" dir="ltr" style="MARGIN: 0in 0in 0pt"><font face="Arial" size="2"><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-bidi-font-size: 12.0pt"><o:p><a href="http://archives.umc.org/interior.asp?ptid=1&amp;mid=595">Book Reviews</a></o:p></span></font></p><p class="MsoNormal" dir="ltr" style="MARGIN: 0in 0in 0pt"><font face="Arial" size="2"><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-bidi-font-size: 12.0pt"><o:p><a href="http://archives.umc.org/interior.asp?ptid=1&amp;mid=1544">Music Reviews</a></o:p></span></font></p><p class="MsoNormal" dir="ltr" style="MARGIN: 0in 0in 0pt"><font face="Arial" size="2"><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-bidi-font-size: 12.0pt"><o:p><a href="http://archives.umc.org/interior.asp?ptid=1&amp;mid=617">Movie Reviews</a></o:p></span></font></p><p class="MsoNormal" dir="ltr" style="MARGIN: 0in 0in 0pt"><font face="Arial" size="2"><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-bidi-font-size: 12.0pt"><o:p><a href="http://archives.umc.org/interior.asp?ptid=1&amp;mid=599">Profiles</a></o:p></span></font></p><p class="MsoNormal" dir="ltr" style="MARGIN: 0in 0in 0pt"><font face="Arial" size="2"><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-bidi-font-size: 12.0pt"><o:p><a href="http://archives.umc.org/interior.asp?ptid=1&amp;mid=618">The Message</a></o:p></span></font></p><p class="MsoNormal" dir="ltr" style="MARGIN: 0in 0in 0pt"><font face="Arial" size="2"><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-bidi-font-size: 12.0pt"><o:p><a href="http://archives.umc.org/interior.asp?ptid=1&amp;mid=622">Living Prayer Center</a></o:p></span></font></p><p class="MsoNormal" dir="ltr" style="MARGIN: 0in 0in 0pt"><font face="Arial" size="2"><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-bidi-font-size: 12.0pt"><o:p><a href="http://archives.umc.org/interior.asp?ptid=1&amp;mid=2164">Spiritual Gifts</a></o:p></span></font></p></blockquote><font face="Arial" size="2"><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-bidi-font-size: 12.0pt"><o:p><p class="MsoNormal" dir="ltr" style="MARGIN: 0in 0in 0pt"><font face="Arial" size="2"><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-bidi-font-size: 12.0pt"><o:p></o:p></span></font>&nbsp;</p><p class="MsoNormal" dir="ltr" style="MARGIN: 0in 0in 0pt"><o:p><a href="http://www.umc.org/site/c.gjJTJbMUIuE/b.859767/k.EC2F/United_Methodist_News_Service.htm">United Methodist News Service</a></o:p></p><blockquote dir="ltr" style="MARGIN-RIGHT: 0px"><p class="MsoNormal" dir="ltr" style="MARGIN: 0in 0in 0pt"><o:p><a href="http://archives.umc.org/interior.asp?ptid=2&amp;mid=878">News Archives</a></o:p></p><p class="MsoNormal" dir="ltr" style="MARGIN: 0in 0in 0pt"><o:p><a href="http://archives.umc.org/interior.asp?ptid=2&amp;mid=890">Features</a></o:p></p><p class="MsoNormal" dir="ltr" style="MARGIN: 0in 0in 0pt"><o:p><a href="http://archives.umc.org/interior.asp?ptid=1&amp;mid=2544">Noticias en español</a></o:p></p><p class="MsoNormal" dir="ltr" style="MARGIN: 0in 0in 0pt"><o:p><a href="http://archives.umc.org/interior.asp?ptid=5&amp;mid=5170">Korean News</a></o:p></p><p class="MsoNormal" dir="ltr" style="MARGIN: 0in 0in 0pt"><o:p><a href="http://archives.umc.org/interior.asp?ptid=2&amp;mid=902">Resources for Editors</a></o:p></p><p class="MsoNormal" dir="ltr" style="MARGIN: 0in 0in 0pt"><a href="http://archives.umc.org/interior.asp?ptid=2&amp;mid=904">Photo Gallery</a> </p><p class="MsoNormal" dir="ltr" style="MARGIN: 0in 0in 0pt"><a href="http://archives.umc.org/interior.asp?ptid=1&amp;mid=6712">Weekly Digest</a></p></blockquote></o:p></span></font><p class="MsoNormal" style="MARGIN: 0in 0in 0pt"><font face="Arial" size="2"><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-bidi-font-size: 12.0pt"><a href="http://www.umc.org/site/c.gjJTJbMUIuE/b.505367/k.99C8/Faith_in_Action.htm">Faith in Action</a></span></font></p><blockquote dir="ltr" style="MARGIN-RIGHT: 0px"><p class="MsoNormal" style="MARGIN: 0in 0in 0pt"><font face="Arial" size="2"><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-bidi-font-size: 12.0pt"><a href="http://archives.umc.org/interior.asp?ptid=1&amp;mid=372">Volunteer Opportunities</a></span></font></p></blockquote><p class="MsoNormal" dir="ltr" style="MARGIN: 0in 0in 0pt"><font face="Arial" size="2"><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-bidi-font-size: 12.0pt"></span></font>&nbsp;</p><p class="MsoNormal" dir="ltr" style="MARGIN: 0in 0in 0pt"><font face="Arial" size="2"><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-bidi-font-size: 12.0pt"><a href="http://www.umc.org/site/c.gjJTJbMUIuE/b.505369/k.C05B/Tools_for_Ministry.htm">Tools For Ministry</a></span></font></p><blockquote dir="ltr" style="MARGIN-RIGHT: 0px"><p class="MsoNormal" dir="ltr" style="MARGIN: 0in 0in 0pt"><font face="Arial" size="2"><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-bidi-font-size: 12.0pt"><a href="http://archives.umc.org/interior.asp?ptid=1&amp;mid=572">Web Ministry</a></span></font></p><p class="MsoNormal" dir="ltr" style="MARGIN: 0in 0in 0pt"><font face="Arial" size="2"><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-bidi-font-size: 12.0pt"><a href="http://archives.umc.org/interior.asp?ptid=19&amp;mid=785">Youth and Young Adult Leaders</a></span></font></p><p class="MsoNormal" dir="ltr" style="MARGIN: 0in 0in 0pt"><font face="Arial" size="2"><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-bidi-font-size: 12.0pt"><a href="http://archives.umc.org/interior.asp?ptid=1&amp;mid=792">Graphics Library</a></span></font></p><p class="MsoNormal" dir="ltr" style="MARGIN: 0in 0in 0pt"><font face="Arial" size="2"><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-bidi-font-size: 12.0pt"><a href="http://archives.umc.org/interior.asp?ptid=15&amp;mid=6626">Store</a></span></font></p><p class="MsoNormal" dir="ltr" style="MARGIN: 0in 0in 0pt"><font face="Arial" size="2"><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-bidi-font-size: 12.0pt"><a href="http://archives.umc.org/interior.asp?ptid=1&amp;mid=2324">UMC.org Syndication</a></span></font></p></blockquote><p class="MsoNormal" dir="ltr" style="MARGIN: 0in 0in 0pt"><font face="Arial" size="2"><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-bidi-font-size: 12.0pt"></span></font>&nbsp;</p><p class="MsoNormal" dir="ltr" style="MARGIN: 0in 0in 0pt"><font face="Arial" size="2"><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-bidi-font-size: 12.0pt"><a href="http://www.umc.org/site/c.gjJTJbMUIuE/b.505375/k.E944/Directory.htm">Directory</a></span></font></p><blockquote dir="ltr" style="MARGIN-RIGHT: 0px"><p class="MsoNormal" dir="ltr" style="MARGIN: 0in 0in 0pt"><font face="Arial" size="2"><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-bidi-font-size: 12.0pt"><a href="http://archives.umc.org/Directory/ChurchDirectory.asp?ptid=1&amp;mid=222">Find-A-Church</a></span></font></p><p class="MsoNormal" dir="ltr" style="MARGIN: 0in 0in 0pt"><font face="Arial" size="2"><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-bidi-font-size: 12.0pt"><a href="http://archives.umc.org/Directory/ChurchNameZip.asp?ptid=1&amp;mid=556">Regional Offices</a></span></font></p><p class="MsoNormal" dir="ltr" style="MARGIN: 0in 0in 0pt"><font face="Arial" size="2"><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-bidi-font-size: 12.0pt"><a href="http://archives.umc.org/interior.asp?ptid=1&amp;mid=528">Ministries</a></span></font></p><p class="MsoNormal" dir="ltr" style="MARGIN: 0in 0in 0pt"><font face="Arial" size="2"><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-bidi-font-size: 12.0pt"><a href="http://archives.umc.org/interior.asp?ptid=1&amp;mid=2650">General Agencies</a></span></font></p></blockquote><p class="MsoNormal" dir="ltr" style="MARGIN: 0in 0in 0pt"><font face="Arial" size="2"><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-bidi-font-size: 12.0pt"></span></font>&nbsp;</p><p class="MsoNormal" dir="ltr" style="MARGIN: 0in 0in 0pt"><font face="Arial" size="2"><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-bidi-font-size: 12.0pt"><a href="http://archives.umc.org/interior.asp?ptid=5&amp;mid=229">Korean UMC</a></span></font></p><p class="MsoNormal" dir="ltr" style="MARGIN: 0in 0in 0pt"><font face="Arial" size="2"><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-bidi-font-size: 12.0pt"></span></font>&nbsp;</p><p class="MsoNormal" dir="ltr" style="MARGIN: 0in 0in 0pt"><font face="Arial" size="2"><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-bidi-font-size: 12.0pt"></span></font>&nbsp;</p><p class="MsoNormal" dir="ltr" style="MARGIN: 0in 0in 0pt"><font face="Arial" size="2"><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-bidi-font-size: 12.0pt"><a href="http://archives.umc.org/interior.asp?ptid=16&amp;mid=1244">InfoServ</a></span></font></p><p class="MsoNormal" dir="ltr" style="MARGIN: 0in 0in 0pt">&nbsp;</p><p class="MsoNormal" dir="ltr" style="MARGIN: 0in 0in 0pt">&nbsp;</p><p class="MsoNormal" dir="ltr" style="MARGIN: 0in 0in 0pt"><font size="2"><a href="http://archives.umc.org/interior.asp?ptid=15&amp;mid=5929">Christian Educators Fellowship</a></font></p><p class="MsoNormal" dir="ltr" style="MARGIN: 0in 0in 0pt">&nbsp;</p><p class="MsoNormal" dir="ltr" style="MARGIN: 0in 0in 0pt">&nbsp;</p><p class="MsoNormal" dir="ltr" style="MARGIN: 0in 0in 0pt"><font size="2"><a href="http://archives.umc.org/interior.asp?ptid=6&amp;mid=715">Press Center</a> </font></p><p></p>--&gt;<p>We would appreciate your assistance in reporting broken links, <a href="mailto:umc@umcom.org">please e-mail us.</a>&nbsp;<font face="Arial" size="2"><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-bidi-font-size: 12.0pt">&nbsp;<o:p></o:p></span></font></p>-->
+            </font><br>
+            <br> 
+            <!-- DYNAMIC CONTENT ENDS HERE -->
+          </td>
+        </tr>
+      </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- FOOTER INCLUDE BEGINS HERE -->
+
+<table width="778" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td bgcolor="#C18445"><img src="http://archives.umc.org/images/spacer.gif" width="10" height="9"></td>
+  </tr>
+</table>
+<table width="778" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr> 
+    <td width="100" bgcolor="#7B96AD">&nbsp;</td>
+    <td width="571" bgcolor="#7B96AD" align="center" class="whiteText">
+        <p class="whiteText"><a href="http://archives.umc.org/interior.asp?mid=166" class="whiteText">about us</a> <img src="http://archives.umc.org/images/white_dot.gif" width="12" height="12" align="texttop"> <a href="http://archives.umc.org/interior.asp?mid=155" class="whiteText">my
+            spiritual journey</a> <img src="http://archives.umc.org/images/white_dot.gif" width="12" height="12" align="texttop"> <a href="http://archives.umc.org/interior.asp?ptid=2&amp;mid=156" class="whiteText">news</a> <img src="http://archives.umc.org/images/white_dot.gif" width="12" height="12" align="texttop"><a href="http://archives.umc.org/interior.asp?mid=158" class="whiteText"> faith
+            in action</a><br>
+            <a href="http://archives.umc.org/interior.asp?mid=154" class="whiteText">tools for ministry</a> <img src="http://archives.umc.org/images/white_dot.gif" width="12" height="12" align="texttop"><a href="http://archives.umc.org/interior.asp?mid=157" class="whiteText"> directory</a> <img src="http://archives.umc.org/images/white_dot.gif" width="12" height="12" align="texttop"><a href="http://archives.umc.org/interior.asp?mid=452" class="whiteText"> about
+            umc.org</a> <img src="http://archives.umc.org/images/white_dot.gif" width="12" height="12" align="texttop"><a href="http://archives.umc.org/interior.asp?mid=438" class="whiteText"> terms
+            of service</a><br>
+            <span class="smallblackText">UMC.org is the official online ministry of
+            The United Methodist Church<br>&copy; 2023 United Methodist Communications (115)</span></p>
+	</td>
+    <td width="107" bgcolor="#7B96AD"><a href="http://www.UMCom.org"><img src="http://archives.umc.org/images/logo.gif" width="102" height="50" border="0"></a></td>
+  </tr>
+</table>
+
+
+<!-- FOOTER INCLUDE ENDS HERE -->
+</body>
+</html>

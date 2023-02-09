@@ -1,0 +1,121 @@
+
+
+<SCRIPT LANGUAGE="javascript">
+<!--
+function isEmailAddr(email)
+{
+  var result = false
+  var theStr = new String(email)
+  var index = theStr.indexOf("@");
+  if (index > 0)
+  {
+    var pindex = theStr.indexOf(".",index);
+    if ((pindex > index+1) && (theStr.length > pindex+1))
+	result = true;
+  }
+  return result;
+}
+
+
+function formValid(){
+
+	if (document.emailform.Name.value == ""){
+		alert("Please enter your name.");
+		document.emailform.Name.focus();
+		return false;
+	}
+	else if (document.emailform.Email.value == ""){
+		alert("Please enter your email address.");
+		document.emailform.Email.focus();
+		return false;
+	}
+	else if (!isEmailAddr(document.emailform.Email.value)){
+		alert("Please enter valid email for your email address.");
+		document.emailform.Email.focus();
+		return false;
+	}
+	else if (document.emailform.Zip.value == ""){
+		alert("Please enter your zipcode/postal code.");
+		document.emailform.Zip.focus();
+		return false;
+	}
+  else if (document.emailform.InquiryType.selectedIndex < 0)
+  {
+    alert("Please select one of the \"Nature of Inquiry\" options.");
+    document.emailform.InquiryType.focus();
+    return false;
+  }
+
+  else if (document.emailform.InquiryType.selectedIndex == 0)
+  {
+    alert("The first \"Nature of Inquiry\" option is not a valid selection.  Please choose one of the other options.");
+    document.emailform.InquiryType.focus();
+    return false;
+  }	
+	else if (document.emailform.Inquiry.value == ""){
+		alert("Please enter a brief message.");
+		document.emailform.Inquiry.focus();
+		return false;
+	}
+	else return true;
+	}
+//-->
+</script>
+
+<P><STRONG>Contact Us</STRONG></P>
+<P>Thank you for visiting UMC.org, the official online ministry of The United Methodist Church.&nbsp;While it is our intent to make every effort to&nbsp;meet your needs and answer your questions, we understand that you may require additional assistance. If so, please fill out the form below, and we will respond as soon as possible.</P>
+<form method="POST" action="form_contact_us.asp@ptid=1&amp;mid=457&amp;pagemode=print.html" onsubmit="return formValid();" name="emailform">
+<TABLE borderColor=#C18445 cellSpacing=0 borderColorDark=#ffffff cellPadding=3 width=560 align=center borderColorLight=#000000 border=1>
+<TBODY>
+<TR bgColor=#C7CC96>
+	<TD colSpan=2><B>&gt;&gt; Submit an Inquiry:</B> <i>(All Fields required)</i></TD>
+</TR>
+<TR bgColor=#FFFFFF>
+	<TD vAlign=top align=right width="23%">Name:</TD>
+	<TD width="77%"><INPUT size=38 name="Name" tabindex="1"> </TD>
+</TR>
+<TR bgColor=#FFFFFF>
+	<TD align=right>E-mail:</TD>
+	<TD><INPUT size=28 name="Email" tabindex="2"> </TD>
+</TR>
+<TR>
+	<TD noWrap align=right bgColor=#FFFFFF>Zip:</TD>
+	<TD bgColor=#FFFFFF><INPUT size=19 name="Zip" tabindex="3"> </TD>
+</TR>
+<TR>
+	<TD noWrap align=right bgColor=#FFFFFF>Nature of Inquiry:</TD>
+	<TD bgColor=#FFFFFF>
+    &nbsp;<SELECT id=sbScope size=1 name="InquiryType" tabindex="4"> 
+	<OPTION selected>- - Select a Subject - -</OPTION>
+	<OPTION value="info">Beliefs and Policies</OPTION>		
+	<OPTION value="content">Content of UMC.org</OPTION>		
+	<OPTION value="mechanics">Mechanics of UMC.org</OPTION>		
+	<OPTION value="jobs">Jobs Posted</OPTION>				
+	<OPTION value="calendar">Calendar Items</OPTION>			
+	<OPTION value="mission">Mission Opportunities</OPTION>	
+	<OPTION value="editor">Letter to the Editor</OPTION>		
+	<OPTION value="fac">Find-a-Church</OPTION>				
+	<OPTION value="lap">Locate a Pastor</OPTION>
+	<OPTION value="interpreter">Interpreter Online</OPTION>		
+	<OPTION value="webministryteam">Web Ministry</OPTION>				
+	<OPTION value="other">Other</OPTION>	
+	</SELECT>
+	</TD>
+</TR>
+<TR>
+	<TD vAlign=top noWrap align=right bgColor=#FFFFFF>Inquiry:</TD>
+	<TD bgColor=#FFFFFF>
+		<TEXTAREA style="WIDTH: 350px; HEIGHT: 175px" name="Inquiry" rows="17" cols="35" tabindex="5"></TEXTAREA>
+	</TD>
+</TR>
+<TR bgcolor="#C7CC96"> 
+	<td colspan="2" align="center"> 
+		<input type="hidden" name="mid" value="457">
+		<input type="hidden" name="page" value="http://backup.calms2012.umc.org/interior.asp?ptid=1&mid=457">
+		<input type="submit" tabindex="6" value="Submit" name="submit" style="font-size:12px; font-weight:bold; color:#FFFFFF; background:#C18445">
+		<input type="reset" tabindex="7" value="Reset" name="reset" style="font-size:12px; font-weight:bold; color:#FFFFFF; background:#C18445">
+	</td>
+</TBODY></TABLE>
+
+</form>
+

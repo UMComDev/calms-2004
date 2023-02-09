@@ -1,0 +1,64 @@
+
+This feature is no longer available.<br><br>
+
+<SCRIPT LANGUAGE="javascript">
+<!--
+function isEmailAddr(email)
+{
+  var result = false
+  var theStr = new String(email)
+  var index = theStr.indexOf("@");
+  if (index > 0)
+  {
+    var pindex = theStr.indexOf(".",index);
+    if ((pindex > index+1) && (theStr.length > pindex+1))
+	result = true;
+  }
+  return result;
+}
+
+
+function formValid(){
+	if (document.emailform.sender_name.value == ""){
+		alert("Please enter your name.");
+		document.emailform.sender_name.focus();
+		return false;
+	}
+	else if (document.emailform.sender_email.value == ""){
+		alert("Please enter your email address.");
+		document.emailform.sender_email.focus();
+		return false;
+	}
+	else if (!isEmailAddr(document.emailform.sender_email.value)){
+		alert("Please enter valid email for your email address.");
+		document.emailform.sender_email.focus();
+		return false;
+	}
+	else if (document.emailform.friend_name.value == ""){
+		alert("Please enter your friend\'s name.");
+		document.emailform.friend_name.focus();
+		return false;
+	}
+	else if (document.emailform.friend_email.value == ""){
+		alert("Please enter your friend\'s email address.");
+		document.emailform.friend_email.focus();
+		return false;
+	}
+	else if (!isEmailAddr(document.emailform.friend_email.value)){
+		alert("Please enter valid email for your friend\'s email address.");
+		document.emailform.friend_email.focus();
+		return false;
+	}
+	else if (document.emailform.message.value == ""){
+		alert("Please enter a brief message.");
+		document.emailform.message.focus();
+		return false;
+	}
+	else return true;
+	}
+//-->
+</script>
+  
+</p>
+
+

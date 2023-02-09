@@ -1,0 +1,135 @@
+
+  <SCRIPT LANGUAGE="javascript">
+<!--
+function isEmailAddr(email)
+{
+  var result = false
+  var theStr = new String(email)
+  var index = theStr.indexOf("@");
+  if (index > 0)
+  {
+    var pindex = theStr.indexOf(".",index);
+    if ((pindex > index+1) && (theStr.length > pindex+1))
+	result = true;
+  }
+  return result;
+}
+
+
+function formValid(){
+
+	if (document.emailform.Name.value == ""){
+		alert("Please enter your name.");
+		document.emailform.Name.focus();
+		return false;
+	}
+	else if (document.emailform.Email.value == ""){
+		alert("Please enter your email address.");
+		document.emailform.Email.focus();
+		return false;
+	}
+	else if (!isEmailAddr(document.emailform.Email.value)){
+		alert("Please enter valid email for your email address.");
+		document.emailform.Email.focus();
+		return false;
+	}
+	else if (document.emailform.Zip.value == ""){
+		alert("Please enter your zipcode/postal code.");
+		document.emailform.Zip.focus();
+		return false;
+	}
+  else if (document.emailform.InquiryType.selectedIndex < 0)
+  {
+    alert("Please select one of the \"Nature of Inquiry\" options.");
+    document.emailform.InquiryType.focus();
+    return false;
+  }
+  else if (document.emailform.InquiryType.selectedIndex == 0)
+  {
+    alert("The first \"Nature of Inquiry\" option is not a valid selection.  Please choose one of the other options.");
+    document.emailform.InquiryType.focus();
+    return false;
+  }	
+	else if (document.emailform.Question.value == ""){
+		alert("Please enter a brief message.");
+		document.emailform.Question.focus();
+		return false;
+	}
+	else return true;
+	}
+//-->
+</script>
+<style type="text/css">
+<!--
+.style1 {color: #FF0000}
+.style2 {color: #FF0000; font-weight: bold; }
+-->
+</style>  
+
+
+<P><STRONG>Questions?</STRONG></P>
+<P>When you complete the form below, your question will be directed to InfoServ, the United Methodist information service.</p>
+
+<p>Our offices are located at United Methodist Communcations in Nashville, TN</p>
+  
+<p>The InfoServ staff is available, not only to answer questions, but to direct inquirers to contacts for additional information and resources.</p>
+    
+<p>Note:  If you have a Spam Blocker that does not recognize our email address, you will not be able to receive our response.  Please add InfoServ’s email address, infoserv@umcom.org, to your list of approved senders.</p>
+    
+<p class="style2">Please be aware that your message will not reach a local church, district or conference office.</p>
+  
+
+<form method="POST" action="" onsubmit="return formValid();" name="emailform" /form_questions.asp?mid="456&quot;">
+<TABLE borderColor=#C18445 cellSpacing=0 borderColorDark=#ffffff cellPadding=3 width=560 align=center borderColorLight=#000000 border=1>
+<TBODY>
+<TR bgColor=#C7CC96>
+	<TD colSpan=2><B>&gt;&gt; Submit an Inquiry:</B><i>(All fields required, but phone)</i></TD>
+</TR>
+<TR bgColor=#FFFFFF>
+	<TD vAlign=top align=right width="23%">Name:</TD>
+	<TD width="77%"><INPUT size=38 name="Name" tabindex="1"> </TD>
+</TR>
+<TR bgColor=#FFFFFF>
+	<TD align=right>E-mail:</TD>
+	<TD><INPUT size=28 name="Email" tabindex="2"> </TD>
+</TR>
+<TR bgColor=#FFFFFF>
+	<TD align=right>Phone:</TD>
+	<TD><INPUT size=15 name="Phone" tabindex="2"> </TD>
+</TR>
+<TR>
+	<TD noWrap align=right bgColor=#FFFFFF>Zip:</TD>
+	<TD bgColor=#FFFFFF><INPUT size=19 name="Zip" tabindex="3"> </TD>
+</TR>
+<TR>
+	<TD noWrap align=right bgColor=#FFFFFF>Nature of Inquiry:</TD>
+	<TD bgColor=#FFFFFF>
+	<SELECT id=sbScope size=1 name="InquiryType" tabindex="4"> 
+	<OPTION selected>- - Select a Subject - -</OPTION>
+	<OPTION value="beliefs">Beliefs and Policies</OPTION>		
+	<OPTION value="news">Church News</OPTION>		
+	<OPTION value="resources">Resources</OPTION>		
+	<OPTION value="person">Locate a Person</OPTION>				
+	<OPTION value="organization">Locate a Church Organization</OPTION>			
+	<OPTION value="information">Obtain Official Information</OPTION>	
+	<OPTION value="ministries">Ministries of the Church</OPTION>		
+	</SELECT>
+	</TD>
+</TR>
+<TR>
+	<TD vAlign=top noWrap align=right bgColor=#FFFFFF>Question:</TD>
+	<TD bgColor=#FFFFFF>
+		<TEXTAREA style="WIDTH: 350px; HEIGHT: 175px" name="Question" rows="17" cols="35" tabindex="5"></TEXTAREA>
+	</TD>
+</TR>
+<TR bgcolor="#C7CC96"> 
+	<td colspan="2" align="center"> 
+		<input type="hidden" name="mid" value="456">
+		<input type="hidden" name="page" value="http://backup.calms2012.umc.org/interior.asp?mid=456">
+		<input type="submit" tabindex="6" value="Submit" name="submit" style="font-size:12px; font-weight:bold; color:#FFFFFF; background:#C18445">
+		<input type="reset" tabindex="7" value="Reset" name="reset" style="font-size:12px; font-weight:bold; color:#FFFFFF; background:#C18445">
+	</td>
+</TBODY></TABLE>
+
+</form>
+

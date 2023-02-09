@@ -1,0 +1,13 @@
+
+<!--include file="/forms/browserDetectJs.asp" -->
+
+var strDomain = "http://archives.umc.org";
+var pURL = strDomain + "/profiles/popup.htm";
+
+function ppopup()
+{
+	var pWin = window.open(pURL, 'pWindow', 'width=425,height=550');
+	pWin.focus();
+}
+
+document.writeln('<a href="http://www.umc.org/site/lookup.asp?c=lwL4KnN1LtH&b=2285819" target="blank"><img src="http://archives.umc.org/uploads/images/Music_syndication_final.jpg" border="0" alt="Go to Syndication"></a>');

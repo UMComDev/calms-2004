@@ -1,0 +1,304 @@
+
+<script language="JavaScript" src="flash_detect.js"></script>
+<script language="JavaScript">
+	var varSubmitForm = "False";
+	function hp_redirect(js_NextURL, js_QS1, js_QS2 ) {
+		// js_NextURL: the target URL		
+		// js_QS1	 : QueryString that is sent thru ct_save.asp
+		//         	   Omit the following vars to avoid errors: chid, mid, section, layout, edit, aid
+		//
+		// js_QS2	 : QueryString for normal redirect. Include ALL vars needed to make the target page work.	
+		if (varSubmitForm == "True") {
+			document.all.Rtn2editor.value 	= "1";
+			document.all.NextURL.value 		= js_NextURL;
+			document.all.NextQuery.value 	= "&" + js_QS1;
+			//alert(js_NextURL + ".asp?"+ js_QS1);
+			document.fHtmlEditor.submit();		
+		}else{
+			location = js_NextURL + ".asp?"+ js_QS2;
+		}
+	}
+</script>
+
+<!-- INCLUDE VIRTUAL="include_redirect.asp" -->
+
+<html>
+<head>
+<title>The Message Archive</title>
+<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">-->
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta name="robots" content="noindex">
+
+<META NAME="description" CONTENT="Archive of The Message, bi-monthly audio sermons from leading United Methodist pastors.">
+<META NAME="keywords" CONTENT="united methodist, pastor, sermons">
+<link href="global.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" src="global.js"></script>
+
+
+<!-- GOOGLE AD SERVICE - ADDED 2010-04-14 -->
+<script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'> 
+</script> 
+<script type='text/javascript'> 
+GS_googleAddAdSenseService("ca-pub-5286074780767328"); 
+GS_googleEnableAllServices(); 
+</script> 
+<script type='text/javascript'> 
+GA_googleAddSlot("ca-pub-5286074780767328", "Interpreter_175_146"); 
+</script> 
+<script type='text/javascript'> 
+GA_googleFetchAds(); 
+</script> 
+
+
+
+
+</head>
+
+<body bgcolor="#FFFFFF" link="#FF0000" vlink="#FF0000" alink="#FF0000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onLoad="MM_preloadImages('/images/sec_nav_questions_over.gif','/images/sec_nav_glossary_over.gif','/images/sec_nav_press_over.gif','/images/sec_nav_jobs_over.gif','/images/sec_nav_calendar_over.gif','/images/sec_nav_korean_trans_over.jpg','/images/sec_nav_contact_over.gif','/images/sec_nav_friend_over.gif','/images/sec_nav_search_over.gif','/images/nav_about_over.jpg','/images/nav_spirit_over.jpg','/images/nav_news_over.jpg','/images/nav_faith_over.jpg','/images/nav_tools_over.jpg','/images/nav_directory_over.jpg','/images/article_print_over.gif','/images/article_email_over.gif','/images/article_bookmark_over.gif')">
+<!--<script language="JavaScript" src="popUpMsg.js"></script>-->
+
+<!-- TOP BANNER INCLUDE STARTS HERE -->
+
+
+<link href="stylesheets/1_styleNav.css" rel="stylesheet" type="text/css">
+
+<body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0">
+
+<table align="center" height=29 width="778" background="stylesheets/tcimg/tcbg.gif">
+<tr><td><img border="0" src="stylesheets/tcimg/tcimg_01.gif" width="142" height="23"><a href="http://umc.org"><img border="0" src="stylesheets/tcimg/tcimg_02.gif" width="105" height="23"></a><a href="http://www.umc.org/site/c.lwL4KnN1LtH/b.1716943/k.EEBB/Directory.htm"><img border="0" src="stylesheets/tcimg/tcimg_03.gif" width="84" height="23"></a><a href="http://archives.umc.org/Directory/ChurchDirectory.asp?ptid=1&mid=222"><img border="0" src="stylesheets/tcimg/tcimg_04.gif" width="92" height="23"></a><a href="http://google.umc.org/search?access=p&output=xml_no_dtd&site=UMCom_UMCorg_Collection&ie=UTF-8&y=1&client=UMCom_UMCorg_2007_Frontend&oe=UTF-8&proxystylesheet=UMCom_UMCorg_2007_Frontend"><img border="0" src="stylesheets/tcimg/tcimg_05.gif" width="51" height="23"></a></td></tr>
+
+</table> 
+ 
+<table width="778" border="0" align="center" cellspacing="0" cellpadding="0" bgcolor=#C6CB93>
+	  <tr class=MainNavTR> 
+	    <td><table width=100% CELLPADDING=0  cellspacing=0 border=0 align=center><tr class=MainNavTR>	<td nowrap class=MainNavTD align=center>
+          <a href="http://www.kintera.org/site/lookup.asp?c=lwL4KnN1LtH&b=1355347">
+          <img border="0" src="uploads/images/newmenu_ourchurch_192x23.gif" width="192" height="23"></a></td>
+	<td nowrap class=MainNavTD align=center>
+          <a href="http://www.kintera.org/site/lookup.asp?c=lwL4KnN1LtH&b=1355349">
+          <img border="0" src="uploads/images/newmenu_ourfaith_192x23.gif" width="192" height="23"></a></td>
+	<td nowrap class=MainNavTD align=center>
+          <a href="http://www.kintera.org/site/lookup.asp?c=lwL4KnN1LtH&b=1355351">
+          <img border="0" src="uploads/images/newmenu_ourpeople_192x23.gif" width="192" height="23"></a></td>
+	<td nowrap class=MainNavTD align=center>
+          <a href="http://www.kintera.org/site/lookup.asp?c=lwL4KnN1LtH&b=1355355">
+          <img border="0" src="uploads/images/newmenu_ourworld_192x23.gif" width="192" height="23"></a></td>
+	</table></td>
+	  </tr>
+	</table><table width="778" border="0" align="center" cellspacing="0" cellpadding="0">
+	  <tr class=ContainerDivider> 
+	    <td><img src="images/spacer.gif" width=1 height=2></td>
+	  </tr>
+	</table>
+<table width="778" border="0" align="center" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><img src="images/banners/hp_banner_spiritual3.jpg" width="778" border="0" usemap="#map2home">
+
+	
+	<map name="map2home">
+	    
+			<area shape="rect" coords="0,0,360,40" href="http://www.umc.org/" alt="LINK: UMC.org Home" title="LINK: UMC.org Home">
+		
+	</map>
+	
+
+	</td>
+  </tr>
+</table>
+<table width="778" border="0" align="center" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><img src="images/white_spacer.jpg" width="30" height="9"></td>
+  </tr>
+</table>
+<!-- TOP BANNER INCLUDE ENDS HERE -->
+
+
+
+<!-- SUBNAVIGATION AND MAIN BODY CONTENT -->
+<table width="778" height="50%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+  <tr>
+    <!-- LEFT SIDE INCLUDE: Dynamic section navigation will appear in this cell. -->
+    <td width="175" valign="top" rowspan="2"> 
+      <table width="175" border="0" cellpadding="0" cellspacing="0" class=ContainerTD>
+          <tr> 
+            <td width="1" background="images/keyline.gif"><img src="images/spacer.gif" width="1" height="1"></td>
+            <td width="174" valign="top">
+<!-- Left Side Nav: Start -->
+
+<table width=174 cellpadding=0 cellspacing=0 border=0 class=containerTD><tr class=ContainerHeader>
+<td valign=top width=13 class=ContainerHeader><img name=155 id=155 src="images/spacer.gif">
+</td><td valign=middle width=154 class=ContainerHeader><a href="http://backup.calms2012.umc.org/interior.asp?ptid=1&amp;mid=155" class=WLeftNav>
+My Spiritual Journey</a></td><td width=7 valign=top background="images/menu_title_right_bg.gif" ><img src="images/menu_title_right.gif" width=7 height=24></td></tr></table><table width=174 cellpadding=0 cellspacing=0 border=0><tr class=ContainerTD><td valign=top width="167"><img src="images/spacer.gif" width=167 height=5></td><td width=7><img src="images/menu_right.gif" width=7 height=5></td></tr></table>
+<table width=174 cellpadding=0 cellspacing=0 border=0 class=containerTD><tr class=ContainerTD>
+<td valign=top width=7 class=ContainerTD>
+<img src="images/spacer.gif" width=7 height=1 border=0></td>
+<td valign=top width=13 class=ContainerTD><img name=599 id=599 src="images/nav_closed.gif">
+</td><td valign=top width=147 class=ContainerTD><a href="interior.asp@ptid=1&amp;mid=599.html" class=SecondaryNav>
+Profiles</a></td><td width=7 valign=top background="images/menu_right.gif" ><img src="images/menu_right.gif" width=7 height=13></td></tr></table>
+<table width=174 cellpadding=0 cellspacing=0 border=0 class=containerTD><tr class=ContainerTD>
+<td valign=top width=7 class=ContainerTD>
+<img src="images/spacer.gif" width=7 height=1 border=0></td>
+<td valign=top width=13 class=ContainerTD><img name=595 id=595 src="images/nav_closed.gif">
+</td><td valign=top width=147 class=ContainerTD><a href="interior.asp@ptid=1&amp;mid=595.html" class=SecondaryNav>
+Book Reviews</a></td><td width=7 valign=top background="images/menu_right.gif" ><img src="images/menu_right.gif" width=7 height=13></td></tr></table>
+<table width=174 cellpadding=0 cellspacing=0 border=0 class=containerTD><tr class=ContainerTD>
+<td valign=top width=7 class=ContainerTD>
+<img src="images/spacer.gif" width=7 height=1 border=0></td>
+<td valign=top width=13 class=ContainerTD><img name=617 id=617 src="images/nav_closed.gif">
+</td><td valign=top width=147 class=ContainerTD><a href="interior.asp@ptid=1&amp;mid=617.html" class=SecondaryNav>
+Movie Reviews</a></td><td width=7 valign=top background="images/menu_right.gif" ><img src="images/menu_right.gif" width=7 height=13></td></tr></table>
+<table width=174 cellpadding=0 cellspacing=0 border=0 class=containerTD><tr class=ContainerTD>
+<td valign=top width=7 class=ContainerTD>
+<img src="images/spacer.gif" width=7 height=1 border=0></td>
+<td valign=top width=13 class=ContainerTD><img name=1544 id=1544 src="images/nav_closed.gif">
+</td><td valign=top width=147 class=ContainerTD><a href="interior.asp@ptid=1&amp;mid=1544.html" class=SecondaryNav>
+Music Reviews</a></td><td width=7 valign=top background="images/menu_right.gif" ><img src="images/menu_right.gif" width=7 height=13></td></tr></table>
+<table width=174 cellpadding=0 cellspacing=0 border=0 class=containerTD><tr class=ContainerTD>
+<td valign=top width=7 class=ContainerTD>
+<img src="images/spacer.gif" width=7 height=1 border=0></td>
+<td valign=top width=13 class=ContainerTD><img name=618 id=618 src="images/nav_open.gif">
+</td><td valign=top width=147 class=ContainerTD><a href="interior.asp@ptid=1&amp;mid=618.html" class=SecondaryNav>
+The Message</a></td><td width=7 valign=top background="images/menu_right.gif" ><img src="images/menu_right.gif" width=7 height=13></td></tr></table>
+<table width=174 cellpadding=0 cellspacing=0 border=0 class=containerTD><tr class=ContainerTD>
+<td valign=top width=14 class=ContainerTD>
+<img src="images/spacer.gif" width=7 height=1 border=0><img src="images/spacer.gif" width=7 height=1 border=0></td>
+<td valign=top width=13 class=ContainerTD><img name=2122 id=2122 src="images/nav_open.gif">
+</td><td valign=top width=140 class=ContainerTD><a href="interior.asp@ptid=1&amp;mid=2122.html" class=SecondaryNav>
+The Message Archive</a></td><td width=7 valign=top background="images/menu_right.gif" ><img src="images/menu_right.gif" width=7 height=13></td></tr></table>
+<table width=174 cellpadding=0 cellspacing=0 border=0 class=containerTD><tr class=ContainerTD>
+<td valign=top width=21 class=ContainerTD>
+<img src="images/spacer.gif" width=7 height=1 border=0><img src="images/spacer.gif" width=7 height=1 border=0><img src="images/spacer.gif" width=7 height=1 border=0></td>
+<td valign=top width=13 class=ContainerTD><img name=11190 id=11190 src="images/nav_closed.gif">
+</td><td valign=top width=133 class=ContainerTD><a href="http://backup.calms2012.umc.org/interior.asp?ptid=1&amp;mid=11190" class=SecondaryNav>
+Rev. Dr. David Bard</a></td><td width=7 valign=top background="images/menu_right.gif" ><img src="images/menu_right.gif" width=7 height=13></td></tr></table>
+<table width=174 cellpadding=0 cellspacing=0 border=0 class=containerTD><tr class=ContainerTD>
+<td valign=top width=7 class=ContainerTD>
+<img src="images/spacer.gif" width=7 height=1 border=0></td>
+<td valign=top width=13 class=ContainerTD><img name=622 id=622 src="images/nav_closed.gif">
+</td><td valign=top width=147 class=ContainerTD><a href="interior.asp@ptid=1&amp;mid=622.html" class=SecondaryNav>
+Living Prayer Center</a></td><td width=7 valign=top background="images/menu_right.gif" ><img src="images/menu_right.gif" width=7 height=13></td></tr></table>
+<table width=174 cellpadding=0 cellspacing=0 border=0 class=containerTD><tr class=ContainerTD>
+<td valign=top width=7 class=ContainerTD>
+<img src="images/spacer.gif" width=7 height=1 border=0></td>
+<td valign=top width=13 class=ContainerTD><img name=2164 id=2164 src="images/nav_closed.gif">
+</td><td valign=top width=147 class=ContainerTD><a href="interior.asp@ptid=1&amp;mid=2164.html" class=SecondaryNav>
+Spiritual Gifts</a></td><td width=7 valign=top background="images/menu_right.gif" ><img src="images/menu_right.gif" width=7 height=13></td></tr></table>
+<table width=174 cellpadding=0 cellspacing=0 border=0 class=containerTD><tr class=ContainerTD>
+<td valign=top width=7 class=ContainerTD>
+<img src="images/spacer.gif" width=7 height=1 border=0></td>
+<td valign=top width=13 class=ContainerTD><img name=4852 id=4852 src="images/nav_closed.gif">
+</td><td valign=top width=147 class=ContainerTD><a href="interior.asp@ptid=1&amp;mid=4852.html" class=SecondaryNav>
+My Spiritual Journey Archives</a></td><td width=7 valign=top background="images/menu_right.gif" ><img src="images/menu_right.gif" width=7 height=13></td></tr></table>
+
+
+<!-- Left Side Nav: End -->
+			</td>
+
+          </tr>
+        </table>
+		<table width=175 border=0 cellpadding=0 cellspacing=0 class=ContainerTD>
+          <tr>
+		    <td width="1" background="images/keyline.gif"><img src="images/spacer.gif" width="1" height="1"></td>
+            
+          <td width=167><img src="images/spacer.gif" width="167" height="10"></td>
+            <td><img src="images/menu_right.gif" width="7" height="13"></td>
+		  </tr>
+		</table>
+        <table width="175" height="7" border="0" cellpadding="0" cellspacing="0">
+          <tr> 
+            <td colspan=2 class=ContainerTD><img src="images/menu_bottom.gif" width="175" height="10"></td>
+          </tr>
+        </table>
+        
+		<br clear="all">
+<!-- Left Side HP Containers: Start -->
+
+<!-- Left Side HP Containers: End   -->
+ 
+    </td>
+<!-- END LEFT SIDE INCLUDE -->
+
+<!-- START OF MAIN BODY AREA -->
+			
+    <td width="597" valign="top">
+
+        <table width="100%" height="16" border="0" cellpadding="0" cellspacing="0">
+
+          <tr> 
+		  	<td valign="top" width=14><img src="images/spacer.gif" width="14" height="16"></td>
+            <td valign="top" class="NewsText">
+
+<!-- DYNAMIC BREAD CRUMB NAVIGATION STARTS HERE -->
+           
+        <span class=ThirdLinks><a href="http://umc.org" class=ThirdLinks>Home</a>&nbsp;&gt;&nbsp;<a href="http://backup.calms2012.umc.org/interior.asp?ptid=1&amp;mid=155" class=ThirdLinks>My Spiritual Journey</a>&nbsp;&gt;&nbsp;<a href="interior.asp@ptid=1&amp;mid=618.html" class=ThirdLinks>The Message</a>&nbsp;&gt;&nbsp;The Message Archive</span>
+			<!--'add "Logged in " message -->
+			
+<!-- DYNAMIC BREAD CRUMB NAVIGATION ENDS HERE -->
+                </td>
+				
+
+                
+              </tr>
+
+            </table>
+
+       <table width="100%" border="0" cellspacing="0" cellpadding="0" valign=top>
+	    <tr>
+          <td valign=top colspan=2><img src="images/spacer.gif" width="1" height="6"></td>
+		</tr>
+        <tr>
+          <td valign=top width=10><img src="images/spacer.gif" width="10" height="1"></td> 
+          <td valign=top>
+          	 
+            <!-- DYNAMIC CONTENT IS OUTPUTTED HERE -->
+            <font size=2 face="Arial"> 
+            <P><STRONG><FONT face="Arial, Helvetica, sans-serif" size=4>The Message Archive</FONT><BR></STRONG><FONT face="Arial, Helvetica, sans-serif" size=2><BR><BR><STRONG>Rev. Dr. David Bard<BR></STRONG><FONT face="Arial, Helvetica, sans-serif" size=2>First&nbsp;<FONT face="Arial, Helvetica, sans-serif" size=2>UMC;<STRONG> </STRONG>Duluth, MN<BR></FONT></FONT><FONT face="Arial, Helvetica, sans-serif" size=2><FONT face="Arial, Helvetica, sans-serif" size=2><EM><A href="http://backup.calms2012.umc.org/interior.asp?ptid=1&amp;mid=11190">Why Jesus?</A><BR></EM>June 5, 2006</FONT></FONT></FONT></P><P><FONT face="Arial, Helvetica, sans-serif" size=2><STRONG>Rev. Walter Kimbrough<BR></STRONG><FONT face="Arial, Helvetica, sans-serif" size=2>Cascade&nbsp;<FONT face="Arial, Helvetica, sans-serif" size=2>UMC;<STRONG> </STRONG>Atlanta, GA<BR></FONT></FONT><FONT face="Arial, Helvetica, sans-serif" size=2><FONT face="Arial, Helvetica, sans-serif" size=2><EM><A href="http://backup.calms2012.umc.org/interior.asp?ptid=1&amp;mid=11148">Empowered for Service</A><BR></EM>May 22, 2006</FONT></FONT></FONT></P><P><FONT face="Arial, Helvetica, sans-serif" size=2><STRONG>Rev. Dan Rasmussen<BR></STRONG><FONT face="Arial, Helvetica, sans-serif" size=2>Center&nbsp;<FONT face="Arial, Helvetica, sans-serif" size=2>UMC;<STRONG> </STRONG>Indianapolis, IN<BR></FONT></FONT><FONT face="Arial, Helvetica, sans-serif" size=2><FONT face="Arial, Helvetica, sans-serif" size=2><EM><A href="http://backup.calms2012.umc.org/interior.asp?ptid=1&amp;mid=11097">Covenant Living in a Contract Society</A><BR></EM>May 8, 2006</FONT></FONT></FONT></P><P><STRONG><FONT size=2>Rev. David Beckett<BR></FONT></STRONG><FONT face="Arial, Helvetica, sans-serif"><FONT size=2>St. John&nbsp;</FONT><FONT face="Arial, Helvetica, sans-serif" size=2>UMC;<STRONG> </STRONG>Anchorage, AK<BR></FONT></FONT><FONT face="Arial, Helvetica, sans-serif"><FONT face="Arial, Helvetica, sans-serif"><FONT size=2><EM><A href="http://backup.calms2012.umc.org/interior.asp?ptid=1&amp;mid=10945">Death Valley Flowers</A><BR></EM></FONT></FONT></FONT><FONT face="Arial, Helvetica, sans-serif"><FONT face="Arial, Helvetica, sans-serif"><FONT size=2>April 17, 2006</FONT></FONT></FONT></P><P><FONT face="Arial, Helvetica, sans-serif" size=2><STRONG>Rev. Patricia Farris<BR></STRONG><FONT face="Arial, Helvetica, sans-serif" size=2>First&nbsp;<FONT face="Arial, Helvetica, sans-serif" size=2>UMC;<STRONG> </STRONG>Santa Monica, CA<BR></FONT></FONT><FONT face="Arial, Helvetica, sans-serif" size=2><FONT face="Arial, Helvetica, sans-serif" size=2><EM><A href="http://backup.calms2012.umc.org/interior.asp?ptid=1&amp;mid=10898">Renewal Through Turning to Christ</A><BR></EM>March 20, 2006</FONT></FONT></FONT></P><P><FONT face="Arial, Helvetica, sans-serif" size=2><STRONG>Rev. Thomas Laney, Jr.<BR></STRONG><FONT face="Arial, Helvetica, sans-serif" size=2>West End&nbsp;<FONT face="Arial, Helvetica, sans-serif" size=2>UMC;<STRONG> </STRONG>Nashville, TN<BR></FONT></FONT><FONT face="Arial, Helvetica, sans-serif" size=2><FONT face="Arial, Helvetica, sans-serif" size=2><EM><A href="http://backup.calms2012.umc.org/interior.asp?ptid=1&amp;mid=10852">Confronting Life's Demons</A><BR></EM>March 6, 2006</FONT></FONT></FONT></P><P><FONT face="Arial, Helvetica, sans-serif" size=2><STRONG>Rev. Tyrone Gordon<BR></STRONG><FONT face="Arial, Helvetica, sans-serif" size=2>St. Luke Community&nbsp;<FONT face="Arial, Helvetica, sans-serif" size=2>UMC;<STRONG> </STRONG>Dallas, TX<BR></FONT></FONT><FONT face="Arial, Helvetica, sans-serif" size=2><FONT face="Arial, Helvetica, sans-serif" size=2><EM><A href="http://backup.calms2012.umc.org/interior.asp?ptid=1&amp;mid=10751">And the Struggle Continues...</A><BR></EM>February 20, 2006</FONT></FONT></FONT></P><P><FONT face="Arial, Helvetica, sans-serif" size=2><STRONG>Rev. Dr. Kathlyn James<BR></STRONG><FONT face="Arial, Helvetica, sans-serif" size=2>First&nbsp;<FONT face="Arial, Helvetica, sans-serif" size=2>UMC;<STRONG> </STRONG>Seattle, WA<BR></FONT></FONT><FONT face="Arial, Helvetica, sans-serif" size=2><FONT face="Arial, Helvetica, sans-serif" size=2><EM><A href="http://backup.calms2012.umc.org/interior.asp?ptid=1&amp;mid=10678">How to Live with Weeds</A><BR></EM>February 6, 2006</FONT></FONT></FONT></P><P><FONT face="Arial, Helvetica, sans-serif" size=2><STRONG>Dr. Bill Bouknight<BR></STRONG><FONT face="Arial, Helvetica, sans-serif" size=2>Christ&nbsp;<FONT face="Arial, Helvetica, sans-serif" size=2>UMC;<STRONG> </STRONG>Memphis, TN<BR></FONT></FONT><FONT face="Arial, Helvetica, sans-serif" size=2><FONT face="Arial, Helvetica, sans-serif" size=2><EM><A href="http://backup.calms2012.umc.org/interior.asp?ptid=1&amp;mid=10623">The Intelligent Designer</A><BR></EM>January 16, 2006</FONT></FONT></FONT></P><P><FONT face="Arial, Helvetica, sans-serif" size=2><STRONG>Rev. Robin Hynicka<BR></STRONG><FONT face="Arial, Helvetica, sans-serif" size=2>Arch Street&nbsp;<FONT face="Arial, Helvetica, sans-serif" size=2>UMC;<STRONG> </STRONG>Philadelphia, PA<BR></FONT></FONT><FONT face="Arial, Helvetica, sans-serif" size=2><FONT face="Arial, Helvetica, sans-serif" size=2><EM><A href="http://backup.calms2012.umc.org/interior.asp?ptid=1&amp;mid=10437">Wait, Wait, Don't Tease Me</A><BR></EM>December 13, 2005</FONT></FONT></FONT></P><P><FONT face="Arial, Helvetica, sans-serif" size=2><STRONG>Rev. Peter Perry<BR></STRONG><FONT face="Arial, Helvetica, sans-serif" size=2>First&nbsp;<FONT face="Arial, Helvetica, sans-serif" size=2>UMC;<STRONG> </STRONG>Phoenix, AZ<BR></FONT></FONT><FONT face="Arial, Helvetica, sans-serif" size=2><FONT face="Arial, Helvetica, sans-serif" size=2><EM><A href="http://backup.calms2012.umc.org/interior.asp?ptid=1&amp;mid=10078">The Bible Tells Me So</A><BR></EM>October 17, 2005</FONT></FONT></FONT></P><P><FONT face="Arial, Helvetica, sans-serif" size=2><STRONG>Rev. Reid Crotty<BR></STRONG><FONT face="Arial, Helvetica, sans-serif" size=2>Bluff Park&nbsp;<FONT face="Arial, Helvetica, sans-serif" size=2>UMC;<STRONG> </STRONG>Birmingham, AL<BR></FONT><EM><A href="http://backup.calms2012.umc.org/interior.asp?ptid=1&amp;mid=9971">When Reality Stinks</A><BR></EM></FONT><FONT face="Arial, Helvetica, sans-serif" size=2><FONT face="Arial, Helvetica, sans-serif" size=2>October 3, 2005</FONT></FONT></FONT></P><P><FONT face="Arial, Helvetica, sans-serif" size=2><STRONG>Rev. Dr.&nbsp; Bernadine Wormley Daniels<BR></STRONG><FONT face="Arial, Helvetica, sans-serif" size=2>Exousia <FONT face="Arial, Helvetica, sans-serif" size=2>UMC;<STRONG> </STRONG>Detroit, MI</FONT><BR><EM><A href="http://backup.calms2012.umc.org/interior.asp?ptid=1&amp;mid=9838">Praying Heaven Down</A><BR></EM></FONT><FONT face="Arial, Helvetica, sans-serif" size=2><FONT face="Arial, Helvetica, sans-serif" size=2>September 15, 2005</FONT></FONT></FONT></P><P><FONT face="Arial, Helvetica, sans-serif" size=2><STRONG>Rev. James Slone<BR></STRONG><FONT face="Arial, Helvetica, sans-serif" size=2>Saint Matthew UMC; Belleville, IL<BR><EM><A href="http://backup.calms2012.umc.org/interior.asp?ptid=1&amp;mid=9646">What If the Sun Came Up In the West?</A><BR></EM></FONT><FONT face="Arial, Helvetica, sans-serif" size=2><FONT face="Arial, Helvetica, sans-serif" size=2>August 23, 2005</FONT></FONT></FONT></P><P><FONT face="Arial, Helvetica, sans-serif" size=2><STRONG>Rev. Ruth Merriam<BR></STRONG><FONT face="Arial, Helvetica, sans-serif" size=2>The Church on the Cape; Cape Porpoise, Maine<BR><EM><A href="http://backup.calms2012.umc.org/interior.asp?ptid=1&amp;mid=9511">God and Golf</A><BR></EM></FONT></FONT><FONT face="Arial, Helvetica, sans-serif" size=2><FONT face="Arial, Helvetica, sans-serif" size=2>August 2, 2005</FONT></FONT></P><P><FONT face="Arial, Helvetica, sans-serif" size=2><STRONG>Rev. Ed Robb<BR></STRONG><FONT face="Arial, Helvetica, sans-serif" size=2>The Woodlands&nbsp;UMC; The Woodlands, Texas<BR><EM><A href="http://www.umc.org/site/lookup.asp?c=gjJTJbMUIuE&amp;b=878809">What About Doubt?</A><BR></EM>July 11, 2005</FONT></FONT></P><P><FONT face="Arial, Helvetica, sans-serif" size=2><STRONG>Rev. Junius Dotson<BR></STRONG><FONT face="Arial, Helvetica, sans-serif" size=2>Saint&nbsp;Mark&nbsp;UMC; Wichita, Kansas<BR><EM><A href="http://backup.calms2012.umc.org/interior.asp?ptid=1&amp;mid=9163">Behind the Scenes</A><BR></EM>June 24, 2005</FONT></FONT></P><P><FONT face="Arial, Helvetica, sans-serif" size=2><STRONG>Rev. Roland McGregor<BR></STRONG><FONT face="Arial, Helvetica, sans-serif" size=2>Asbury UMC; Albuquerque, New Mexico<BR><EM><A href="http://backup.calms2012.umc.org/interior.asp?ptid=1&amp;mid=8498">The Boundless Love of God</A><BR></EM>June 10, 2005</FONT></FONT></P><P><FONT face="Arial, Helvetica, sans-serif" size=2><STRONG>Rev. Douglass Fitch<BR></STRONG><FONT face="Arial, Helvetica, sans-serif" size=2>Glide Memorial UMC; San Francisco, California <BR><EM><A href="http://backup.calms2012.umc.org/interior.asp?ptid=1&amp;mid=7976">Courage to Love</A><BR></EM>May 26, 2005</FONT></FONT></P><P><FONT face="Arial, Helvetica, sans-serif" size=2><STRONG>Rev. Celestyne C. DeVance<BR></STRONG></FONT><FONT face="Arial, Helvetica, sans-serif" size=2>St. John's UMC; Des Moines, Iowa <BR><EM><A href="http://backup.calms2012.umc.org/interior.asp?mid=7460">God Bless You</A> </EM><BR>May 3, 2005</FONT></P><P><FONT size=2><FONT face="Arial, Helvetica, sans-serif"><STRONG>Rev. Rob Weber<BR></STRONG>Grace Community UMC; Shreveport, Louisiana<BR></FONT></FONT><A href="http://backup.calms2012.umc.org/interior.asp?mid=6708"><EM><FONT face="Arial, Helvetica, sans-serif" size=2>What I Have I Give to You</FONT></EM></A><BR><FONT face="Arial, Helvetica, sans-serif" size=2>February 11, 2005</FONT></P><P><FONT size=2><FONT face="Arial, Helvetica, sans-serif"><STRONG>Rev. Michael Williams<BR></STRONG>Blakemore UMC; Nashville, Tennessee<BR></FONT></FONT><A href="http://backup.calms2012.umc.org/interior.asp?mid=6455"><EM><FONT face="Arial, Helvetica, sans-serif" size=2>Getting the Story Backwards</FONT></EM></A><BR><FONT face="Arial, Helvetica, sans-serif" size=2>January 10, 2005</FONT></P><P><STRONG><FONT face="Arial, Helvetica, sans-serif" size=2>Rev. Roland McGregor<BR></FONT></STRONG><FONT face="Arial, Helvetica, sans-serif" size=2>Asbury UMC; Albuquerque, New Mexico<BR></FONT><A href="http://backup.calms2012.umc.org/interior.asp?ptid=1&amp;mid=6001"><EM><FONT face="Arial, Helvetica, sans-serif" size=2>Comfort for Afflicted Pastors</FONT></EM></A><BR><FONT face="Arial, Helvetica, sans-serif" size=2>November 08, 2004</FONT></P><P><STRONG><FONT face="Arial, Helvetica, sans-serif" size=2>Rev. Adam Hamilton<BR></FONT></STRONG><FONT face="Arial, Helvetica, sans-serif" size=2>Church of the Resurrection; Leawood, Kansas<BR></FONT><A href="http://backup.calms2012.umc.org/interior.asp?ptid=1&amp;mid=5898"><EM><FONT face="Arial, Helvetica, sans-serif" size=2>Making Love Last a Lifetime</FONT></EM></A><BR><FONT face="Arial, Helvetica, sans-serif" size=2>October 25, 2004</FONT></P><P><STRONG><FONT face="Arial, Helvetica, sans-serif" size=2>Rev. Jim Jackson<BR></FONT></STRONG><FONT face="Arial, Helvetica, sans-serif" size=2>Chapelwood United Methodist Church; Houston, Texas<BR></FONT><A href="http://backup.calms2012.umc.org/interior.asp?ptid=1&amp;mid=5776"><EM><FONT face="Arial, Helvetica, sans-serif" size=2>First Things First: Be Sure of God</FONT></EM></A><BR><FONT face="Arial, Helvetica, sans-serif" size=2>October 11, 2004</FONT></P><P><STRONG><FONT face="Arial, Helvetica, sans-serif" size=2>Rev. Rudy Rasmus<BR></FONT></STRONG><FONT face="Arial, Helvetica, sans-serif">St. John's Downtown; Houston, Texas<BR></FONT><A href="http://backup.calms2012.umc.org/interior.asp?ptid=1&amp;mid=5726"><EM><FONT face="Arial, Helvetica, sans-serif">Take Your Seat At The Table</FONT></EM></A><BR><FONT face="Arial, Helvetica, sans-serif">September 27, 2004</FONT></P><P><STRONG><FONT face="Arial, Helvetica, sans-serif" size=2>Rev. Laura Early<BR></FONT></STRONG><FONT face="Arial, Helvetica, sans-serif" size=2>All God's Children United Methodist Church; Aulander, North Carolina<BR><EM><A href="http://backup.calms2012.umc.org/interior.asp?ptid=1&amp;mid=5619">Let the Children Speak</A></EM><BR>September 9, 2004</FONT></P><P><STRONG><FONT face="Arial, Helvetica, sans-serif" size=2>Rev. Louis Chase<BR></FONT></STRONG><FONT face="Arial, Helvetica, sans-serif" size=2>Hamilton United Methodist Church; Los Angeles, California<BR></FONT><A href="http://backup.calms2012.umc.org/interior.asp?mid=5517"><EM><FONT face="Arial, Helvetica, sans-serif" size=2>When America Was Young</FONT></EM></A><BR><FONT face="Arial, Helvetica, sans-serif" size=2>August 23, 2004</FONT></P><P><STRONG><FONT face="Arial, Helvetica, sans-serif" size=2>Rev. R. Wade Paschal, Jr.<BR></FONT></STRONG><FONT face="Arial, Helvetica, sans-serif" size=2>First United Methodist Church; Tulsa, Oklahoma<BR></FONT><A href="http://backup.calms2012.umc.org/interior.asp?ptid=1&amp;mid=5454"><EM><FONT face="Arial, Helvetica, sans-serif" size=2>Making Sense of Pleasure</FONT></EM></A><BR><FONT face="Arial, Helvetica, sans-serif" size=2>August 9, 2004</FONT></P><P><FONT face="Arial, Helvetica, sans-serif" size=2><STRONG>Rev. Mike Slaughter<BR></STRONG></FONT><FONT face="Arial, Helvetica, sans-serif" size=2>Ginghamsburg Church; Tipp City, Ohio<BR></FONT><EM><A href="http://backup.calms2012.umc.org/interior.asp?ptid=1&amp;mid=5349"><FONT face="Arial, Helvetica, sans-serif" size=2>Intimate Connection</FONT></A><BR></EM><FONT face="Arial, Helvetica, sans-serif" size=2>July 26, 2004</FONT></P><P><FONT face="Arial, Helvetica, sans-serif" size=2><STRONG>Rev. Jim Jackson<BR></STRONG></FONT><FONT face="Arial, Helvetica, sans-serif" size=2>Chapelwood United Methodist Church; Houston, Texas<BR></FONT><A href="http://backup.calms2012.umc.org/interior.asp?ptid=1&amp;mid=5214"><EM><FONT face="Arial, Helvetica, sans-serif" size=2>Why have the Jews rejected Jesus as Messiah?</FONT></EM></A><BR><FONT face="Arial, Helvetica, sans-serif" size=2>July 6, 2004</FONT></P><P><STRONG><FONT face="Arial, Helvetica, sans-serif" size=2>Rev. Brandon Cho<BR></FONT></STRONG><FONT face="Arial, Helvetica, sans-serif" size=2>Executive Director, United Methodist Council on Korean-American Ministries <BR></FONT><A href="http://backup.calms2012.umc.org/interior.asp?ptid=1&amp;mid=4761"><EM><FONT face="Arial, Helvetica, sans-serif" size=2>We Have Seen the Lord</FONT></EM></A><BR><FONT face="Arial, Helvetica, sans-serif" size=2>June 21, 2004</FONT></P><P><STRONG><FONT face="Arial, Helvetica, sans-serif" size=2>Rev. Adam Hamilton<BR></FONT></STRONG><FONT face="Arial, Helvetica, sans-serif" size=2>Church of the Resurrection; Leawood, Kansas<BR></FONT><A href="http://backup.calms2012.umc.org/interior.asp?ptid=1&amp;mid=4759"><EM><FONT face="Arial, Helvetica, sans-serif" size=2>Abortion: The Most Controversial Topics</FONT></EM></A><BR><FONT face="Arial, Helvetica, sans-serif" size=2>June 7, 2004</FONT></P><P><STRONG><FONT face="Arial, Helvetica, sans-serif" size=2>Rev. Janet Wolfe<BR></FONT></STRONG><EM><A href="http://backup.calms2012.umc.org/interior.asp?ptid=1&amp;mid=3769"><FONT face="Arial, Helvetica, sans-serif" size=2>I'm Going On Anyhow</FONT></A><BR></EM><FONT face="Arial, Helvetica, sans-serif" size=2>May 17, 2004</FONT></P><P><STRONG><FONT face="Arial, Helvetica, sans-serif" size=2>Rev. Kimberly Reisman<BR></FONT></STRONG><FONT face="Arial, Helvetica, sans-serif" size=2>Trinity United Methodist Church; LaFayette, Indiana<BR></FONT><A href="http://backup.calms2012.umc.org/interior.asp?ptid=1&amp;mid=3926"><EM><FONT face="Arial, Helvetica, sans-serif" size=2>The DNA of Love</FONT></EM></A><BR><FONT face="Arial, Helvetica, sans-serif" size=2>April 17, 2004</FONT></P></FONT><STRONG><FONT face="Arial, Helvetica, sans-serif" size=2>Rev. Rudy Rasmus<BR></FONT></STRONG><FONT face="Arial, Helvetica, sans-serif">St. John's Downtown; Houston, Texas<BR></FONT><A href="http://backup.calms2012.umc.org/interior.asp?ptid=1&amp;mid=3925"><EM><FONT face="Arial, Helvetica, sans-serif">Holy Places</FONT></EM></A><BR><FONT face="Arial, Helvetica, sans-serif">April 5, 2004</FONT><FONT face="Arial, Helvetica, sans-serif" size=2> </FONT><P><STRONG><FONT face="Arial, Helvetica, sans-serif" size=2>Rev. Laura Early<BR></FONT></STRONG><FONT face="Arial, Helvetica, sans-serif" size=2>All God's Children United Methodist Church; Aulander, North Carolina<BR><EM><A href="http://backup.calms2012.umc.org/interior.asp?ptid=1&amp;mid=3650">Stargazing</A></EM><BR>March 15, 2004</FONT></P><P><FONT size=2><FONT face="Arial, Helvetica, sans-serif"><STRONG>Rev. Dr. Brandon Cho<BR></STRONG>United Methodist Council on Korean-American Ministries, California <BR></FONT></FONT><A href="http://backup.calms2012.umc.org/interior.asp?ptid=1&amp;mid=3462"><FONT face="Arial, Helvetica, sans-serif" size=2><EM>What is your Vine?</EM></FONT></A><BR><FONT face="Arial, Helvetica, sans-serif" size=2>March 1, 2004</FONT></P><P><STRONG><FONT face="Arial, Helvetica, sans-serif" size=2>Rev. Louis Chase<BR></FONT></STRONG><FONT face="Arial, Helvetica, sans-serif" size=2>Hamilton United Methodist Church; Los Angeles, California<BR></FONT><A href="http://backup.calms2012.umc.org/interior.asp?ptid=1&amp;mid=3197"><EM><FONT face="Arial, Helvetica, sans-serif" size=2>The Soul of The Nation</FONT></EM></A><BR><FONT face="Arial, Helvetica, sans-serif" size=2>February 16, 2004</FONT></P><P><STRONG><FONT face="Arial, Helvetica, sans-serif" size=2>Rev. R. Wade Paschal, Jr.<BR></FONT></STRONG><FONT face="Arial, Helvetica, sans-serif" size=2>First United Methodist Church; Tulsa, Oklahoma<BR></FONT><A href="http://umc.org/interior.asp?ptid=1&amp;mid=2992"><EM><FONT face="Arial, Helvetica, sans-serif" size=2>A Way of Living in Christ</FONT></EM></A><BR><FONT face="Arial, Helvetica, sans-serif" size=2>February 2, 2004</FONT></P><P><FONT size=2><FONT face="Arial, Helvetica, sans-serif"><STRONG>Rev. Mike Slaughter</STRONG><BR></FONT></FONT><FONT face="Arial, Helvetica, sans-serif" size=2>Ginghamsburg Church; Tipp City, Ohio<BR></FONT><EM><A href="http://backup.calms2012.umc.org/interior.asp?ptid=1&amp;mid=2653"><I><FONT face="Arial, Helvetica, sans-serif" size=2>Forgiven: Overcoming Guilt</FONT></I></A><BR></EM><FONT face="Arial, Helvetica, sans-serif" size=2>January 19, 2004</FONT></P>
+            
+			<BR clear=all>
+			<br clear="all"><br><div align="right"><a href="http://backup.calms2012.umc.org/interior_print.asp?ptid=1&amp;mid=2122&amp;pagemode=print" target="_blank" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('toolbar_print','','images/article_print_over.gif',1)"><img src="images/article_print.gif" alt="Click for a printer friendly version of this page" name="toolbar_print" width="83" height="19" border="0"></a><a href="interior.asp@mid=453.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('toolbar_email','','images/article_email_over.gif',1)"><img src="images/article_email.gif" alt="Click to email someone a link to this page" name="toolbar_email" width="83" height="19" border="0"></a></div>
+            </font><br>
+            <br> 
+            <!-- DYNAMIC CONTENT ENDS HERE -->
+          </td>
+        </tr>
+      </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+	
+
+<!-- FOOTER INCLUDE BEGINS HERE -->
+<div align="center">
+  <table width=778 border=0 cellspacing=0 cellpadding=4>
+	<tr>
+		<td width=778 valign=top bgcolor="#F2F1E1">
+		<p class=first align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">
+		<span><b>Site Tools:</b>&nbsp;</span>
+		<a style="text-decoration: none; color: #5575a1" href="http://www.umc.org/site/c.lwL4KnN1LtH/b.1355413/k.D5E5/Site_Map/apps/sitemap/sitemap.asp">Site Map</a>&nbsp;|&nbsp;
+		<a href="http://archives.umc.org/interior.asp?ptid=1&mid=258" style="text-decoration: none; color: #5575a1">Glossary</a>&nbsp;|&nbsp;
+		<a href="http://www.umc.org/site/c.lwL4KnN1LtH/b.1716943/k.EEBB/Directory.htm" style="text-decoration: none; color: #5575a1">Directory</a>&nbsp;|&nbsp;<a href="http://archives.umc.org/interior.asp?mid=375" style="text-decoration: none; color: #5575a1">Calendar</a>&nbsp;
+        <span>
+        <span class="inner"><b>Content Tools</b>:</span>&nbsp;</span><a href="http://archives.umc.org/interior.asp?ptid=2&mid=2758" style="text-decoration: none; color: #5575a1">Email Updates</a>&nbsp;|&nbsp;<a  href="http://www.umc.org/site/c.lwL4KnN1LtH/b.2106139/k.1170/Still_in_Production.htm" info="This feature is still in development. Please check back in the coming weeks." style="text-decoration: none; color: #5575a1">Syndication</a>&nbsp;|&nbsp;<a  href="http://www.umc.org/site/c.lwL4KnN1LtH/b.2106139/k.1170/Still_in_Production.htm" info="This feature is still in development. Please check back in the coming weeks." style="text-decoration: none; color: #5575a1">RSS Feed</a><br>
+        <br>
+        <a  href="http://www.umc.org/site/c.lwL4KnN1LtH/b.2247173/k.8A06/About_UMCorg/apps/ka/ct/contactcustom.asp" style="text-decoration: none; color: #5575a1">About UMC.org</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a info="This feature is still in development. Please check back in the coming weeks." style="text-decoration: none; color: #5575a1" href="http://www.umc.org/site/c.lwL4KnN1LtH/b.2267689/k.9997/Press_Center.htm">Press Center</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://archives.umc.org/interior.asp?ptid=1&mid=287" style="text-decoration: none; color: #5575a1">Jobs</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a  href="http://www.umc.org/site/c.lwL4KnN1LtH/b.2106139/k.1170/Still_in_Production.htm" info="This feature is still in development. Please check back in the coming weeks." style="text-decoration: none; color: #5575a1">&#160;</a>
+		<a href="http://www.korean.umc.org/" style="text-decoration: none; color: #5575a1"><img alt="Image Link Title" src="http://www.umc.org/atf/cf/{DB6A45E4-C446-4248-82C8-E131B6424741}/koreanumc.gif" border="0" /></a>&#160;<a href="http://www.korean.umc.org/" style="text-decoration: none; color: #5575a1">Korean UMC</a></font></p>
+</td>
+	</tr>
+</table>
+</div>
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-1387816-2";
+urchinTracker();
+</script>
+
+
+
+<!-- FOOTER INCLUDE ENDS HERE -->
+</body>
+</html>

@@ -1,0 +1,88 @@
+
+<P><FONT size=4><STRONG>Living Prayer Center</STRONG></FONT></P>
+<P><FONT size=2><IMG alt="upper room living prayer center united methodist" src="uploads/images/living_prayer_image.jpg" align=left border=1>Welcome
+    to the Living Prayer Center, a ministry of The Upper Room®.<BR>
+&nbsp; <BR>
+  The Upper Room® Living Prayer Center was started in April 1977. Five volunteers
+  answered 300 prayer requests that first month. Today 175 volunteers are scheduled
+  to answer the toll-free telephone lines 24 hours a day, 7 days a week, and
+  365 days a year and pray for 30,000 prayer requests a month. Funding for the
+  toll-free line is provided by The Upper Room, United Methodist Men, and individual
+  gifts.<BR>
+&nbsp; <BR>
+  When you submit a prayer request using this Web page, your request will be
+  e-mailed to the Prayer Center within 24 hours, offered for prayer at The Upper
+  Room Chapel, and sent out to Upper Room Covenant Prayer Groups as well. <BR>
+&nbsp; <BR>
+  To protect the privacy of those requesting prayer, each request is edited before
+  it is sent to Covenant Prayer Groups. The request is edited to remove any information
+  that would identify the person or situation needing prayer.</FONT></P>
+<TABLE borderColor=#C18445 cellSpacing=0 borderColorDark=#ffffff cellPadding=3 width=560 align=center borderColorLight=#000000 border=1>
+  <form name=frmPrayerReq action="http://www.upperroom.org/prayer_center/default.asp" method=post onSubmit="return formValid();">
+    <TR bgColor=#C7CC96>
+      <TD colSpan=2><B><FONT face="Arial, Helvetica, sans-serif" size=2>&gt;&gt; Submit
+            a Prayer Request by E-mail:</FONT></B></TD>
+    </TR>
+    <TR bgColor=#FFFFFF>
+      <TD vAlign=top align=right width=165><FONT size=2>Person Requesting Prayer<FONT face=arial,helvetica>:</FONT></FONT></TD>
+      <TD width=377><input type="text" size="18" name="sender" maxlength=100>
+      </TD>
+    </TR>
+    <TR bgColor=#FFFFFF>
+      <TD align=right width=165><FONT face=arial,helvetica size=2>State or Country:</FONT></TD>
+      <TD width=377><input type="text" size="18" name="sender_state" maxlength=50>
+      </TD>
+    </TR>
+    <TR>
+      <TD noWrap align=right width=165 bgColor=#FFFFFF><FONT face="Arial, Helvetica, sans-serif" size=2>Prayer
+          For (First Name Only):</FONT></TD>
+      <TD width=377 bgColor=#FFFFFF><input type="text" size="18" name="receiver" maxlength=100>
+      </TD>
+    </TR>
+    <TR>
+      <TD noWrap align=right width=165 bgColor=#FFFFFF><FONT face="Arial, Helvetica, sans-serif" size=2>State
+          or Country:</FONT></TD>
+      <TD width=377 bgColor=#FFFFFF><input type="text" size="18" name="receiver_state" maxlength=50>
+      </TD>
+    </TR>
+    <TR>
+      <TD vAlign=top noWrap align=right width=165 bgColor=#FFFFFF><FONT size=2>Prayer
+          Request <em><br>
+      (500 character limit)</em>:</FONT></TD>
+      <TD width=377 bgColor=#FFFFFF><textarea rows=10 cols=40 name="comments" wrap="virtual"></textarea>
+      </TD>
+    </TR>
+    <TR bgColor=#C7CC96>
+      <TD colSpan=2><B>
+        <input type="submit" value="Send Prayer Request" name="submit"  style="font-size:12px; font-weight:bold; color:#FFFFFF; background:#C18445">
+      </B></TD>
+    </TR>
+  <input type=hidden name=act value="prayer_req">
+  <input type=hidden name=redirectpage value="http://backup.calms2012.umc.org/form_prayreq.asp?mid=633">
+  </form>
+</TABLE>
+<SCRIPT LANGUAGE="javascript">
+<!--
+function formValid(){
+	with (document.frmPrayerReq) {
+	if (sender.value == ""){
+		alert("Please enter your name.");
+		sender.focus();
+		return false;
+	}
+	else if (receiver.value == ""){
+		alert("Please enter the name of the person who the prayer is for.");
+		receiver.focus();
+		return false;
+	}
+	else if (comments.value == ""){
+		alert("Please enter your prayer request.");
+		comments.focus();
+		return false;
+	}
+	else return true;
+	}
+	return false;
+}
+//-->
+  </script>

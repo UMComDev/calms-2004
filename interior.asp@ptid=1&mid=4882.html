@@ -1,0 +1,298 @@
+
+<script language="JavaScript" src="flash_detect.js"></script>
+<script language="JavaScript">
+	var varSubmitForm = "False";
+	function hp_redirect(js_NextURL, js_QS1, js_QS2 ) {
+		// js_NextURL: the target URL		
+		// js_QS1	 : QueryString that is sent thru ct_save.asp
+		//         	   Omit the following vars to avoid errors: chid, mid, section, layout, edit, aid
+		//
+		// js_QS2	 : QueryString for normal redirect. Include ALL vars needed to make the target page work.	
+		if (varSubmitForm == "True") {
+			document.all.Rtn2editor.value 	= "1";
+			document.all.NextURL.value 		= js_NextURL;
+			document.all.NextQuery.value 	= "&" + js_QS1;
+			//alert(js_NextURL + ".asp?"+ js_QS1);
+			document.fHtmlEditor.submit();		
+		}else{
+			location = js_NextURL + ".asp?"+ js_QS2;
+		}
+	}
+</script>
+
+<html>
+<head>
+<title>Tools for Ministry Archive</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<META NAME="description" CONTENT="">
+<META NAME="keywords" CONTENT="">
+<link href="global.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" src="global.js"></script>
+</head>
+
+<body bgcolor="#FFFFFF" link="#FF0000" vlink="#FF0000" alink="#FF0000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onLoad="MM_preloadImages('/images/sec_nav_questions_over.gif','/images/sec_nav_glossary_over.gif','/images/sec_nav_press_over.gif','/images/sec_nav_jobs_over.gif','/images/sec_nav_calendar_over.gif','/images/sec_nav_korean_trans_over.jpg','/images/sec_nav_contact_over.gif','/images/sec_nav_friend_over.gif','/images/sec_nav_search_over.gif','/images/nav_about_over.jpg','/images/nav_spirit_over.jpg','/images/nav_news_over.jpg','/images/nav_faith_over.jpg','/images/nav_tools_over.jpg','/images/nav_directory_over.jpg','/images/article_print_over.gif','/images/article_email_over.gif','/images/article_bookmark_over.gif')">
+
+<!-- TOP BANNER INCLUDE STARTS HERE -->
+
+<link href="stylesheets/1_styleNav.css" rel="stylesheet" type="text/css">
+
+<body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0">
+
+<table align="center" height=29 width="778" background="stylesheets/tcimg/tcbg.gif">
+<tr><td><img border="0" src="stylesheets/tcimg/tcimg_01.gif" width="142" height="23"><a href="http://umc.org"><img border="0" src="stylesheets/tcimg/tcimg_02.gif" width="105" height="23"></a><a href="http://www.umc.org/site/c.lwL4KnN1LtH/b.1716943/k.EEBB/Directory.htm"><img border="0" src="stylesheets/tcimg/tcimg_03.gif" width="84" height="23"></a><a href="http://archives.umc.org/Directory/ChurchDirectory.asp?ptid=1&mid=222"><img border="0" src="stylesheets/tcimg/tcimg_04.gif" width="92" height="23"></a><a href="http://google.umc.org/search?access=p&output=xml_no_dtd&site=UMCom_UMCorg_Collection&ie=UTF-8&y=1&client=UMCom_UMCorg_2007_Frontend&oe=UTF-8&proxystylesheet=UMCom_UMCorg_2007_Frontend"><img border="0" src="stylesheets/tcimg/tcimg_05.gif" width="51" height="23"></a></td></tr>
+
+</table> 
+ 
+<table width="778" border="0" align="center" cellspacing="0" cellpadding="0" bgcolor=#C6CB93>
+	  <tr class=MainNavTR> 
+	    <td><table width=100% CELLPADDING=0  cellspacing=0 border=0 align=center><tr class=MainNavTR>	<td nowrap class=MainNavTD align=center>
+          <a href="http://www.kintera.org/site/lookup.asp?c=lwL4KnN1LtH&b=1355347">
+          <img border="0" src="uploads/images/newmenu_ourchurch_192x23.gif" width="192" height="23"></a></td>
+	<td nowrap class=MainNavTD align=center>
+          <a href="http://www.kintera.org/site/lookup.asp?c=lwL4KnN1LtH&b=1355349">
+          <img border="0" src="uploads/images/newmenu_ourfaith_192x23.gif" width="192" height="23"></a></td>
+	<td nowrap class=MainNavTD align=center>
+          <a href="http://www.kintera.org/site/lookup.asp?c=lwL4KnN1LtH&b=1355351">
+          <img border="0" src="uploads/images/newmenu_ourpeople_192x23.gif" width="192" height="23"></a></td>
+	<td nowrap class=MainNavTD align=center>
+          <a href="http://www.kintera.org/site/lookup.asp?c=lwL4KnN1LtH&b=1355355">
+          <img border="0" src="uploads/images/newmenu_ourworld_192x23.gif" width="192" height="23"></a></td>
+	</table></td>
+	  </tr>
+	</table><table width="778" border="0" align="center" cellspacing="0" cellpadding="0">
+	  <tr class=ContainerDivider> 
+	    <td><img src="images/spacer.gif" width=1 height=2></td>
+	  </tr>
+	</table>
+<table width="778" border="0" align="center" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><img src="images/banners/hp_banner_tools.jpg" width="778" border="0" usemap="#map2home">
+
+	
+	<map name="map2home">
+	    
+			<area shape="rect" coords="0,0,360,40" href="http://archives.umc.org/interior.asp?mid=" alt="LINK: UMC.org Home" title="LINK: UMC.org Home">
+		
+	</map>
+	
+
+	</td>
+  </tr>
+</table>
+<table width="778" border="0" align="center" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><img src="images/white_spacer.jpg" width="30" height="9"></td>
+  </tr>
+</table>
+<!-- TOP BANNER INCLUDE ENDS HERE -->
+
+<!-- SUBNAVIGATION AND MAIN BODY CONTENT -->
+<table width="778" height="50%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+  <tr>
+    <!-- LEFT SIDE INCLUDE: Dynamic section navigation will appear in this cell. -->
+    <td width="175" valign="top"> 
+      <table width="175" border="0" cellpadding="0" cellspacing="0" bgcolor="#C7CC96">
+          <tr> 
+            <td width="1" background="images/keyline.gif"><img src="images/spacer.gif" width="1" height="1"></td>
+            <td width="164" valign="top">
+				<table width="174" border="0" cellpadding="0" cellspacing="0">
+          		  <tr> 
+            		<td width="167" valign="top">
+
+<table width=174 cellpadding=0 cellspacing=0 border=0 class=containerTD><tr class=ContainerHeader>
+<td valign=top width=13 class=ContainerHeader><img name=154 id=154 src="images/spacer.gif">
+</td><td valign=middle width=154 class=ContainerHeader><a href="http://backup.calms2012.umc.org/interior.asp?ptid=1&amp;mid=154" class=WLeftNav>
+Tools For Ministry</a></td><td width=7 valign=top background="images/menu_title_right_bg.gif" ><img src="images/menu_title_right.gif" width=7 height=24></td></tr></table><table width=174 cellpadding=0 cellspacing=0 border=0><tr class=ContainerTD><td valign=top width="167"><img src="images/spacer.gif" width=167 height=5></td><td width=7><img src="images/menu_right.gif" width=7 height=5></td></tr></table>
+<table width=174 cellpadding=0 cellspacing=0 border=0 class=containerTD><tr class=ContainerTD>
+<td valign=top width=7 class=ContainerTD>
+<img src="images/spacer.gif" width=7 height=1 border=0></td>
+<td valign=top width=13 class=ContainerTD><img name=572 id=572 src="images/nav_closed.gif">
+</td><td valign=top width=147 class=ContainerTD><a href="interior.asp@ptid=1&amp;mid=572.html" class=SecondaryNav>
+Web Ministry</a></td><td width=7 valign=top background="images/menu_right.gif" ><img src="images/menu_right.gif" width=7 height=13></td></tr></table>
+<table width=174 cellpadding=0 cellspacing=0 border=0 class=containerTD><tr class=ContainerTD>
+<td valign=top width=7 class=ContainerTD>
+<img src="images/spacer.gif" width=7 height=1 border=0></td>
+<td valign=top width=13 class=ContainerTD><img name=785 id=785 src="images/nav_closed.gif">
+</td><td valign=top width=147 class=ContainerTD><a href="interior.asp@ptid=19&amp;mid=785.html" class=SecondaryNav>
+Youth and Young Adult Leaders</a></td><td width=7 valign=top background="images/menu_right.gif" ><img src="images/menu_right.gif" width=7 height=13></td></tr></table>
+<table width=174 cellpadding=0 cellspacing=0 border=0 class=containerTD><tr class=ContainerTD>
+<td valign=top width=7 class=ContainerTD>
+<img src="images/spacer.gif" width=7 height=1 border=0></td>
+<td valign=top width=13 class=ContainerTD><img name=792 id=792 src="images/nav_closed.gif">
+</td><td valign=top width=147 class=ContainerTD><a href="interior.asp@ptid=1&amp;mid=792.html" class=SecondaryNav>
+Graphics Library</a></td><td width=7 valign=top background="images/menu_right.gif" ><img src="images/menu_right.gif" width=7 height=13></td></tr></table>
+<table width=174 cellpadding=0 cellspacing=0 border=0 class=containerTD><tr class=ContainerTD>
+<td valign=top width=7 class=ContainerTD>
+<img src="images/spacer.gif" width=7 height=1 border=0></td>
+<td valign=top width=13 class=ContainerTD><img name=2324 id=2324 src="images/nav_closed.gif">
+</td><td valign=top width=147 class=ContainerTD><a href="interior.asp@ptid=1&amp;mid=2324.html" class=SecondaryNav>
+UMC.org Syndication</a></td><td width=7 valign=top background="images/menu_right.gif" ><img src="images/menu_right.gif" width=7 height=13></td></tr></table>
+<table width=174 cellpadding=0 cellspacing=0 border=0 class=containerTD><tr class=ContainerTD>
+<td valign=top width=7 class=ContainerTD>
+<img src="images/spacer.gif" width=7 height=1 border=0></td>
+<td valign=top width=13 class=ContainerTD><img name=4882 id=4882 src="images/nav_closed.gif">
+</td><td valign=top width=147 class=ContainerTD><a href="interior.asp@ptid=1&amp;mid=4882.html" class=SecondaryNav>
+Tools for Ministry Archive</a></td><td width=7 valign=top background="images/menu_right.gif" ><img src="images/menu_right.gif" width=7 height=13></td></tr></table>
+<table width=174 cellpadding=0 cellspacing=0 border=0 class=containerTD><tr class=ContainerTD>
+<td valign=top width=7 class=ContainerTD>
+<img src="images/spacer.gif" width=7 height=1 border=0></td>
+<td valign=top width=13 class=ContainerTD><img name=6680 id=6680 src="images/nav_closed.gif">
+</td><td valign=top width=147 class=ContainerTD><a href="interior.asp@ptid=1&amp;mid=6680.html" class=SecondaryNav>
+Christian Educators Fellowship</a></td><td width=7 valign=top background="images/menu_right.gif" ><img src="images/menu_right.gif" width=7 height=13></td></tr></table>
+<table width=174 cellpadding=0 cellspacing=0 border=0 class=containerTD><tr class=ContainerTD>
+<td valign=top width=7 class=ContainerTD>
+<img src="images/spacer.gif" width=7 height=1 border=0></td>
+<td valign=top width=13 class=ContainerTD><img name=6862 id=6862 src="images/nav_closed.gif">
+</td><td valign=top width=147 class=ContainerTD><a href="interior.asp@ptid=1&amp;mid=6862.html" class=SecondaryNav>
+Store</a></td><td width=7 valign=top background="images/menu_right.gif" ><img src="images/menu_right.gif" width=7 height=13></td></tr></table>
+
+
+					</td>
+          		  </tr>
+        		</table>
+			</td>
+          </tr>
+        </table>
+		<table width=175 border=0 cellpadding=0 cellspacing=0 bgcolor="#C7CC96">
+          <tr>
+		    <td width="1" background="images/keyline.gif"><img src="images/spacer.gif" width="1" height="1"></td>
+            
+          <td width=167><img src="images/spacer.gif" width=167 height=10></td>
+            <td><img src="images/menu_right.gif" width=7 height=13></td>
+		  </tr>
+		</table>
+        <table width="175" height="7" border="0" cellpadding="0" cellspacing="0" background="images/nav_bottom_fill.gif">
+          <tr> 
+            <td width="1" background="images/keyline.gif"><img src="images/spacer.gif" width="1" height="1"></td>
+            <td><div align="right"><img src="images/menu_bottom.gif" width="174" height="10"></div></td>
+          </tr>
+        </table>
+<br clear="all">
+
+<!-- Left Side HP Containers: Start -->
+
+<!-- Left Side HP Containers: End   -->		
+    </td>
+<!-- END LEFT SIDE INCLUDE -->
+
+<!-- START OF MAIN BODY AREA -->
+    <td width="597" valign="top"> 
+        <table width="100%" height="16" border="0" cellpadding="0" cellspacing="0">
+          <tr> 
+		  	<td valign="top" width=14><img src="images/spacer.gif" width="14" height="16"></td>
+            <td valign="top" class="NewsText">
+
+<!-- DYNAMIC BREAD CRUMB NAVIGATION STARTS HERE -->
+            
+<span class=ThirdLinks><a href="http://umc.org" class=ThirdLinks>Home</a>&nbsp;&gt;&nbsp;<a href="http://backup.calms2012.umc.org/interior.asp?ptid=1&amp;mid=154" class=ThirdLinks>Tools For Ministry</a>&nbsp;&gt;&nbsp;Tools for Ministry Archive</span>
+
+<!-- DYNAMIC BREAD CRUMB NAVIGATION ENDS HERE -->
+                </td>
+              </tr>
+            </table>
+       <table width="100%" border="0" cellspacing="0" cellpadding="0" valign=top>
+	    <tr>
+          <td valign=top><img src="images/spacer.gif" width="1" height="6"></td>
+		</tr>
+        <tr>
+          <td valign=top width=10><img src="images/spacer.gif" width="10" height="1"></td> 
+          <td valign=top>
+          <br clear="all">
+<!-- Theme Search: Start -->
+<table align=right width="175" border="0" cellpadding="0" cellspacing="0">
+  	<tr>
+		<td valign=middle colspan=3 height=20 width=175>
+		<table width="100%" border="0" cellpadding="0" cellspacing="0"><tr bgcolor=""><td width="5" bgcolor=""><img src="images/spacer.gif" width="5" height="20" align=absmiddle></td><td class="WhiteText" bgcolor="">Search Results</td><td width="5" valign="top" bgcolor=""><img src="images/spacer.gif" width="5" height="16" align=absmiddle></td></tr></table>
+		</td>
+	</tr>
+	<tr>
+    	<td height="2" bgcolor="" colspan=3><img src="images/spacer.gif" width="2" height="1"></td>
+	</tr>	        
+    <tr> 
+	  	<form name="ThemeSearch" method="post" action="http://backup.calms2012.umc.org/theme.asp?ptid=1&amp;mid=4882&amp;tid=158">
+    	<td bgcolor="" width=2><img src="images/spacer.gif" width="2" height="2"></td>
+	    <td valign="top" width="171" align="right" bgcolor="">
+	    	<table width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td align=center>
+	    	<input type="text" name="search" value="" style="width:130px; height:20px; COLOR:#000000; FONT-FAMILY: Arial; font-size: 12px; font-style: normal; font-weight: normal; background-color : #ffffff; border-color : ; border-style : solid; border-width : 1px;" size="20">&nbsp;<input type="submit" name="Submit" value="GO" style="height:20px; font-size:9.5px; font-weight:bold; color:#FFFFFF; background:#C18445">
+			</td></tr></table>
+		</td>
+		<td bgcolor="" width=2><img src="images/spacer.gif" width="2" height="2"></td>
+	    </form>
+	</tr>
+	<tr>
+    	<td height="2" bgcolor="" colspan=3><img src="images/spacer.gif" width="175" height="2"></td>
+	</tr>
+</table>
+<!-- Theme Search: End   -->
+          	 
+            <!-- DYNAMIC CONTENT IS OUTPUTTED HERE -->
+            <span class=blackText>Pages associated with the theme:<br></span><span class=Titles>Tools for Ministry</span><br clear=all>36 records(s) returned<br>You are now viewing records 1 through 20<br>
+ <br clear=all><table width=100% border=0 cellpadding=0 cellspacing=0>
+   <tr>
+      <td height=5 background="images/blue_bar.gif"><img src="images/spacer.gif" width="1" height="5"></td>
+   </tr>
+</table><br clear=all>
+<a  class="intertext" style="font-size: 10pt;" href="interior.asp@ptid=1&amp;mid=3331.html">Lent and Easter</a><span class=smallText><br><span class=ThirdLinks>Home&nbsp;&gt;&nbsp;Tools For Ministry&nbsp;&gt;&nbsp;Lent and Easter</span><br>(last updated: 3/3/2010)</span><span class=NewsText><br>UMC.org, the official online ministry of The United Methodist Church, has developed this feature on Lent and Easter specifically for visitors seeking further understanding, as well as resources developed by the Church.<br><br></span>
+<a  class="intertext" style="font-size: 10pt;" href="interior.asp@ptid=1&amp;mid=5437.html">Welcoming</a><span class=smallText><br><span class=ThirdLinks>Home&nbsp;&gt;&nbsp;Tools For Ministry&nbsp;&gt;&nbsp;Leader Resources&nbsp;&gt;&nbsp;Welcoming</span><br>(last updated: 2/18/2009)</span><span class=NewsText><br>Welcoming is how we show kindness, acceptance, and hospitality to everyone - guests and members alike. People catch glimpses of Christ through their encounters with us. In a nation that's becoming more unchurched all the time, we need to ensure that seekers encounter in us a Christ that they want to know better.<br><br></span>
+<a  class="intertext" style="font-size: 10pt;" href="interior.asp@ptid=1&amp;mid=4292.html">Congregations Liven Sunday Worship with New Media: Part 1</a><span class=smallText><br><span class=ThirdLinks>Home&nbsp;&gt;&nbsp;Tools For Ministry&nbsp;&gt;&nbsp;Leader Resources&nbsp;&gt;&nbsp;Congregations Liven Sunday Worship with New Media: Part 1</span><br>(last updated: 3/5/2008)</span><span class=NewsText><br>Church use of new media - technology such as projection systems and computers - has been a growing worship phenomenon in the past five years. Congregations across the globe are using new media on a weekly basis, and it is having a profound effect on their ministries.<br><br></span>
+<a  class="intertext" style="font-size: 10pt;" href="interior.asp@ptid=1&amp;mid=2350.html">Workers for the Harvest: Successful Member Assimilation</a><span class=smallText><br><span class=ThirdLinks>Home&nbsp;&gt;&nbsp;Tools For Ministry&nbsp;&gt;&nbsp;Workers for the Harvest: Successful Member Assimilation</span><br>(last updated: 1/8/2007)</span><span class=NewsText><br>Many churches see their membership shrinking or remaining static. Others are growing in numbers only, not in service. But many churches have found the secret to member assimilation, energizing new and established members alike.<br><br></span>
+<a  class="intertext" style="font-size: 10pt;" href="interior.asp@ptid=15&amp;mid=6238.html">Book Reviews</a><span class=smallText><br><span class=ThirdLinks>Home&nbsp;&gt;&nbsp;Christian Educators Fellowship&nbsp;&gt;&nbsp;Leadership Resources&nbsp;&gt;&nbsp;Book Reviews</span><br>(last updated: 8/31/2006)</span><span class=NewsText><br>Book ReviewTeaching the Bible in the Church<br><br></span>
+<a  class="intertext" style="font-size: 10pt;" href="interior.asp@ptid=24&amp;mid=6476.html">Online Communities Connect Christians in Cyberspace</a><span class=smallText><br><span class=ThirdLinks>Home&nbsp;&gt;&nbsp;Tools For Ministry&nbsp;&gt;&nbsp;Web Ministry&nbsp;&gt;&nbsp;Online Communities Connect Christians in Cyberspace</span><br>(last updated: 8/31/2006)</span><span class=NewsText><br>A U.S. soldier in Iraq watches sermons on live streaming video. A woman isolated by her chemotherapy draws strength from daily e-mails. And members of a Minnesota church use technology to stay in touch while wintering in Florida.All three are examples of Web ministry through online church communities.<br><br></span>
+<a  class="intertext" style="font-size: 10pt;" href="interior.asp@ptid=43&amp;mid=9141.html">Laity Sunday Worship Helps</a><span class=smallText><br><span class=ThirdLinks>Home&nbsp;&gt;&nbsp;Interpreter Magazine&nbsp;&gt;&nbsp;Archives&nbsp;&gt;&nbsp;2005 Archives&nbsp;&gt;&nbsp;July - August 2005&nbsp;&gt;&nbsp;Laity Sunday Worship Helps</span><br>(last updated: 3/29/2006)</span><span class=NewsText><br>One in Spirit All in Ministry; In the Spirit of Discipleship<br><br></span>
+<a  class="intertext" style="font-size: 10pt;" href="interior.asp@ptid=1&amp;mid=5356.html">Volunteers Press On, Despite International Unrest. But Not All Work Abroad.</a><span class=smallText><br><span class=ThirdLinks>Home&nbsp;&gt;&nbsp;Tools For Ministry&nbsp;&gt;&nbsp;Volunteers Press On, Despite International Unrest. But Not All Work Abroad.</span><br>(last updated: 11/8/2005)</span><span class=NewsText><br>When Sandy Rowland of Charlestown, W. Va., voiced her wish to return to Bosnia for a third mission trip %22nobody wanted me to go,%22 she says.It was May 2003, two months after the start of the U.S.-led war on Iraq. The memory of the Sept. 11 terrorist attacks on New York City and Washington, D.C., still was fresh. And, to make matters worse, this time she planned to travel by herself. %22I was going to cancel if the government or the church said it was dangerous to go,%22 she says. But the threat posed by wartime travel was not the only factor in her decision-making. %22I prayed about it, and I said I’m going, war or no war.%22<br><br></span>
+<a  class="intertext" style="font-size: 10pt;" href="interior.asp@ptid=1&amp;mid=8009.html">Special Gathering: Ministry Fills Spiritual Need for Disabled</a><span class=smallText><br><span class=ThirdLinks>Home&nbsp;&gt;&nbsp;Tools For Ministry&nbsp;&gt;&nbsp;Special Gathering: Ministry Fills Spiritual Need for Disabled</span><br>(last updated: 5/27/2005)</span><span class=NewsText><br>Like many Christians, Kevin Flower struggled to know how to serve God.  He longed to be a church leader, but wasn’t sure how because of his disability—he is mentally challenged.<br><br></span>
+<a  class="intertext" style="font-size: 10pt;" href="interior.asp@ptid=2&amp;mid=7063.html">Churches sell steeple space as hiding spots for cellular antennas</a><span class=smallText><br><span class=ThirdLinks>Home&nbsp;&gt;&nbsp;Tools For Ministry&nbsp;&gt;&nbsp;Churches sell steeple space as hiding spots for cellular antennas</span><br>(last updated: 4/1/2005)</span><span class=NewsText><br>For generations, church steeples have served as conduits to God, symbolically reaching heavenward, providing a visual reminder of the size and power of the church, and calling congregations to worship with the sound of bells.  These days, the steeple may also include an antenna to relay cell phone calls.<br><br></span>
+<a  class="intertext" style="font-size: 10pt;" href="interior.asp@ptid=1&amp;mid=6749.html">Tips for organizing a health ministry</a><span class=smallText><br><span class=ThirdLinks>Home&nbsp;&gt;&nbsp;Tools For Ministry&nbsp;&gt;&nbsp;Soaring health costs turn churches into primary care providers&nbsp;&gt;&nbsp;Tips for organizing a health ministry</span><br>(last updated: 2/17/2005)</span><span class=NewsText><br>United Methodist health care advocates provide these tips for organizing a health ministry.<br><br></span>
+<a  class="intertext" style="font-size: 10pt;" href="interior.asp@ptid=1&amp;mid=6605.html">African church offers model for evangelism, growth</a><span class=smallText><br><span class=ThirdLinks>Home&nbsp;&gt;&nbsp;Tools For Ministry&nbsp;&gt;&nbsp;African church offers model for evangelism, growth</span><br>(last updated: 1/28/2005)</span><span class=NewsText><br>Just four months after the Rev. Anastacio Chembeze was appointed pastor of a church in northern Mozambique, his chief concern is the shortage of trained church workers for his growing congregation.<br><br></span>
+<a  class="intertext" style="font-size: 10pt;" href="interior.asp@ptid=2&amp;mid=6528.html">Weekday Ministries Thrive at Downtown Churches</a><span class=smallText><br><span class=ThirdLinks>Home&nbsp;&gt;&nbsp;Tools For Ministry&nbsp;&gt;&nbsp;Weekday Ministries Thrive at Downtown Churches</span><br>(last updated: 1/18/2005)</span><span class=NewsText><br>Not long ago, many Americans lived, worked, worshipped and shopped downtown. That changed as people moved to suburbia. Churches moved with them, expanding in a way not possible with urban land constraints to meet the needs of a changing population.<br><br></span>
+<a  class="intertext" style="font-size: 10pt;" href="interior.asp@ptid=24&amp;mid=6125.html">Cyberspace Church Experiment Ends After Four Months</a><span class=smallText><br><span class=ThirdLinks>Home&nbsp;&gt;&nbsp;Tools For Ministry&nbsp;&gt;&nbsp;Web Ministry&nbsp;&gt;&nbsp;Cyberspace Church Experiment Ends After Four Months</span><br>(last updated: 11/24/2004)</span><span class=NewsText><br>Church of Fools began as a three-month experiment: Would Internet-savvy Christians and non-Christians embrace a three-dimensional, virtual reality church?<br><br></span>
+<a  class="intertext" style="font-size: 10pt;" href="interior.asp@ptid=1&amp;mid=6114.html">Churches Invest in Shocking Hearts Back to Life</a><span class=smallText><br><span class=ThirdLinks>Home&nbsp;&gt;&nbsp;Tools For Ministry&nbsp;&gt;&nbsp;Churches Invest in Shocking Hearts Back to Life</span><br>(last updated: 11/23/2004)</span><span class=NewsText><br>Each day without warning the hearts of more than 930 Americans stop beating, according to American Heart Association statistics. Every year, more than 250,000 people die of sudden cardiac arrest on the way to the hospital. And up to 50,000 of those deaths could have been prevented if defibrillators were widely available in public gathering places and people were trained to use the equipment. That’s why both the Heart Association and Red Cross encourage the purchase of defibrillators for places where crowds gather. The devices are portable and compact – the size of a notebook – weighing about five pounds and costing around $1,500.<br><br></span>
+<a  class="intertext" style="font-size: 10pt;" href="interior.asp@ptid=2&amp;mid=6080.html">Pine trees provide chapel experience at special times of year</a><span class=smallText><br><span class=ThirdLinks>Home&nbsp;&gt;&nbsp;United Methodist News Service&nbsp;&gt;&nbsp;News Archives&nbsp;&gt;&nbsp;2004&nbsp;&gt;&nbsp;November&nbsp;&gt;&nbsp;Pine trees provide chapel experience at special times of year</span><br>(last updated: 11/18/2004)</span><span class=NewsText><br>Each Sunday through Labor Day, a multitude of boats deliver worshippers to the Chapel in the Pines, an outreach boatdock ministry of an Alabama United Methodist congregation.<br><br></span>
+<a  class="intertext" style="font-size: 10pt;" href="interior.asp@ptid=1&amp;mid=5868.html">At Family Holiday Celebrations, Some Mourn Those Absent</a><span class=smallText><br><span class=ThirdLinks>Home&nbsp;&gt;&nbsp;Tools For Ministry&nbsp;&gt;&nbsp;At Family Holiday Celebrations, Some Mourn Those Absent</span><br>(last updated: 10/29/2004)</span><span class=NewsText><br>(UMCom) – Virginia Bender remembers the first family photo she took after her daughter committed suicide. It was during the winter holidays. “Someone was missing,” she says. Bender, 72, a member of First United Methodist Church in Portland, Ore., has since lost a son, and just this year she lost her second husband. So she is preparing for another tough holiday season. She plans to attend classes at her church for those grieving a loss, and she will cook Thanksgiving dinner for her four surviving children and her second husband’s four children.<br><br></span>
+<a  class="intertext" style="font-size: 10pt;" href="interior.asp@ptid=1&amp;mid=5824.html">Cross-promoting Works for Oprah. It Can Work at Church, Too.</a><span class=smallText><br><span class=ThirdLinks>Home&nbsp;&gt;&nbsp;Tools For Ministry&nbsp;&gt;&nbsp;Web Ministry&nbsp;&gt;&nbsp;Cross-promoting Works for Oprah. It Can Work at Church, Too.</span><br>(last updated: 10/18/2004)</span><span class=NewsText><br>UMCom) -- The survival of any product or public personality depends on on-going promotion. Oprah Winfrey doesn’t let you forget her name or face – you see it in magazines, newspapers and on television. And she is consistently cross-promoting her various outlets – her magazine publicizes her Web site, which heralds her TV show. Churches have much to learn from such a marketing maven.<br><br></span>
+<a  class="intertext" style="font-size: 10pt;" href="interior.asp@ptid=1&amp;mid=5845.html">Christian Comedian is Laugh Out Loud, Funny</a><span class=smallText><br><span class=ThirdLinks>Home&nbsp;&gt;&nbsp;Tools For Ministry&nbsp;&gt;&nbsp;Christian Comedian is Laugh Out Loud, Funny</span><br>(last updated: 10/15/2004)</span><span class=NewsText><br>(UMCom) – Clean comedy. The words alone might draw laughs from some. But Al Fike offers just that at Christian Comedy Night, where “Holy Smoke!” is the closest thing to an expletive booming from the stage. His premise is simple: Offer a venue where individuals – and families – can enjoy an evening of comedy without vulgarity. Call it novel, but it’s one man’s crusade to clean up comedy.<br><br></span>
+<a  class="intertext" style="font-size: 10pt;" href="interior.asp@ptid=1&amp;mid=5643.html">Texas Church Ropes in Cowboys at Arena Church</a><span class=smallText><br><span class=ThirdLinks>Home&nbsp;&gt;&nbsp;Tools For Ministry&nbsp;&gt;&nbsp;Texas Church Ropes in Cowboys at Arena Church</span><br>(last updated: 10/15/2004)</span><span class=NewsText><br>(UMCom) – When Curtis House was pastor of Happy United Methodist Church in Happy, Texas, he wanted to reach the cowboys of the massive cattle yards surrounding this north Texas Panhandle town. If he couldn’t get them to church, he figured, he’d create a congregation where they might feel more comfortable.<br><br></span>
+1&nbsp;&nbsp;&nbsp;<a class="intertext" href="interior.asp@ptid=1&amp;mid=4882&amp;rec=2.html">2</a>&nbsp;&nbsp;&nbsp;<a class="intertext" href="interior.asp@ptid=1&amp;mid=4882&amp;rec=2.html">Next >></a>
+            <!-- DYNAMIC CONTENT ENDS HERE -->
+          </td>
+        </tr>
+      </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- FOOTER INCLUDE BEGINS HERE -->
+<!-- INCLUDE FILE="include_footer.asp" -->
+<div align="center">
+  <table width=778 border=0 cellspacing=0 cellpadding=4>
+	<tr>
+		<td width=778 valign=top bgcolor="#F2F1E1">
+		<p class=first align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">
+		<span><b>Site Tools:</b>&nbsp;</span>
+		<a style="text-decoration: none; color: #5575a1" href="http://www.umc.org/site/c.lwL4KnN1LtH/b.1355413/k.D5E5/Site_Map/apps/sitemap/sitemap.asp">Site Map</a>&nbsp;|&nbsp;
+		<a href="http://archives.umc.org/interior.asp?ptid=1&mid=258" style="text-decoration: none; color: #5575a1">Glossary</a>&nbsp;|&nbsp;
+		<a href="http://www.umc.org/site/c.lwL4KnN1LtH/b.1716943/k.EEBB/Directory.htm" style="text-decoration: none; color: #5575a1">Directory</a>&nbsp;|&nbsp;<a href="http://archives.umc.org/interior.asp?mid=375" style="text-decoration: none; color: #5575a1">Calendar</a>&nbsp;
+        <span>
+        <span class="inner"><b>Content Tools</b>:</span>&nbsp;</span><a href="http://archives.umc.org/interior.asp?ptid=2&mid=2758" style="text-decoration: none; color: #5575a1">Email Updates</a>&nbsp;|&nbsp;<a  href="http://www.umc.org/site/c.lwL4KnN1LtH/b.2106139/k.1170/Still_in_Production.htm" info="This feature is still in development. Please check back in the coming weeks." style="text-decoration: none; color: #5575a1">Syndication</a>&nbsp;|&nbsp;<a  href="http://www.umc.org/site/c.lwL4KnN1LtH/b.2106139/k.1170/Still_in_Production.htm" info="This feature is still in development. Please check back in the coming weeks." style="text-decoration: none; color: #5575a1">RSS Feed</a><br>
+        <br>
+        <a  href="http://www.umc.org/site/c.lwL4KnN1LtH/b.2247173/k.8A06/About_UMCorg/apps/ka/ct/contactcustom.asp" style="text-decoration: none; color: #5575a1">About UMC.org</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a info="This feature is still in development. Please check back in the coming weeks." style="text-decoration: none; color: #5575a1" href="http://www.umc.org/site/c.lwL4KnN1LtH/b.2267689/k.9997/Press_Center.htm">Press Center</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://archives.umc.org/interior.asp?ptid=1&mid=287" style="text-decoration: none; color: #5575a1">Jobs</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a  href="http://www.umc.org/site/c.lwL4KnN1LtH/b.2106139/k.1170/Still_in_Production.htm" info="This feature is still in development. Please check back in the coming weeks." style="text-decoration: none; color: #5575a1">&#160;</a>
+		<a href="http://www.korean.umc.org/" style="text-decoration: none; color: #5575a1"><img alt="Image Link Title" src="http://www.umc.org/atf/cf/{DB6A45E4-C446-4248-82C8-E131B6424741}/koreanumc.gif" border="0" /></a>&#160;<a href="http://www.korean.umc.org/" style="text-decoration: none; color: #5575a1">Korean UMC</a></font></p>
+</td>
+	</tr>
+</table>
+</div>
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-1387816-2";
+urchinTracker();
+</script>
+
+
+
+<!-- FOOTER INCLUDE ENDS HERE -->
+</body>
+</html>

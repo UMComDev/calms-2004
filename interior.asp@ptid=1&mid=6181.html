@@ -1,0 +1,268 @@
+
+<script language="JavaScript" src="flash_detect.js"></script>
+<script language="JavaScript">
+	var varSubmitForm = "False";
+	function hp_redirect(js_NextURL, js_QS1, js_QS2 ) {
+		// js_NextURL: the target URL		
+		// js_QS1	 : QueryString that is sent thru ct_save.asp
+		//         	   Omit the following vars to avoid errors: chid, mid, section, layout, edit, aid
+		//
+		// js_QS2	 : QueryString for normal redirect. Include ALL vars needed to make the target page work.	
+		if (varSubmitForm == "True") {
+			document.all.Rtn2editor.value 	= "1";
+			document.all.NextURL.value 		= js_NextURL;
+			document.all.NextQuery.value 	= "&" + js_QS1;
+			//alert(js_NextURL + ".asp?"+ js_QS1);
+			document.fHtmlEditor.submit();		
+		}else{
+			location = js_NextURL + ".asp?"+ js_QS2;
+		}
+	}
+</script>
+
+<!-- INCLUDE VIRTUAL="include_redirect.asp" -->
+
+<html>
+<head>
+<title>Hospitals and Health Care Systems</title>
+<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">-->
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta name="robots" content="noindex">
+
+<META NAME="description" CONTENT="A list of United Methodist-related hospitals and health care facilities that are members of the United Methodist Association of Health and Welfare Ministries.">
+<META NAME="keywords" CONTENT="Methodist, hospital, health care, medical">
+<link href="global.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" src="global.js"></script>
+
+
+<!-- GOOGLE AD SERVICE - ADDED 2010-04-14 -->
+<script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'> 
+</script> 
+<script type='text/javascript'> 
+GS_googleAddAdSenseService("ca-pub-5286074780767328"); 
+GS_googleEnableAllServices(); 
+</script> 
+<script type='text/javascript'> 
+GA_googleAddSlot("ca-pub-5286074780767328", "Interpreter_175_146"); 
+</script> 
+<script type='text/javascript'> 
+GA_googleFetchAds(); 
+</script> 
+
+
+
+
+</head>
+
+<body bgcolor="#FFFFFF" link="#FF0000" vlink="#FF0000" alink="#FF0000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onLoad="MM_preloadImages('/images/sec_nav_questions_over.gif','/images/sec_nav_glossary_over.gif','/images/sec_nav_press_over.gif','/images/sec_nav_jobs_over.gif','/images/sec_nav_calendar_over.gif','/images/sec_nav_korean_trans_over.jpg','/images/sec_nav_contact_over.gif','/images/sec_nav_friend_over.gif','/images/sec_nav_search_over.gif','/images/nav_about_over.jpg','/images/nav_spirit_over.jpg','/images/nav_news_over.jpg','/images/nav_faith_over.jpg','/images/nav_tools_over.jpg','/images/nav_directory_over.jpg','/images/article_print_over.gif','/images/article_email_over.gif','/images/article_bookmark_over.gif')">
+<!--<script language="JavaScript" src="popUpMsg.js"></script>-->
+
+<!-- TOP BANNER INCLUDE STARTS HERE -->
+
+
+<link href="stylesheets/1_styleNav.css" rel="stylesheet" type="text/css">
+
+<body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0">
+
+<table align="center" height=29 width="778" background="stylesheets/tcimg/tcbg.gif">
+<tr><td><img border="0" src="stylesheets/tcimg/tcimg_01.gif" width="142" height="23"><a href="http://umc.org"><img border="0" src="stylesheets/tcimg/tcimg_02.gif" width="105" height="23"></a><a href="http://www.umc.org/site/c.lwL4KnN1LtH/b.1716943/k.EEBB/Directory.htm"><img border="0" src="stylesheets/tcimg/tcimg_03.gif" width="84" height="23"></a><a href="http://archives.umc.org/Directory/ChurchDirectory.asp?ptid=1&mid=222"><img border="0" src="stylesheets/tcimg/tcimg_04.gif" width="92" height="23"></a><a href="http://google.umc.org/search?access=p&output=xml_no_dtd&site=UMCom_UMCorg_Collection&ie=UTF-8&y=1&client=UMCom_UMCorg_2007_Frontend&oe=UTF-8&proxystylesheet=UMCom_UMCorg_2007_Frontend"><img border="0" src="stylesheets/tcimg/tcimg_05.gif" width="51" height="23"></a></td></tr>
+
+</table> 
+ 
+<table width="778" border="0" align="center" cellspacing="0" cellpadding="0" bgcolor=#C6CB93>
+	  <tr class=MainNavTR> 
+	    <td><table width=100% CELLPADDING=0  cellspacing=0 border=0 align=center><tr class=MainNavTR>	<td nowrap class=MainNavTD align=center>
+          <a href="http://www.kintera.org/site/lookup.asp?c=lwL4KnN1LtH&b=1355347">
+          <img border="0" src="uploads/images/newmenu_ourchurch_192x23.gif" width="192" height="23"></a></td>
+	<td nowrap class=MainNavTD align=center>
+          <a href="http://www.kintera.org/site/lookup.asp?c=lwL4KnN1LtH&b=1355349">
+          <img border="0" src="uploads/images/newmenu_ourfaith_192x23.gif" width="192" height="23"></a></td>
+	<td nowrap class=MainNavTD align=center>
+          <a href="http://www.kintera.org/site/lookup.asp?c=lwL4KnN1LtH&b=1355351">
+          <img border="0" src="uploads/images/newmenu_ourpeople_192x23.gif" width="192" height="23"></a></td>
+	<td nowrap class=MainNavTD align=center>
+          <a href="http://www.kintera.org/site/lookup.asp?c=lwL4KnN1LtH&b=1355355">
+          <img border="0" src="uploads/images/newmenu_ourworld_192x23.gif" width="192" height="23"></a></td>
+	</table></td>
+	  </tr>
+	</table><table width="778" border="0" align="center" cellspacing="0" cellpadding="0">
+	  <tr class=ContainerDivider> 
+	    <td><img src="images/spacer.gif" width=1 height=2></td>
+	  </tr>
+	</table>
+<table width="778" border="0" align="center" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><img src="images/banners/hp_banner_directory2.jpg" width="778" border="0" usemap="#map2home">
+
+	
+	<map name="map2home">
+	    
+			<area shape="rect" coords="0,0,360,40" href="http://www.umc.org/" alt="LINK: UMC.org Home" title="LINK: UMC.org Home">
+		
+	</map>
+	
+
+	</td>
+  </tr>
+</table>
+<table width="778" border="0" align="center" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><img src="images/white_spacer.jpg" width="30" height="9"></td>
+  </tr>
+</table>
+<!-- TOP BANNER INCLUDE ENDS HERE -->
+
+
+
+<!-- SUBNAVIGATION AND MAIN BODY CONTENT -->
+<table width="778" height="50%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+  <tr>
+    <!-- LEFT SIDE INCLUDE: Dynamic section navigation will appear in this cell. -->
+    <td width="175" valign="top" rowspan="2"> 
+      <table width="175" border="0" cellpadding="0" cellspacing="0" class=ContainerTD>
+          <tr> 
+            <td width="1" background="images/keyline.gif"><img src="images/spacer.gif" width="1" height="1"></td>
+            <td width="174" valign="top">
+<!-- Left Side Nav: Start -->
+
+<table width=174 cellpadding=0 cellspacing=0 border=0 class=containerTD><tr class=ContainerHeader>
+<td valign=top width=13 class=ContainerHeader><img name=157 id=157 src="images/spacer.gif">
+</td><td valign=middle width=154 class=ContainerHeader><a href="interior.asp@ptid=1&amp;mid=157.html" class=WLeftNav>
+Directory</a></td><td width=7 valign=top background="images/menu_title_right_bg.gif" ><img src="images/menu_title_right.gif" width=7 height=24></td></tr></table><table width=174 cellpadding=0 cellspacing=0 border=0><tr class=ContainerTD><td valign=top width="167"><img src="images/spacer.gif" width=167 height=5></td><td width=7><img src="images/menu_right.gif" width=7 height=5></td></tr></table>
+<table width=174 cellpadding=0 cellspacing=0 border=0 class=containerTD><tr class=ContainerTD>
+<td valign=top width=7 class=ContainerTD>
+<img src="images/spacer.gif" width=7 height=1 border=0></td>
+<td valign=top width=13 class=ContainerTD><img name=222 id=222 src="images/nav_closed.gif">
+</td><td valign=top width=147 class=ContainerTD><a href="interior.asp@ptid=1&amp;mid=222.html" class=SecondaryNav>
+Find-A-Church</a></td><td width=7 valign=top background="images/menu_right.gif" ><img src="images/menu_right.gif" width=7 height=13></td></tr></table>
+<table width=174 cellpadding=0 cellspacing=0 border=0 class=containerTD><tr class=ContainerTD>
+<td valign=top width=7 class=ContainerTD>
+<img src="images/spacer.gif" width=7 height=1 border=0></td>
+<td valign=top width=13 class=ContainerTD><img name=556 id=556 src="images/nav_closed.gif">
+</td><td valign=top width=147 class=ContainerTD><a href="interior.asp@ptid=1&amp;mid=556.html" class=SecondaryNav>
+Regional Offices</a></td><td width=7 valign=top background="images/menu_right.gif" ><img src="images/menu_right.gif" width=7 height=13></td></tr></table>
+<table width=174 cellpadding=0 cellspacing=0 border=0 class=containerTD><tr class=ContainerTD>
+<td valign=top width=7 class=ContainerTD>
+<img src="images/spacer.gif" width=7 height=1 border=0></td>
+<td valign=top width=13 class=ContainerTD><img name=528 id=528 src="images/nav_closed.gif">
+</td><td valign=top width=147 class=ContainerTD><a href="interior.asp@ptid=1&amp;mid=528.html" class=SecondaryNav>
+Ministries</a></td><td width=7 valign=top background="images/menu_right.gif" ><img src="images/menu_right.gif" width=7 height=13></td></tr></table>
+<table width=174 cellpadding=0 cellspacing=0 border=0 class=containerTD><tr class=ContainerTD>
+<td valign=top width=7 class=ContainerTD>
+<img src="images/spacer.gif" width=7 height=1 border=0></td>
+<td valign=top width=13 class=ContainerTD><img name=2650 id=2650 src="images/nav_closed.gif">
+</td><td valign=top width=147 class=ContainerTD><a href="interior.asp@ptid=1&amp;mid=2650.html" class=SecondaryNav>
+General Agencies</a></td><td width=7 valign=top background="images/menu_right.gif" ><img src="images/menu_right.gif" width=7 height=13></td></tr></table>
+
+
+<!-- Left Side Nav: End -->
+			</td>
+
+          </tr>
+        </table>
+		<table width=175 border=0 cellpadding=0 cellspacing=0 class=ContainerTD>
+          <tr>
+		    <td width="1" background="images/keyline.gif"><img src="images/spacer.gif" width="1" height="1"></td>
+            
+          <td width=167><img src="images/spacer.gif" width="167" height="10"></td>
+            <td><img src="images/menu_right.gif" width="7" height="13"></td>
+		  </tr>
+		</table>
+        <table width="175" height="7" border="0" cellpadding="0" cellspacing="0">
+          <tr> 
+            <td colspan=2 class=ContainerTD><img src="images/menu_bottom.gif" width="175" height="10"></td>
+          </tr>
+        </table>
+        
+		<br clear="all">
+<!-- Left Side HP Containers: Start -->
+
+<!-- Left Side HP Containers: End   -->
+ 
+    </td>
+<!-- END LEFT SIDE INCLUDE -->
+
+<!-- START OF MAIN BODY AREA -->
+			
+    <td width="597" valign="top">
+
+        <table width="100%" height="16" border="0" cellpadding="0" cellspacing="0">
+
+          <tr> 
+		  	<td valign="top" width=14><img src="images/spacer.gif" width="14" height="16"></td>
+            <td valign="top" class="NewsText">
+
+<!-- DYNAMIC BREAD CRUMB NAVIGATION STARTS HERE -->
+           
+        <span class=ThirdLinks><a href="http://umc.org" class=ThirdLinks>Home</a>&nbsp;&gt;&nbsp;<a href="interior.asp@ptid=1&amp;mid=157.html" class=ThirdLinks>Directory</a>&nbsp;&gt;&nbsp;<a href="interior.asp@ptid=1&amp;mid=528.html" class=ThirdLinks>Ministries</a>&nbsp;&gt;&nbsp;Hospitals and Health Care Systems</span>
+			<!--'add "Logged in " message -->
+			
+<!-- DYNAMIC BREAD CRUMB NAVIGATION ENDS HERE -->
+                </td>
+				
+
+                
+              </tr>
+
+            </table>
+
+       <table width="100%" border="0" cellspacing="0" cellpadding="0" valign=top>
+	    <tr>
+          <td valign=top colspan=2><img src="images/spacer.gif" width="1" height="6"></td>
+		</tr>
+        <tr>
+          <td valign=top width=10><img src="images/spacer.gif" width="10" height="1"></td> 
+          <td valign=top>
+          	 
+            <!-- DYNAMIC CONTENT IS OUTPUTTED HERE -->
+            <font size=2 face="Arial"> 
+            <P>These hospitals and health care facilities have a relationship with a United Methodist annual conference or general agency.</P><HR><P>AK |&nbsp;<A href="interior.asp@ptid=1&amp;mid=6181.html#ALABAMA">AL</A> |&nbsp;<A href="interior.asp@ptid=1&amp;mid=6181.html#ARKANSAS">AR</A> | AZ |&nbsp;<A href="interior.asp@ptid=1&amp;mid=6181.html#CALIFORNIA">CA</A> | CO | CT |&nbsp;<A href="interior.asp@ptid=1&amp;mid=6181.html#districtofcolumbia">DC</A> | DE |&nbsp;FL |&nbsp;<A href="interior.asp@ptid=1&amp;mid=6181.html#GEORGIA">GA</A> | HI |&nbsp;<A href="interior.asp@ptid=1&amp;mid=6181.html#IOWA">IA</A> | ID |&nbsp;<A href="interior.asp@ptid=1&amp;mid=6181.html#ILLINOIS">IL</A> |&nbsp;<A href="interior.asp@ptid=1&amp;mid=6181.html#INDIANA">IN</A> |&nbsp;<A href="interior.asp@ptid=1&amp;mid=6181.html#KANSAS">KS</A> |&nbsp;<A href="interior.asp@ptid=1&amp;mid=6181.html#KENTUCKY">KY</A> |&nbsp;LA | MA | MD | ME |&nbsp;MI |&nbsp;<A href="interior.asp@ptid=1&amp;mid=6181.html#MINNESOTA">MN</A> |&nbsp;<A href="interior.asp@ptid=1&amp;mid=6181.html#MISSOURI">MO</A> |&nbsp;<A href="interior.asp@ptid=1&amp;mid=6181.html#MISSISSIPPI">MS</A> |&nbsp;<A href="interior.asp@ptid=1&amp;mid=6181.html#MONTANA">MT</A> |&nbsp;<A href="interior.asp@ptid=1&amp;mid=6181.html#NORTHCAROLINA">NC</A> | ND |&nbsp;<A href="interior.asp@ptid=1&amp;mid=6181.html#NEBRASKA">NE</A> | NH | NJ | NM | NV |&nbsp;<A href="interior.asp@ptid=1&amp;mid=6181.html#NEWYORK">NY</A> |&nbsp;<A href="interior.asp@ptid=1&amp;mid=6181.html#OHIO">OH</A> | OK | OR |&nbsp;<A href="interior.asp@ptid=1&amp;mid=6181.html#PENNSYLVANIA">PA</A> | RI |&nbsp;SC | SD |&nbsp;<A href="interior.asp@ptid=1&amp;mid=6181.html#TENNESSEE">TN</A> |&nbsp;<A href="interior.asp@ptid=1&amp;mid=6181.html#TEXAS">TX</A> | UT | VA | VT | WA |&nbsp;<A href="interior.asp@ptid=1&amp;mid=6181.html#WISCONSIN">WI</A> | WV | WY</P><P><BR><A name=ALABAMA></A><STRONG>ALABAMA</STRONG> </P><P><A href="http://www.carraway.org/" target=_blank>Carraway Methodist Medical Center</A>&nbsp;&nbsp;<BR>1600 North 26th Street&nbsp;&nbsp; <BR>Birmingham, AL 35234<BR>Phone: (205) 226-6000 <BR>Connectional Unit: North Alabama Conference.</P><P><BR><A name=ARKANSAS></A><STRONG>ARKANSAS</STRONG> </P><P><A href="http://www.amhparagould.com/" target=_blank>Arkansas Methodist Hospital</A>&nbsp;<BR>900 West Kings Hwy<BR>Paragould, AR 72450<BR>Phone: (870) 239-7000<BR>Fax: (870) 239-7400<BR><FONT face="Times New Roman" size=1><FONT face="Arial, Helvetica, sans-serif" size=2>Capacity: 121 beds, 20 bassinets, 32,828 outpatient visits.<BR></FONT></FONT>Connectional Unit: North Arkansas Conference.</P><P><BR><A name=CALIFORNIA></A><STRONG>CALIFORNIA</STRONG> <BR><BR><A href="http://www.methodisthospital.org/frontpage/Default.htm" target=_blank>Methodist Hospital of Southern California</A><BR>300 W Huntington Dr<BR>Arcadia, CA 91007<BR>Phone: (626) 445-4441<BR>Fax: (626) 821-2378<BR><FONT face="Times New Roman" size=1><FONT face="Arial, Helvetica, sans-serif" size=2>Capacity: 345 beds; 30 bassinets; 71,276 inpatient days; 20,157 outpatient visits<BR></FONT></FONT>Connectional Unit: California-Pacific Conference.</P><P><A href="http://www.methodistsacramento.org/" target=_blank>Methodist Hospital of Sacramento</A><BR>7500 Hospital Dr<BR>Sacramento, CA 95823<BR>Phone: (916) 423-3000<BR>Fax: (916) 423-6045<BR><FONT face="Times New Roman" size=1><FONT face="Arial, Helvetica, sans-serif" size=2>Capacity: 319 beds; 18 bassinets; 60,927 inpatient days; 78,785 outpatient visits<BR></FONT></FONT>Methodist Hospital of Sacramento is run by Catholic Healthcare West.</P><P><BR><STRONG><A name=districtofcolumbia></A>DISTRICT OF COLUMBIA</STRONG>&nbsp;</P><P><A href="http://www.sibley.org/" target=_blank>Sibley Memorial Hospital</A><BR>5255 Loughboro Road NW<BR>Washington, DC 20016<BR>Phone: (202) 537-4000<BR>Fax: (202) 537-4683 <BR><FONT face="Times New Roman" size=1><FONT face="Arial, Helvetica, sans-serif" size=2>Capacity: 362 beds, 24 bassinets<BR></FONT></FONT>Connectional Unit: North Georgia Conference.</P><P><BR><A name=GEORGIA></A><STRONG>GEORGIA</STRONG> </P><P><A href="http://www.emoryhealthcare.org/departments/WW/about_us/geriatric_hospital.html" target=_blank>Wesley Woods Center of Emory University, Inc.</A><BR>1821 Clifton Rd NE<BR>Atlanta, GA 30329<BR>Phone: (404) 728-6206<BR>Fax: (404) 728-6214<BR><FONT face="Times New Roman" size=1><FONT face="Arial, Helvetica, sans-serif" size=2>Wesley Woods Center of Emory University, Inc. owns:<BR></FONT><FONT face="Arial, Helvetica, sans-serif" size=2>Wesley Woods Towers in Atlanta, 182 Independent Living and 19 Assisted Living Beds<BR></FONT></FONT>Connectional Unit: North Georgia Conference.</P><P><A href="http://www.sjchs.org/" target=_blank>St. Joseph’s/Candler Healthcare System</A>&nbsp;<BR>5353 Reynolds Street <BR>Savannah, GA 31405<BR>Phone: (912) 692-6002<BR>Fax: (912) 692-2296<BR>Connectional Unit: South Georgia Conference.</P><P><BR><A name=ILLINOIS></A><STRONG>ILLINOIS</STRONG> </P><P><A href="http://www.alzheimersbethany.org/" target=_blank>Bethany Methodist Corporation</A><BR>5025 North Paulina Street <BR>Chicago, IL 60640<BR>Phone: (773) 271-9040 <BR>Fax: (773) 989-1337<BR>Bethany Methodist Corporation supervises the following facilities&nbsp;that operate at different locations:&nbsp;<BR><A href="http://www.bethanyretirement.org/" target=_blank>Bethany Retirement Community</A>; Chicago, IL<BR><A href="http://www.bethanyterrace.org/" target=_blank>Bethany Terrace Nursing Home</A>, Morton Grove, IL and <BR><A href="http://www.methodistchicago.org/" target=_blank>Methodist Hospital of Chicago</A>, Chicago, IL.<BR>Connectional Unit: Northern Illinois Conference.</P><P><A href="http://www.methodistmedicalcenter.org/" target=_blank>Methodist Health Services Corporation</A>&nbsp;<BR>221 NE Glen Oak Avenue&nbsp; <BR>Peoria, IL 61636<BR>Phone (309) 672-5522<BR>Fax: (309) 672-5598<BR><FONT face="Times New Roman" size=1><FONT face="Arial, Helvetica, sans-serif" size=2>Capacity: 540 beds; 32 bassinets; 149,338 inpatient days; 91,887 outpatient visits; chaplaincy services<BR></FONT></FONT>Connectional Unit: Illinois Great Rivers Conference.</P><P><A href="http://www.rosecrance.org/" target=_blank>Rosecrance Health Network</A>&nbsp;<BR>1601 University Drive<BR>Rockford, IL 61107 <BR>Phone: (815) 391-1000 <BR>Fax: (815) 391-5041 <BR>Rosecrance Health Network is a leading provider of a full continuum of substance abuse treatment services for children, youth, adults, and families at six sites in Rockford, IL. Nearly 5000 individuals are served each year. Services include: prevention education and training, intervention services, detoxification, outpatient and inpatient treatment, continuing care, student assistance programs in area schools, recovery homes for adolescent females and adult women with children, job skills training and employment, and alumni clubs.<BR>Connectional Unit: Northern Illinois Conference</P><P><BR><A name=INDIANA></A><STRONG>INDIANA</STRONG> </P><P><A href="http://www.parkview.com/" target=_blank>Parkview Health System</A><BR>2200 Randalia Dr<BR>Fort Wayne, IN 46805<BR>Phone: (219) 484-6636<BR>Fax: (219) 480-5978<BR><FONT face="Times New Roman" size=1><FONT face="Arial, Helvetica, sans-serif" size=2>Capacity: 654 beds; 36 bassinets; 198,756 inpatient days; 192,743 outpatient visits; nursing school; chaplaincy services<BR></FONT></FONT>Connectional Unit: North Indiana Conference.</P><P><A href="http://www.methodisthospitals.org/" target=_blank>Methodist Hospitals, Inc.</A><BR>600 Grant Street<BR>Gary, IN 46402<BR>Phone: (219) 886-4000<BR>Fax: (219) 886-4603<BR><FONT face="Times New Roman" size=1><FONT face="Arial, Helvetica, sans-serif" size=2>Methodist Hospitals, Inc. supervises the following facilities:<BR></FONT><FONT face="Arial, Helvetica, sans-serif" size=2>Methodist Hospital, Northlake Campus, 600 Grant St., Gary, IN 46402<BR></FONT><FONT face="Arial, Helvetica, sans-serif" size=2>Methodist Hospital, Southlake Campus, 8701 Broadway, Merrillville, IN 46410<BR></FONT><FONT face="Arial, Helvetica, sans-serif" size=2>Methodist Hospital, Midlake Campus, 2269 W. 25th Ave., Gary, IN 46404<BR></FONT></FONT>Connectional Unit: South Indiana Conference.</P><P><A href="http://www.clarian.org/" target=_blank>Clarian Health Partners Inc.</A>&nbsp;<BR><FONT face="Times New Roman" size=1><FONT face="Arial, Helvetica, sans-serif" size=2>1515 N. Senate Blvd.<BR></FONT><FONT face="Arial, Helvetica, sans-serif" size=2>PO Box 1367<BR></FONT><FONT face="Arial, Helvetica, sans-serif" size=2>Indianapolis, IN 46202<BR></FONT><FONT face="Arial, Helvetica, sans-serif" size=2>Phone: (317) 962-3888 <BR>Fax: (317) 962-8520<BR></FONT><FONT face="Arial, Helvetica, sans-serif" size=2>Inpatient average: census 945/day; Highlights include one of the largest transplant centers in the US, Nation's highest intensity pediatric </FONT><FONT face="Arial, Helvetica, sans-serif" size=2>hospital, two level 1 trauma centers, Magnet Hospital recognition, WHO baby friendly hospital, substantive investment in charity care, </FONT><FONT face="Arial, Helvetica, sans-serif" size=2>medical education, and community services.<BR></FONT><FONT face="Arial, Helvetica, sans-serif" size=2>Clarian Health Partners operates the following facilities:<BR></FONT><FONT face="Arial, Helvetica, sans-serif" size=2>Methodist Hospital<BR></FONT><FONT face="Arial, Helvetica, sans-serif" size=2>Indiana University Hospital<BR></FONT><FONT face="Arial, Helvetica, sans-serif" size=2>Riley Hospital for Children<BR></FONT></FONT>Connectional Unit: South Indiana Conference.</P><P><BR><A name=IOWA></A><STRONG>IOWA</STRONG> </P><P><A href="http://www.stlukescr.org/default.cfm" target=_blank>St. Lukes Methodist Hospital</A><BR>1026 A Avenue NE <BR>PO Box 3026<BR>Cedar Rapids, IA 52402<BR>Phone: (319) 369-7203<BR>Fax: (319) 369-8997<BR><FONT face="Times New Roman" size=1><FONT face="Arial, Helvetica, sans-serif" size=2>Capacity: 599 beds, 28 Medicare/Medicaid beds<BR></FONT></FONT>Connectional Unit: Iowa Conference.</P><P><A href="http://www.ihsdesmoines.org/body.cfm?id=26" target=_blank>Iowa Methodist Medical Center</A><BR>1200 Pleasant St<BR>Des Moines, IA 50309-1453<BR>Phone: (515) 241-5009<BR>Fax: (515) 241-5994<BR><FONT face="Times New Roman" size=1><FONT face="Arial, Helvetica, sans-serif" size=2>Iowa Methodist is the state's largest private hospital.<BR></FONT><FONT face="Arial, Helvetica, sans-serif" size=2>Capacity: 560 beds; 44 bassinets; 121,130 inpatient days; 139,328 outpatient visits; nursing school; chaplaincy services<BR></FONT></FONT>Connectional Unit: Iowa Conference.</P><P><A href="http://www.stlukes.org/" target=_blank>St. Luke's Regional Medical Center</A>&nbsp;<BR>2720 Stone Park Blvd<BR>Sioux City, IA 51104<BR>Phone: (712) 279-3500<BR>Fax: (712) 279-7958<BR><FONT face="Times New Roman" size=1><FONT face="Arial, Helvetica, sans-serif" size=2>Capacity: 353 beds; 48 bassinets; 87,997 inpatient days; 50,100 outpatient visits; nursing school; chaplaincy services<BR></FONT></FONT>Connectional Unit: Iowa Conference.</P><P><BR><A name=KANSAS></A><STRONG>KANSAS</STRONG> </P><P><A href="http://www.srhc.com/" target=_blank>Salina Regional Health Center</A>&nbsp;<BR>400 S Sante Fe<BR>Salina, KS 67401<BR>Phone: (785) 452-7000<BR>Fax: (785) 452-6963<BR><FONT face="Times New Roman" size=1><FONT face="Arial, Helvetica, sans-serif" size=2>Capacity: 212 beds; 20 bassinets; 31,760 inpatient days; 30,237 outpatient visits; nursing school; chaplaincy services<BR></FONT></FONT>Connectional Unit: Kansas West Conference.</P><P><BR><A name=KENTUCKY></A><STRONG>KENTUCKY</STRONG> </P><P><A href="http://www.rbmission.org/" target=_blank>Red Bird Clinic</A>&nbsp;<BR>53 Queendale Center<BR>Beverly, KY 40913-9607<BR>Phone: (606) 598-5915<BR>Fax: (606) 598-6405&nbsp;<BR><FONT face="Times New Roman" size=1><FONT face="Arial, Helvetica, sans-serif" size=2>Small mission clinic in service to Southeastern Appalachian Kentucky with medical clinic, dental clinic, laboratory, x-ray and </FONT><FONT face="Arial, Helvetica, sans-serif" size=2>counseling when available.<BR></FONT></FONT>Connectional Units: Red Bird Missionary Conference &amp; GBGM Community &amp; Institutional Ministries Unit.</P><P><A href="http://www.methodisthospital.net/" target=_blank>Community UM Hospital, Inc.</A><BR>1305 N Elm St <BR>PO Box 48<BR>Henderson, KY 42420<BR>Phone: (502) 827-7500<BR>Fax: (205) 827-7402<BR><FONT face="Times New Roman" size=1><FONT face="Arial, Helvetica, sans-serif" size=2>Capacity: 213 beds; 8 bassinets; 49,336 inpatient days; 66,655 outpatient visits; chaplaincy services<BR></FONT></FONT>Connectional Unit: Kentucky Conference.</P><P><A href="http://www.nortonhealthcare.com/Index.cfm?Site=Hospitals%20and%20Care%20Centers&amp;Section=Norton%20Hospital" target=_blank>Norton Hospital </A><BR>PO Box 35070<BR>Louisville, KY 40232-5070<BR>Phone: (502) 629-2000<BR>Fax: (502) 629-6060<BR>Connectional Unit: Kentucky Conference.</P><P><A href="http://www.omhs.org/" target=_blank>Mercy Hospital</A><BR>1006 Ford Avenue<BR>Owensboro, KY 42302-2839<BR><FONT face="Arial, Helvetica, sans-serif" size=2>Phone: </FONT><FONT face="Arial, Helvetica, sans-serif" size=2>(502) 686-6100<BR></FONT><FONT face="Arial, Helvetica, sans-serif" size=2>Fax: (502) 683-4723<BR></FONT>Connectional Unit: Kentucky Conference.</P><P><A href="http://www.medicalleader.org/" target=_blank>Pikeville Methodist Hospital</A>&nbsp;<BR>911 South Bypass Road<BR>Pikeville, KY 41501<BR>Phone: (606) 886-1884<BR>Fax: (606) 432-9479<BR><FONT face="Times New Roman" size=1><FONT face="Arial, Helvetica, sans-serif" size=2>Capacity: 221 beds; 25 bassinets; 40,990 inpatient days; 73,329 outpatient visits; chaplaincy services<BR></FONT></FONT>Connectional Unit: Kentucky Conference.</P><P><BR><A name=MINNESOTA></A><STRONG>MINNESOTA</STRONG> </P><P><A href="http://www.parknicollet.com/Methodist/" target=_blank>Methodist Hospital</A><BR>6500 Excelsior Blvd <BR>PO Box 650 <BR>Minneapolis, MN 55426<BR>Phone: (952) 993-5000<BR>Fax: (952) 993-5930<BR><FONT face="Times New Roman" size=1><FONT face="Arial, Helvetica, sans-serif" size=2>Methodist Hospital is a 426 bed facility and is recognized as an area leader in cancer care, cardiovascular services, maternity care and </FONT><FONT face="Arial, Helvetica, sans-serif" size=2>neuro-rehabilitation medicine.<BR></FONT></FONT>Connectional Unit: Minnesota Conference.</P><P><A href="http://www.mayoclinic.org/methodisthospital/" target=_blank>Rochester Methodist Hospital</A>&nbsp;<BR>201 West Center St <BR>Rochester, MN 55902<BR>Phone: (507) 286-7890<BR>Fax: (507) 284-9605<BR><FONT face="Times New Roman" size=1><FONT face="Arial, Helvetica, sans-serif" size=2>Capacity: 792 beds; 32 bassinets; 188,473 inpatient days; 25,269 outpatient visits<BR></FONT></FONT>Connectional Unit: Minnesota Conference.</P><P><BR><A name=MISSISSIPPI></A><STRONG>MISSISSIPPI </STRONG></P><P><A href="http://www.methodistonline.org/" target=_blank>Methodist Rehabilitation Center</A>&nbsp;<BR>1350 East Woodrow Wilson Drive<BR>Jackson, MS 39216<BR>Phone: (601) 981-2611<BR>Fax: (601) 364-3465<BR>Connectional Unit: Mississippi Conference.</P><P><BR><STRONG><A name=MISSOURI></A>MISSOURI</STRONG></P><P><A href="http://www.freemanhealth.com/frontpage/default.htm" target=_blank>Freeman Health System</A><BR>1102 W. 32nd Street <BR>Joplin, MO 64804<BR>Phone: (417) 623-2801<BR>Fax: (417) 625-6646<BR><FONT face="Times New Roman" size=1><FONT face="Arial, Helvetica, sans-serif" size=2>Capacity: 347 beds; acute care/surgical services; emergency/trauma unit; licensed skilled nursing unit; outpatient services for clinical </FONT><FONT face="Arial, Helvetica, sans-serif" size=2>and surgical care; home health care; inpatient drug/alcohol program for adults and adolescents; urgent care; neonatal ICU, wound care </FONT><FONT face="Arial, Helvetica, sans-serif" size=2>and hyperbaric medicine; sleep center<BR></FONT></FONT>Connectional Unit: Missouri West Conference.</P><P><A href="http://www.heartland-health.com/" target=_blank>Heartland Regional Medical Center</A>&nbsp; <BR>532 Faraon <BR>Saint Joseph, MO 64501<BR>Phone: (816) 271-7111<BR>Fax: (816) 271-6569<BR><FONT face="Times New Roman" size=1><FONT face="Arial, Helvetica, sans-serif" size=2>Capacity: 594 beds; 35 bassinets; 149,530 inpatient days; 35,159 outpatient visits; chaplaincy services<BR></FONT></FONT>Connectional Unit: Missouri West Conference.</P><FONT face="Times New Roman" size=3><P align=left><FONT face="Arial, Helvetica, sans-serif" size=2>BJC Health System <BR></FONT></FONT><FONT face="Arial, Helvetica, sans-serif" size=2>4353 Clayton Ave. Rm 166<BR></FONT><FONT face="Arial, Helvetica, sans-serif" size=2>Saint Louis, MO 63110-1621<BR></FONT><FONT face="Arial, Helvetica, sans-serif" size=2>Phone: (618) 463-7311 <BR>Fax: (618) 463-7850<BR>Connectional Unit: Illinois Great Rivers Conference</FONT></P><P><BR><A name=MONTANA></A><STRONG>MONTANA</STRONG> </P><P><A href="http://www.billingsclinic.com/frontpage/Default.htm" target=_blank></A><A href="http://www.billingsclinic.com/" target=_blank>Billings Clinic</A><BR>2800 Tenth Ave N<BR>Billings, MT 59107-7000<BR>Phone: (406) 6574000<BR>Fax: (406) 238-2785<BR><FONT face="Times New Roman" size=1><FONT face="Arial, Helvetica, sans-serif" size=2>Capacity: 272 bed hospital with 6 primary and specialty branch clinics; outpatient services for medical and surgical care; inpatient </FONT><FONT face="Arial, Helvetica, sans-serif" size=2>psychiatric unit; continuing care services<BR></FONT></FONT>Connectional Unit: Yellowstone Conference.</P><P><A href="http://www.bozemandeaconess.org/" target=_blank>Bozeman Deaconess Hospital</A>&nbsp;<BR>915 Highland Blvd<BR>Bozeman, MT 59715<BR>Phone: (406) 585-1007<BR>Fax: (406) 585-1070<BR>Connectional Unit: Yellowstone Conference.</P><P><A href="http://www.benefis.org/default.htm" target=_blank></A><A href="http://www.benefis.org/" target=_blank>Benefis Healthcare</A><BR>1101 26th Street South<BR>Great Falls, MT 59405<BR>Phone: (406) 455-5477<BR>Fax: (406) 455-4587<BR><FONT face="Times New Roman" size=1><FONT face="Arial, Helvetica, sans-serif" size=2>Capacity: 502 beds; acute and surgical care services; behavioral health services; heart institute; Sletten Cancer Institute; Peace Hospice </FONT><FONT face="Arial, Helvetica, sans-serif" size=2>residential facility<BR></FONT></FONT>Connectional Unit: Yellowstone Conference.</P><P><BR><A name=NEBRASKA></A><STRONG>NEBRASKA</STRONG> </P><P><A href="http://www.bryanlgh.org/index2.asp" target=_blank>Bryan LGH Medical Center</A>&nbsp;<BR>1600 S 48 St<BR>Lincoln, NE 68506-1299<BR>Phone: (402) 489-0200<BR>Fax: (402) 483-8306<BR><FONT face="Times New Roman" size=1><FONT face="Arial, Helvetica, sans-serif" size=2>Capacity: 606 beds; 50 inpatient drug and alcohol beds; transitional and inpatient acute rehabilitation units; comprehensive mental </FONT><FONT face="Arial, Helvetica, sans-serif" size=2>health services; home health care and home medical services; College of Health Sciences.<BR></FONT></FONT>Connectional Unit Nebraska Conference.</P><P><A href="http://www.bestcare.org/" target=_blank>Nebraska Methodist Health Systems</A><BR>8303 Dodge St<BR>Omaha, NE 68114<BR>Phone: (402) 354-4441<BR>Fax: (402) 354-8735<BR><FONT face="Times New Roman" size=1><FONT face="Arial, Helvetica, sans-serif" size=2>Capacity: 685 beds; acute care/surgical services; cancer center; high-risk obstetrics and NICU on site; emergency/trauma unit; </FONT><FONT face="Arial, Helvetica, sans-serif" size=2>outpatient services for clinical and surgical care; magnet nursing designation; home health care; Nursing and Health Professions<BR></FONT><FONT face="Arial, Helvetica, sans-serif" size=2>College; chaplaincy services<BR></FONT><FONT face="Arial, Helvetica, sans-serif" size=2>Nebraska Methodist Health System operates the following facilities:<BR></FONT><FONT face="Arial, Helvetica, sans-serif" size=2>Nebraska Methodist Hospital<BR></FONT><FONT face="Arial, Helvetica, sans-serif" size=2>Jennie Edmundson Memorial Hospital<BR>Connectional Unit: Nebraska Conference.</FONT></P></FONT><P><A href="http://www.rwmc.net/" target=_blank>Regional West Medical Center</A>&nbsp;<BR>4021 Avenue B<BR>Scottsbluff NE 69361<BR>Phone: (308) 635-3711<BR>Fax: (308) 630-1815<BR><FONT face="Times New Roman" size=1><FONT face="Arial, Helvetica, sans-serif" size=2>Capacity: 179 beds; acute care/surgical services; emergency/level II trauma unit; air ambulance; outpatient services for clinical and </FONT><FONT face="Arial, Helvetica, sans-serif" size=2>surgical care; acute rehabilitation/outpatient rehabilitation center; behavioral health services; referral laboratory/blood center; cancer </FONT><FONT face="Arial, Helvetica, sans-serif" size=2>treatment center; home health care; hospice; licensed skilled nursing; retirement living; sleep lab<BR></FONT></FONT>Connectional Unit: Nebraska Conference.</P><P><BR><A name=NEWYORK></A><STRONG>NEW YORK</STRONG> </P><P><A href="http://www.nym.org/" target=_blank>New York Methodist Hospital</A>&nbsp;&nbsp;<BR>506 Sixth St<BR>Brooklyn, NY 11215<BR>Phone: (718) 780-3000<BR>Fax:(718) 780-3770<BR><FONT face="Times New Roman" size=1><FONT face="Arial, Helvetica, sans-serif" size=2>Capacity: 570 beds; 42 bassinets; 179,416 inpatient days; 164,019 outpatient visits (clinics and health centers); chaplain services; CPE </FONT><FONT face="Arial, Helvetica, sans-serif" size=2>Program<BR>Connectional Unit: New York, Greater New Jersey, Troy and Wyoming Conferences.&nbsp;</FONT></P></FONT><P><BR><A name=NORTHCAROLINA></A><STRONG>NORTH CAROLINA</STRONG> </P><P><A href="http://www.mc.duke.edu/index3.htm" target=_blank>Duke University Medical Center</A>&nbsp;<BR>P0 Box 3708<BR>Durham, NC 27710<BR>Phone: (919) 684-5414<BR>Fax: (919) 681-8921<BR>Connectional Unit: North Carolina Conference.</P><P><BR><A name=OHIO></A><STRONG>OHIO</STRONG> </P><P><A href="http://www.health-alliance.com/christ" target=_blank>Christ Hospital of Greater Cincinnati</A><BR>3200 Burnet&nbsp;Ave. <BR>Cincinnati, OH 45229<BR>Phone: (513) 585-2000<BR><FONT face="Times New Roman" size=1><FONT face="Arial, Helvetica, sans-serif" size=2>Capacity: 550 beds, 215,416 inpatient days, 16,0090 outpatient visits, nursing school, chaplaincy services<BR></FONT></FONT>Connectional Unit: West Ohio Conference.</P><P><A href="http://www.saintlukesfoundation.org/" target=_blank>St. Lukes Foundation of Cleveland </A><BR><FONT face="Times New Roman" size=1><FONT face="Arial, Helvetica, sans-serif" size=2>4208 Prospect Ave.<BR></FONT><FONT face="Arial, Helvetica, sans-serif" size=2>Cleveland, OH 44103- 4306<BR></FONT><FONT face="Arial, Helvetica, sans-serif" size=2>Phone: (216) 431-8010 <BR>Fax: (216) 431-8015<BR></FONT><FONT face="Arial, Helvetica, sans-serif" size=2>Capacity: 442 beds; 32 bassinets; 121,554 inpatient days; 131,741 outpatient visits; chaplaincy services<BR></FONT></FONT>Connectional Unit: East Ohio Conference.</P><P><A href="http://www.ohiohealth.com/" target=_blank>OhioHealth Corporation</A><BR>1087 Dennison Avenue<BR>Columbus, OH 43201<BR>Phone: (614) 544-5424<BR>Fax: (614) 544-4244<BR>OhioHealth Corporation supervises the following facilities:<BR><A href="http://www.ohiohealth.com/facilities/riverside/index.htm" target=_blank>Riverside Methodist Hospital</A>, Columbus, OH <BR><A href="http://www.hardinmemorial.org/" target=_blank>Hardin Memorial Hospital</A>, Kenton, OH<BR><A href="http://www.somc.org/" target=_blank>Southern Ohio Medical Center</A>, Portsmouth, OH<BR><A href="http://www.morrowcountyhospital.com/" target=_blank>Morrow County Hospital</A>, Mount Gilead, OH<BR><A href="http://www.ohiohealth.com/facilities/grant/index.htm" target=_blank>Grant Medical Center</A>, Columbus, OH<BR><A href="http://www.mariongeneral.com/home.php" target=_blank>Marion General Hospital</A>, Marion, OH<BR><A href="http://www.ohiohealth.com/facilities/doctors/index.htm" target=_blank>Doctors Hospitals</A>, Columbus, OH<BR>Connectional Unit: West Ohio Conference.</P><P><A href="http://www.promedica.org/promedica/index.jsp?id=351" target=_blank>Flower Hospital</A><BR>5200 Harroun Road<BR>Sylvania, OH 43560<BR>Phone: (419) 824-1444<BR>Fax: (419) 882-2342<BR><FONT face="Times New Roman" size=1><FONT face="Arial, Helvetica, sans-serif" size=2>Capacity: 242; supervised by Flower Hospital, Inc.; 242 beds, 24 bassinets, 62,000 inpatients days; 291,769 outpatient visits; chaplaincy </FONT><FONT face="Arial, Helvetica, sans-serif" size=2>services<BR></FONT></FONT>Connectional Unit: West Ohio Conference.</P><P><BR><A name=PENNSYLVANIA></A><STRONG>PENNSYLVANIA</STRONG> </P><P>Methodist Hospital <BR>2301 S Broad St<BR>Philadelphia, PA 19148<BR>Phone: (215) 952-9000<BR>Fax: (215) 952-9014<BR><FONT face="Times New Roman" size=1><FONT face="Arial, Helvetica, sans-serif" size=2>Capacity: 205 beds; 56,000 inpatient days; 56,630 outpatient visits; chaplaincy services<BR></FONT></FONT>Connectional Units: Eastern Pennsylvania Conference.</P><P><FONT face="Times New Roman" size=3><FONT face="Arial, Helvetica, sans-serif" size=2><STRONG><BR></STRONG></FONT></P></FONT><P><A name=TENNESSEE></A><STRONG>TENNESSEE</STRONG> </P><P><A href="http://www.methodisthealth.org/" target=_blank>Methodist Healthcare, Inc.</A><BR>1265 Union Ave Suite 700<BR>Memphis, TN 38104<BR>Phone: (901) 516-0553<BR>Fax: (901) 726-0554<BR>Methodist Health Systems, Inc., supervises the following facilities:<BR><A href="http://www.methodisthealth.org/facility.asp?facid=germantown" target=_blank>Methodist Healthcare&nbsp;</A>-&nbsp;Germantown&nbsp;Hospital, Memphis, TN<BR>Methodist Healthcare - Home Care and Hospice Memphis, TN<BR><A href="http://www.methodisthealth.org/facility.asp?facid=north" target=_blank>Methodist Healthcare&nbsp;</A>-&nbsp;North&nbsp;Hospital,&nbsp;Memphis, TN<BR><A href="http://www.methodisthealth.org/facility.asp?facid=south" target=_blank>Methodist Healthcare </A>- South&nbsp;Hospital, &nbsp;Memphis, TN<BR>Methodist Healthcare - University Hospital, Memphis, TN<BR><A href="http://www.lebonheur.org/" target=_blank>LeBonheur Children’s Medical Center</A>,&nbsp;Memphis, TN<BR><A href="http://www.methodisthealth.org/facility.asp?facid=fayette" target=_blank>Methodist Healthcare&nbsp;</A>- Fayette Hospital, Somerville, TN<BR>Connectional Units: Memphis, Arkansas, &amp; Mississippi Conferences.</P><P><A href="http://www.mmcoakridge.com/mmc-home.cfm" target=_blank>Methodist Medical Center of Oak Ridge</A>&nbsp;<BR>990 Oak Ridge Turnpike<BR>Oak Ridge, TN 37830<BR>Phone: (423) 481-1101<BR>Fax: (423) 481-1088<BR>Connectional Unit: Holston Conference.</P><P><BR><A name=TEXAS></A><STRONG>TEXAS</STRONG> </P><P><A href="http://www.methodisthealthsystem.org/" target=_blank>Methodist Hospitals of Dallas</A>&nbsp;<BR>P0 Box 655999<BR>Dallas, TX 75265-5999<BR>Phone: (214) 947-8181<BR>Fax: (214) 947-4501<BR>Connectional Unit: North Texas Conference.</P><P><A href="http://www.texashealth.org/main.asp?enorgid=&amp;level=2&amp;id=&amp;name=Home/Hospitals/HarrisMethodistHospital" target=_blank>Harris Methodist Health System</A>&nbsp;<BR>1301 Pennsylvania Ave<BR>Fort Worth, TX 76104<BR>Phone: (817) 878-5900<BR>Fax: (817) 570-8997<BR>Connectional Unit: North Texas Conference.</P><P><A href="http://www.methodisthealth.com/cgi-bin/hmdim/home/home.do" target=_blank>Methodist Hospital System</A>&nbsp;<BR>6565 Fannin Street, Suit&nbsp;D 200<BR>Houston, TX 77030-2707<BR>Phone: (713) 790-3311<BR>Fax: (713) 790-2605&nbsp;<BR><FONT face="Times New Roman" size=1><FONT face="Arial, Helvetica, sans-serif" size=2>Capacity: 1352 beds; Chaplaincy Services<BR></FONT></FONT>Connectional Unit: Texas Conference.</P><P><A href="http://www.covenanthealth.org/frontpage/Default.htm" target=_blank>Covenant Health System</A>&nbsp;<BR>3615 19th St <BR>PO Box 1201<BR>Lubbock, TX 79410<BR>Phone: (806) 792-1011<BR>Fax: (806) 792-2116<BR><FONT face="Times New Roman" size=1><FONT face="Arial, Helvetica, sans-serif" size=2>Capacity: 594 beds; 50 bassinets; 126,870 inpatient days; 76, 447 outpatient visits; chaplaincy services; 24-Hour emergency room; </FONT><FONT face="Arial, Helvetica, sans-serif" size=2>neonatal intensive care; South Texas Cancer Institute<BR></FONT></FONT>Connectional Unit: Southwest Texas Conference.</P><P><A href="http://www.mhm.org/" target=_blank>Methodist Healthcare Ministries of South Texas</A><BR>4507 Medical Drive<BR>San Antonio, TX 78229<BR>Phone: (210) 692-0234<BR>Fax: (210) 614-7563<BR>Connectional Unit: Southwest Texas Conference.</P><P><A href="http://sahealth.com/" target=_blank>Methodist Healthcare</A><BR>7711 Louis Pasteur Drive, Suite 101<BR>San Antonio, TX 78229<BR>Phone: (210) 575-4000<BR>Fax: (210) 575-6836<BR><FONT face="Times New Roman" size=1><FONT face="Arial, Helvetica, sans-serif" size=2>Methodist Healthcare facilities include:<BR></FONT><FONT face="Arial, Helvetica, sans-serif" size=2>Methodist Hospital - San Antonio, TX<BR></FONT><FONT face="Arial, Helvetica, sans-serif" size=2>Methodist Children's Hospital, San Antonio, TX<BR></FONT><FONT face="Arial, Helvetica, sans-serif" size=2>Methodist Specialty and Transplant Hospital, San Antonio, TX<BR></FONT><FONT face="Arial, Helvetica, sans-serif" size=2>Metropolitan Methodist Hospital, San Antonio, TX<BR></FONT><FONT face="Arial, Helvetica, sans-serif" size=2>Northeast Methodist Hospital, San Antonio, TX<BR></FONT><FONT face="Arial, Helvetica, sans-serif" size=2>Methodist Ambulatory Surgical Services, San Antonio, TX<BR></FONT></FONT>Connectional Unit: Southwest Texas Conference</P><P><BR><A name=WISCONSIN></A><STRONG>WISCONSIN</STRONG>&nbsp;<BR><BR><A href="http://www.bellin.org/" target=_blank>Bellin Health</A> <BR>744&nbsp;S. Webster Ave <BR>P0 Box 23400<BR>Green Bay, WI 54305-3400<BR>Phone: (920) 433-3500<BR>Fax: (920) 433-7971<BR>Connectional Unit: Wisconsin Conference.</P><P><FONT face="Arial, Helvetica, sans-serif" size=1><EM>This list is maintained by InfoServ, the information service of The United Methodist Church and an initiative of United Methodist Communications. Please report errors or corrections to <A href="mailto:infoserv@umcom.org" target=_blank>InfoServ</A>.</EM></FONT></P>
+            
+			<BR clear=all>
+			<br clear="all"><br><div align="right"><a href="http://backup.calms2012.umc.org/interior_print.asp?ptid=1&amp;mid=6181&amp;pagemode=print" target="_blank" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('toolbar_print','','images/article_print_over.gif',1)"><img src="images/article_print.gif" alt="Click for a printer friendly version of this page" name="toolbar_print" width="83" height="19" border="0"></a><a href="interior.asp@mid=453.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('toolbar_email','','images/article_email_over.gif',1)"><img src="images/article_email.gif" alt="Click to email someone a link to this page" name="toolbar_email" width="83" height="19" border="0"></a></div>
+            </font><br>
+            <br> 
+            <!-- DYNAMIC CONTENT ENDS HERE -->
+          </td>
+        </tr>
+      </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+	
+
+<!-- FOOTER INCLUDE BEGINS HERE -->
+<div align="center">
+  <table width=778 border=0 cellspacing=0 cellpadding=4>
+	<tr>
+		<td width=778 valign=top bgcolor="#F2F1E1">
+		<p class=first align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">
+		<span><b>Site Tools:</b>&nbsp;</span>
+		<a style="text-decoration: none; color: #5575a1" href="http://www.umc.org/site/c.lwL4KnN1LtH/b.1355413/k.D5E5/Site_Map/apps/sitemap/sitemap.asp">Site Map</a>&nbsp;|&nbsp;
+		<a href="http://archives.umc.org/interior.asp?ptid=1&mid=258" style="text-decoration: none; color: #5575a1">Glossary</a>&nbsp;|&nbsp;
+		<a href="http://www.umc.org/site/c.lwL4KnN1LtH/b.1716943/k.EEBB/Directory.htm" style="text-decoration: none; color: #5575a1">Directory</a>&nbsp;|&nbsp;<a href="http://archives.umc.org/interior.asp?mid=375" style="text-decoration: none; color: #5575a1">Calendar</a>&nbsp;
+        <span>
+        <span class="inner"><b>Content Tools</b>:</span>&nbsp;</span><a href="http://archives.umc.org/interior.asp?ptid=2&mid=2758" style="text-decoration: none; color: #5575a1">Email Updates</a>&nbsp;|&nbsp;<a  href="http://www.umc.org/site/c.lwL4KnN1LtH/b.2106139/k.1170/Still_in_Production.htm" info="This feature is still in development. Please check back in the coming weeks." style="text-decoration: none; color: #5575a1">Syndication</a>&nbsp;|&nbsp;<a  href="http://www.umc.org/site/c.lwL4KnN1LtH/b.2106139/k.1170/Still_in_Production.htm" info="This feature is still in development. Please check back in the coming weeks." style="text-decoration: none; color: #5575a1">RSS Feed</a><br>
+        <br>
+        <a  href="http://www.umc.org/site/c.lwL4KnN1LtH/b.2247173/k.8A06/About_UMCorg/apps/ka/ct/contactcustom.asp" style="text-decoration: none; color: #5575a1">About UMC.org</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a info="This feature is still in development. Please check back in the coming weeks." style="text-decoration: none; color: #5575a1" href="http://www.umc.org/site/c.lwL4KnN1LtH/b.2267689/k.9997/Press_Center.htm">Press Center</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://archives.umc.org/interior.asp?ptid=1&mid=287" style="text-decoration: none; color: #5575a1">Jobs</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a  href="http://www.umc.org/site/c.lwL4KnN1LtH/b.2106139/k.1170/Still_in_Production.htm" info="This feature is still in development. Please check back in the coming weeks." style="text-decoration: none; color: #5575a1">&#160;</a>
+		<a href="http://www.korean.umc.org/" style="text-decoration: none; color: #5575a1"><img alt="Image Link Title" src="http://www.umc.org/atf/cf/{DB6A45E4-C446-4248-82C8-E131B6424741}/koreanumc.gif" border="0" /></a>&#160;<a href="http://www.korean.umc.org/" style="text-decoration: none; color: #5575a1">Korean UMC</a></font></p>
+</td>
+	</tr>
+</table>
+</div>
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-1387816-2";
+urchinTracker();
+</script>
+
+
+
+<!-- FOOTER INCLUDE ENDS HERE -->
+</body>
+</html>

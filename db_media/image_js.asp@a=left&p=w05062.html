@@ -1,0 +1,173 @@
+
+
+
+document.writeln('<html><head>');
+var putLayerX = 0;
+var putLayerY = 0;
+var var1
+var var2
+var1= 0
+var2 = 2
+
+
+function getQueryVariable(variable) {
+  var query = window.location.search.substring(1);
+  var vars = query.split("&");
+  for (var i=0;i<vars.length;i++) {
+    var pair = vars[i].split("=");
+    if (pair[0] == variable) {
+      return pair[1];
+    }
+  } 
+  alert('Query Variable ' + variable + ' not found');
+}
+
+
+function getXMouseLoc(e)
+	{
+	var getLayerX;	
+	getLayerX = e.clientX;	
+	return getLayerX;	
+	}
+function getYMouseLoc(e)
+	{
+	var getLayerY;
+	getLayerY = e.clientY;	
+	return getLayerY;	
+	}
+
+	
+function showdivw05062(divname,e)
+	{
+	var LayerName;
+	LayerName = divname;
+	var getLayerX;	
+	getLayerX = e.clientX+document.body.scrollLeft;	
+	var getLayerY;
+	getLayerY = e.clientY+document.body.scrollTop;
+	//var y = event.y+document.body.scrollTop
+
+	theDiv = document.getElementById('w05062').style
+	myWidth = document.documentElement.clientWidth;
+	
+	
+    myHeight = document.documentElement.clientHeight;
+	
+	var theQS = window.location.search.substring(1);
+	
+		
+	if (getLayerY - 100 < 0)
+		{
+		//alert(getLayerY - 100 + ': is top ' + getLayerY + 'minus 200 goes past top edge 0 of ' + myHeight);
+		theDiv.top = getLayerY + 100;	
+		//theDiv.top = getLayerY;	
+		
+		}
+		else
+		{
+		theDiv.top = getLayerY;
+		}
+	
+		
+		if (left = 'center')
+		{
+		theDiv.left = 	getLayerX -100
+		
+		}
+	if (left = 'right')
+		{		
+		//alert ('scroll  var: ' + document.body.scrollLeft);
+		
+		//theDiv.left = getLayerX - 200;
+		//alert ('x: ' + getLayerX);
+		//alert ('divide by 2: ' + getLayerX/2);
+		//alert (theDiv.left);
+		theDiv.left = getLayerX;
+		//alert (theDiv.left);
+		}	
+	if (left = 'left')
+		{
+		if (getLayerX - 200 < 0)
+			{
+			
+			theDiv.left = 	getLayerX + 200
+			}
+			else
+			{			
+			
+			theDiv.left = 	getLayerX
+			}
+		}	
+	
+	theDiv.visibility = "visible";
+	theDiv.overflow = "visible";
+	theDiv.width = 200;
+	theDiv.color = "#0000FF";
+		
+	
+	}
+
+
+function hidedivw05062(divname,e)
+	{
+	theDiv.visibility = "hidden";
+	}
+
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_showHideLayers() { //v6.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+
+
+
+
+
+
+
+document.writeln('<style type="text/css">');
+document.writeln('<!--');
+document.writeln('.style1 {');
+document.writeln('	font-family: Verdana, Arial, Helvetica, sans-serif;');
+document.writeln('	color: #0000FF;');
+document.writeln('}');
+document.writeln('.style2 {color: #0000FF}');
+document.writeln('-->');
+document.writeln('</style>');
+
+document.writeln('</head><body onLoad="MM_showHideLayers(\'ShowLongCaption\',\'\',\'hide\');">');
+document.writeln('<table width="1" border="0" align="left" bgcolor="#C7CC96" ID="Table1">');
+document.writeln('<tr><td align="center">');
+
+document.writeln('<a href="http://backup.calms2012.umc.org/db_media/showimg.asp?full=yes&amp;p=w05062&amp;mime=image%2Fjpeg&amp;name=w05062.jpg" onMouseOver="showdivw05062(\'\', event);" onMouseOut="hidedivw05062(\'\', event);"><img src="http://backup.calms2012.umc.org/db_media/showimg.asp?full=no&amp;p=w05062&amp;mime=image%2Fjpeg" style="border:1px solid #000000;" alt="LINK: Click to open full size version of image"></a>');
+
+document.writeln('</td></tr>');
+
+document.writeln('<tr><td>');
+document.writeln('<span style="font-family:Arial,sans-serif;color:#000000;font-size:10px;"><div align="right"><i>A UMNS Web-only image</i><br><div align="center"><br>Maximo Campo makes less than $50 a month working in the mines of Potosi, Bolivia.<br></span></td>');
+document.writeln('</td></tr>');
+document.writeln('</table>');
+document.writeln('</body></html>');
+
+
+
+
+document.writeln('<div id="w05062" style="position:absolute; width:200px; height:200px; z-index:1; left: 10px; top: 10px; visibility: hidden;">');
+document.writeln('<table width="150" height="200" bgcolor="#ffffff" class="style2"><tr><td valign="top">Maximo Campo makes less than $50 a month working in the mines of Potosi, Bolivia.<br>After a period of political tumult in early June, the situation in Bolivia has stabilized, according to a United Methodist missionary based in La Paz. A UMNS Web-only image. Accompanies UMNS story #366. 6/27/05<br></td></tr></table></div>');
+
