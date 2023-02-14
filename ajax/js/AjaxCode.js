@@ -78,12 +78,7 @@ function processXML(obj){
 	  
 	  //document.ajaxRequest.innerHTML = insertData;
 	  alert ('79:getElementById ajaxRequest is: ' + document.getElementById ('ajaxRequest').innerHTML );
-    }
-
-
-
-
-function SectionListOnChange2() 
+    }function SectionListOnChange2() 
 {
     var SectionList = document.getElementById("SectionList");
     
@@ -379,12 +374,7 @@ function getUpdatedTimes(fac)
 		//$('ajaxRequest').innerHTML = originalRequest.responseText;		
 		//$('result').value = originalRequest.responseText;
 
-	}
-
-
-
-
-function BuildCategoryItems(list, items, type) {
+	}function BuildCategoryItems(list, items, type) {
 	var sub, subitm, obj, x, len = items.length;
 	for(x=0; x<len; ++x) {
 		if(items[x].nodeName != "#text") {
