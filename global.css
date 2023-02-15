@@ -1,405 +1,565 @@
-td {font-family: Arial, sans-serif; 
-		font-size: 9pt; 
-		font-style: normal; 
-		color: #000000}
-body {font-family: Arial, sans-serif; 
-		font-size: 9pt; 
-		font-style: normal; 
-		color: #000000} 
-		
-.LargewhiteText{font-family: Arial, sans-serif; 
-		font-size: 10pt; 
-		font-style: normal; 
-		font-weight: bold; 
-		color: #FFFFFF}
+td {
+	font-family: Arial, sans-serif;
+	font-size: 9pt;
+	font-style: normal;
+	color: #000000
+}
 
-.LargeblackText{font-family: Arial, sans-serif; 
-		font-size: 10pt; 
-		font-style: normal; 
-		font-weight: bold; 
-		color: #000000}		
-		
-.smallblackText{font-family: Arial, sans-serif; 
-		font-size: 7pt; 
-		font-style: normal; 
-		font-weight: bold; 
-		color: #000000}
-		
-.smallCalText{font-family: Arial, sans-serif; 
-		font-size: 8pt; 
-		font-style: normal; 
-		font-weight: normal;
-		color: #000000}
-			
-.blackText{font-family: Arial, sans-serif; 
-		font-size: 10pt; 
-		font-style: normal; 
-		font-weight: normal; 
-		color: #000000}		
-.blackText:link{font-family: Arial, sans-serif; 
-		font-size: 10pt; 
-		font-style: normal; 
-		font-weight: normal; 
-		color: #54569C}		
-.blackText:visited{font-family: Arial, sans-serif; 
-		font-size: 10pt; 
-		font-style: normal; 
-		font-weight: normal; 
-		color: #54569C}		
-.blackText:hover{font-family: Arial, sans-serif; 
-		font-size: 10pt; 
-		font-style: normal; 
-		font-weight: normal; 
-		color: #ff0000}	
-					
-.offBlackText{font-family: Arial, sans-serif; 
-		font-size: 10pt; 
-		font-style: normal; 
-		font-weight: normal; 
-		color: #47426B}		
-.offBlackText:link{font-family: Arial, sans-serif; 
-		font-size: 10pt; 
-		font-style: normal; 
-		font-weight: normal; 
-		color: #0000CC}		
-.offBlackText:visited{font-family: Arial, sans-serif; 
-		font-size: 10pt; 
-		font-style: normal; 
-		font-weight: normal; 
-		color: #0000CC}		
-.offBlackText:hover{font-family: Arial, sans-serif; 
-		font-size: 10pt; 
-		font-style: normal; 
-		font-weight: normal; 
-		color: #ff0000}	
-.offBlackBold{font-family: Arial, sans-serif; 
-		font-size: 10pt; 
-		font-style: normal; 
-		font-weight: bold; 
-		color: #47426B}		
-.offBlackBold:link{font-family: Arial, sans-serif; 
-		font-size: 10pt; 
-		font-style: normal; 
-		font-weight: bold; 
-		color: #0000CC}		
-.offBlackBold:visited{font-family: Arial, sans-serif; 
-		font-size: 10pt; 
-		font-style: normal; 
-		font-weight: bold; 
-		color: #0000CC}		
-.offBlackBold:hover{font-family: Arial, sans-serif; 
-		font-size: 10pt; 
-		font-style: normal; 
-		font-weight: bold; 
-		color: #ff0000}				
+body {
+	font-family: Arial, sans-serif;
+	font-size: 9pt;
+	font-style: normal;
+	color: #000000
+}
 
-.smallText{font-family: Arial, sans-serif; 
-		font-size: 7.1pt; 
-		font-style: normal;
-		font-weight: normal; 
-		color: #000000}
-		
-.NewsText{font-family: Arial, sans-serif; 
-		font-size: 8.5pt; 
-		font-style: normal;
-		font-weight : normal;  
-		color: #000000}
-		
-.BCText{font-family: Arial, sans-serif; 
-		font-size: 7.5pt; 
-		font-style: normal;
-		font-weight : bold;  
-		color: #000000}
-		
-.maintext{font-family: Arial, sans-serif; 
-		font-size: 6pt; 
-		font-style: normal;
-		font-weight: normal; 
-		color: #333333}
-		
-.DevotionText{font-family: Arial, sans-serif; 
-		font-size: 7.5pt; 
-		font-style: normal;  
-		font-weight: normal; 
-		color: #54569C}
-		
-.Titles{font-family: Arial, sans-serif; 
-		font-size: 12pt; 
-		font-style: normal;
-		font-weight : bold;    
-		color: #000000}
+.LargewhiteText {
+	font-family: Arial, sans-serif;
+	font-size: 10pt;
+	font-style: normal;
+	font-weight: bold;
+	color: #FFFFFF
+}
 
-.DevotionTextTitle{font-family: Arial, sans-serif; 
-		font-size: 9pt; 
-		font-style: normal; 
-		font-weight : bold;   
-		color: #000000}
+.LargeblackText {
+	font-family: Arial, sans-serif;
+	font-size: 10pt;
+	font-style: normal;
+	font-weight: bold;
+	color: #000000
+}
 
-intertext {font-size: 8.5pt; 
-		font-style: normal;
-		font-family: arial; 
-		text-decoration:underline;
-		color: #000000}
-					
-a.intertext {font-size: 8.5pt; 
-		font-style: normal;
-		font-family: arial; 
-		text-decoration:underline;
-		color: #000000}
-		
-a:LINK.intertext {font-size: 8.5pt; 
-		font-style: normal;
-		font-family: arial; 
-		text-decoration:underline; 
-		color: #000000}
+.smallblackText {
+	font-family: Arial, sans-serif;
+	font-size: 7pt;
+	font-style: normal;
+	font-weight: bold;
+	color: #000000
+}
 
-a:VISITED.intertext {font-size: 8.5pt; 
-		font-style: normal;
-		font-family: arial; 
-		text-decoration:underline; 
-		color: #000000}
-			
-a:HOVER.intertext{font-size: 8.5pt; 
-		font-style: normal;
-		font-family: arial; 
-		text-decoration:underline;
-		color: #C7CC96}
-	
-.NewsNav {color: 000000; 
-		text-decoration: none; 
-		font-family: arial; 
-		font-weight : normal;  
-		font-size: 9pt}
-				
-a.NewsNav {color: 000000; 
-		text-decoration: none; 
-		font-family: arial; 
-		font-weight : normal;  
-		font-size: 9pt}
-		
-a:LINK.NewsNav {color: 000000; 
-		text-decoration: none; 
-		font-family: arial; 
-		font-weight : normal;  
-		font-size: 9pt}
-		
-a:VISITED.NewsNav {color: 000000; 
-			font-family: arial; 
-			font-weight : normal;  
-			font-size: 9pt}
-			
-a:HOVER.NewsNav {color: 000000; 
-		text-decoration:underline;
-		font-family: arial; 
-		font-weight : normal;  
-		font-size: 9pt}
+.smallCalText {
+	font-family: Arial, sans-serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+	color: #000000
+}
 
-a.SecondaryLink {color: 56688E; 
-		text-decoration: underline; 
-		font-family: arial; 
-		font-weight : bold;  
-		font-size: 7.5pt}
-		
-a:link.SecondaryLink {color: 56688E; 
-		font-family: arial; 
-		font-weight : bold;  
-		font-size: 7.5pt}
+.blackText {
+	font-family: Arial, sans-serif;
+	font-size: 10pt;
+	font-style: normal;
+	font-weight: normal;
+	color: #000000
+}
 
-.adminSecondaryLink {color: 56688E; 
-		font-family: arial; 
-		font-weight : bold;  
-		font-size: 7.5pt}		
-		
-a:Visited.SecondaryLink {color: 56688E; 
-		font-family: arial; 
-		font-weight : bold;  
-		font-size: 7.5pt}
-			
-a:HOVER.SecondaryLink {color: red; 
-		font-family: arial; 
-		font-weight : bold;  
-		font-size: 7.5pt}
-		
-.ThirdLinks {color: #000000; 
-		text-decoration:none;
-		font-family: arial; 
-		font-weight : bold;  
-		font-size: 7.5pt}
+.blackText:link {
+	font-family: Arial, sans-serif;
+	font-size: 10pt;
+	font-style: normal;
+	font-weight: normal;
+	color: #54569C
+}
 
-a.ThirdLinks {color: #000000; 
-		text-decoration:underline;
-		font-family: arial; 
-		font-weight : bold;  
-		font-size: 7.5pt}
-		
-a:LINK.ThirdLinks {color: #000000; 
-		text-decoration:underline;
-		font-family: arial; 
-		font-weight : bold}
-		
-a:VISITED.ThirdLinks {color: #000000; 
-			text-decoration:underline; 
-			font-family: arial; 
-			font-weight : bold}
-			
-a:HOVER.ThirdLinks {color: C1BEAF; 
-		text-decoration:underline;
-		font-family: arial; 
-		font-weight : bold}
-		
-a.RedLinks {color: Red; 
-		text-decoration:none;
-		font-family: arial; 
-		font-weight : bold;  
-		font-size: 7.5pt}
-		
-a:LINK.RedLinks {color: Red; 
-		font-family: arial; 
-		font-weight : bold}
-		
-a:VISITED.RedLinks {color: Red; 
-			font-family: arial; 
-			font-weight : bold}
-			
-a:HOVER.RedLinks {color: 54569C; 
-		text-decoration:underline;
-		font-family: arial; 
-		font-weight : bold}
-		
-.pagingText{font-family: arial; 
-		font-size: 8.5pt; 
-		font-weight : bold;  
-		color: #000000}
-		
-a.pagingLinks {color: Red; 
-		text-decoration:none;
-		font-family: arial; 
-		font-weight : bold;  
-		font-size: 8.5pt}
-		
-a:LINK.pagingLinks {color: Red; 
-		font-family: arial; 
-		font-weight : bold}
-		
-a:VISITED.pagingLinks {color: Red; 
-			font-family: arial; 
-			font-weight : bold}
-			
-a:HOVER.pagingLinks {color: 54569C; 
-		text-decoration:underline;
-		font-family: arial; 
-		font-weight : bold}
-	
-.WLeftNav {color:#ffffff; 
-		text-decoration: none; 
-		font-family: arial; 
-		font-weight : bold;  
-		font-size: 9pt}
+.blackText:visited {
+	font-family: Arial, sans-serif;
+	font-size: 10pt;
+	font-style: normal;
+	font-weight: normal;
+	color: #54569C
+}
 
-a.WLeftNav {color:#ffffff; 
-		text-decoration: none; 
-		font-family: arial; 
-		font-weight : bold;  
-		font-size: 9pt}
-		
-a:LINK.WLeftNav {color: #ffffff; 
-		text-decoration: none; 
-		font-family: arial; 
-		font-weight : bold;
-		font-size: 9pt}
-		
-a:VISITED.WLeftNav {color: #ffffff; 
-			font-family: arial; 
-			font-weight : bold;
-			font-size: 9pt}
-			
-a:HOVER.WLeftNav {color:#ffffff; 
-		text-decoration:underline;
-		font-family: arial; 
-		font-weight : bold;
-		font-size: 9pt}
-				
-a.SecondaryNav {color: 000000; 
-		text-decoration: none; 
-		font-family: arial; 
-		font-weight : bold;  
-		font-size: 8.5pt}
-		
-a:LINK.SecondaryNav {color: 000000; 
-		text-decoration: none; 
-		font-family: arial; 
-		font-weight : bold}
-		
-a:VISITED.SecondaryNav {color: 000000; 
-			font-family: arial; 
-			font-weight : bold}
-			
-a:HOVER.SecondaryNav {color: 000000; 
-		text-decoration:underline;
-		font-family: arial; 
-		font-weight : bold}
-				
-a.SubSecondaryNav {color: 54569C; 
-		text-decoration: none; 
-		font-family: arial;  
-		font-size: 8.5pt}
-		
-a:LINK.SubSecondaryNav {color: 54569C; 
-		text-decoration: none; 
-		font-family: arial}
-		
-a:VISITED.SubSecondaryNav {color: 54569C; 
-			font-family: arial}
-			
-a:HOVER.SubSecondaryNav {color: 54569C; 
-		text-decoration:underline;
-		font-family: arial}
+.blackText:hover {
+	font-family: Arial, sans-serif;
+	font-size: 10pt;
+	font-style: normal;
+	font-weight: normal;
+	color: #ff0000
+}
 
-a.SubOutDatedNav {color: C18445; 
-		text-decoration: none; 
-		font-family: arial;  
-		font-size: 8.5pt; 
-		font-weight : bold}
-		
-a:LINK.SubOutDatedNav {color: C18445; 
-		text-decoration: none; 
-		font-family: arial; 
-		font-weight : bold}
-		
-a:VISITED.SubOutDatedNav {color: C18445; 
-		font-family: arial; 
-		font-weight : bold}
-			
-a:HOVER.SubOutDatedNav {color: 000000; 
-		text-decoration:underline;
-		font-family: arial; 
-		font-weight : bold}
-				
-.whiteText{font-family: Arial, sans-serif; 
-		font-size: 9pt; 
-		text-decoration:none;
-		font-style: normal; 
-		font-weight: bold; 
-		color: #FFFFFF}
-				
-a:LINK.whiteText{font-family: Arial, sans-serif; 
-		font-size: 7pt; 
-		text-decoration:none;
-		font-style: normal; 
-		font-weight: bold; 
-		color: #FFFFFF}		
-						
-a:VISITED.whiteText{font-family: Arial, sans-serif; 
-		font-size: 7pt; 
-		text-decoration:none;
-		font-style: normal; 
-		font-weight: bold; 
-		color: #FFFFFF}		
-								
-a:HOVER.whiteText{font-family: Arial, sans-serif; 
-		font-size: 7pt; 
-		text-decoration:underline;
-		font-style: normal; 
-		font-weight: bold; 
-		color: #FFFFFF}		
-		
+.offBlackText {
+	font-family: Arial, sans-serif;
+	font-size: 10pt;
+	font-style: normal;
+	font-weight: normal;
+	color: #47426B
+}
+
+.offBlackText:link {
+	font-family: Arial, sans-serif;
+	font-size: 10pt;
+	font-style: normal;
+	font-weight: normal;
+	color: #0000CC
+}
+
+.offBlackText:visited {
+	font-family: Arial, sans-serif;
+	font-size: 10pt;
+	font-style: normal;
+	font-weight: normal;
+	color: #0000CC
+}
+
+.offBlackText:hover {
+	font-family: Arial, sans-serif;
+	font-size: 10pt;
+	font-style: normal;
+	font-weight: normal;
+	color: #ff0000
+}
+
+.offBlackBold {
+	font-family: Arial, sans-serif;
+	font-size: 10pt;
+	font-style: normal;
+	font-weight: bold;
+	color: #47426B
+}
+
+.offBlackBold:link {
+	font-family: Arial, sans-serif;
+	font-size: 10pt;
+	font-style: normal;
+	font-weight: bold;
+	color: #0000CC
+}
+
+.offBlackBold:visited {
+	font-family: Arial, sans-serif;
+	font-size: 10pt;
+	font-style: normal;
+	font-weight: bold;
+	color: #0000CC
+}
+
+.offBlackBold:hover {
+	font-family: Arial, sans-serif;
+	font-size: 10pt;
+	font-style: normal;
+	font-weight: bold;
+	color: #ff0000
+}
+
+.smallText {
+	font-family: Arial, sans-serif;
+	font-size: 7.1pt;
+	font-style: normal;
+	font-weight: normal;
+	color: #000000
+}
+
+.NewsText {
+	font-family: Arial, sans-serif;
+	font-size: 8.5pt;
+	font-style: normal;
+	font-weight: normal;
+	color: #000000
+}
+
+.BCText {
+	font-family: Arial, sans-serif;
+	font-size: 7.5pt;
+	font-style: normal;
+	font-weight: bold;
+	color: #000000
+}
+
+.maintext {
+	font-family: Arial, sans-serif;
+	font-size: 6pt;
+	font-style: normal;
+	font-weight: normal;
+	color: #333333
+}
+
+.DevotionText {
+	font-family: Arial, sans-serif;
+	font-size: 7.5pt;
+	font-style: normal;
+	font-weight: normal;
+	color: #54569C
+}
+
+.Titles {
+	font-family: Arial, sans-serif;
+	font-size: 12pt;
+	font-style: normal;
+	font-weight: bold;
+	color: #000000
+}
+
+.DevotionTextTitle {
+	font-family: Arial, sans-serif;
+	font-size: 9pt;
+	font-style: normal;
+	font-weight: bold;
+	color: #000000
+}
+
+intertext {
+	font-size: 8.5pt;
+	font-style: normal;
+	font-family: arial;
+	text-decoration: underline;
+	color: #000000
+}
+
+a.intertext {
+	font-size: 8.5pt;
+	font-style: normal;
+	font-family: arial;
+	text-decoration: underline;
+	color: #000000
+}
+
+a:LINK.intertext {
+	font-size: 8.5pt;
+	font-style: normal;
+	font-family: arial;
+	text-decoration: underline;
+	color: #000000
+}
+
+a:VISITED.intertext {
+	font-size: 8.5pt;
+	font-style: normal;
+	font-family: arial;
+	text-decoration: underline;
+	color: #000000
+}
+
+a:HOVER.intertext {
+	font-size: 8.5pt;
+	font-style: normal;
+	font-family: arial;
+	text-decoration: underline;
+	color: #C7CC96
+}
+
+.NewsNav {
+	color: 000000;
+	text-decoration: none;
+	font-family: arial;
+	font-weight: normal;
+	font-size: 9pt
+}
+
+a.NewsNav {
+	color: 000000;
+	text-decoration: none;
+	font-family: arial;
+	font-weight: normal;
+	font-size: 9pt
+}
+
+a:LINK.NewsNav {
+	color: 000000;
+	text-decoration: none;
+	font-family: arial;
+	font-weight: normal;
+	font-size: 9pt
+}
+
+a:VISITED.NewsNav {
+	color: 000000;
+	font-family: arial;
+	font-weight: normal;
+	font-size: 9pt
+}
+
+a:HOVER.NewsNav {
+	color: 000000;
+	text-decoration: underline;
+	font-family: arial;
+	font-weight: normal;
+	font-size: 9pt
+}
+
+a.SecondaryLink {
+	color: 56688E;
+	text-decoration: underline;
+	font-family: arial;
+	font-weight: bold;
+	font-size: 7.5pt
+}
+
+a:link.SecondaryLink {
+	color: 56688E;
+	font-family: arial;
+	font-weight: bold;
+	font-size: 7.5pt
+}
+
+.adminSecondaryLink {
+	color: 56688E;
+	font-family: arial;
+	font-weight: bold;
+	font-size: 7.5pt
+}
+
+a:Visited.SecondaryLink {
+	color: 56688E;
+	font-family: arial;
+	font-weight: bold;
+	font-size: 7.5pt
+}
+
+a:HOVER.SecondaryLink {
+	color: red;
+	font-family: arial;
+	font-weight: bold;
+	font-size: 7.5pt
+}
+
+.ThirdLinks {
+	color: #000000;
+	text-decoration: none;
+	font-family: arial;
+	font-weight: bold;
+	font-size: 7.5pt
+}
+
+a.ThirdLinks {
+	color: #000000;
+	text-decoration: underline;
+	font-family: arial;
+	font-weight: bold;
+	font-size: 7.5pt
+}
+
+a:LINK.ThirdLinks {
+	color: #000000;
+	text-decoration: underline;
+	font-family: arial;
+	font-weight: bold
+}
+
+a:VISITED.ThirdLinks {
+	color: #000000;
+	text-decoration: underline;
+	font-family: arial;
+	font-weight: bold
+}
+
+a:HOVER.ThirdLinks {
+	color: C1BEAF;
+	text-decoration: underline;
+	font-family: arial;
+	font-weight: bold
+}
+
+a.RedLinks {
+	color: Red;
+	text-decoration: none;
+	font-family: arial;
+	font-weight: bold;
+	font-size: 7.5pt
+}
+
+a:LINK.RedLinks {
+	color: Red;
+	font-family: arial;
+	font-weight: bold
+}
+
+a:VISITED.RedLinks {
+	color: Red;
+	font-family: arial;
+	font-weight: bold
+}
+
+a:HOVER.RedLinks {
+	color: 54569C;
+	text-decoration: underline;
+	font-family: arial;
+	font-weight: bold
+}
+
+.pagingText {
+	font-family: arial;
+	font-size: 8.5pt;
+	font-weight: bold;
+	color: #000000
+}
+
+a.pagingLinks {
+	color: Red;
+	text-decoration: none;
+	font-family: arial;
+	font-weight: bold;
+	font-size: 8.5pt
+}
+
+a:LINK.pagingLinks {
+	color: Red;
+	font-family: arial;
+	font-weight: bold
+}
+
+a:VISITED.pagingLinks {
+	color: Red;
+	font-family: arial;
+	font-weight: bold
+}
+
+a:HOVER.pagingLinks {
+	color: 54569C;
+	text-decoration: underline;
+	font-family: arial;
+	font-weight: bold
+}
+
+.WLeftNav {
+	color: #ffffff;
+	text-decoration: none;
+	font-family: arial;
+	font-weight: bold;
+	font-size: 9pt
+}
+
+a.WLeftNav {
+	color: #ffffff;
+	text-decoration: none;
+	font-family: arial;
+	font-weight: bold;
+	font-size: 9pt
+}
+
+a:LINK.WLeftNav {
+	color: #ffffff;
+	text-decoration: none;
+	font-family: arial;
+	font-weight: bold;
+	font-size: 9pt
+}
+
+a:VISITED.WLeftNav {
+	color: #ffffff;
+	font-family: arial;
+	font-weight: bold;
+	font-size: 9pt
+}
+
+a:HOVER.WLeftNav {
+	color: #ffffff;
+	text-decoration: underline;
+	font-family: arial;
+	font-weight: bold;
+	font-size: 9pt
+}
+
+a.SecondaryNav {
+	color: 000000;
+	text-decoration: none;
+	font-family: arial;
+	font-weight: bold;
+	font-size: 8.5pt
+}
+
+a:LINK.SecondaryNav {
+	color: 000000;
+	text-decoration: none;
+	font-family: arial;
+	font-weight: bold
+}
+
+a:VISITED.SecondaryNav {
+	color: 000000;
+	font-family: arial;
+	font-weight: bold
+}
+
+a:HOVER.SecondaryNav {
+	color: 000000;
+	text-decoration: underline;
+	font-family: arial;
+	font-weight: bold
+}
+
+a.SubSecondaryNav {
+	color: 54569C;
+	text-decoration: none;
+	font-family: arial;
+	font-size: 8.5pt
+}
+
+a:LINK.SubSecondaryNav {
+	color: 54569C;
+	text-decoration: none;
+	font-family: arial
+}
+
+a:VISITED.SubSecondaryNav {
+	color: 54569C;
+	font-family: arial
+}
+
+a:HOVER.SubSecondaryNav {
+	color: 54569C;
+	text-decoration: underline;
+	font-family: arial
+}
+
+a.SubOutDatedNav {
+	color: C18445;
+	text-decoration: none;
+	font-family: arial;
+	font-size: 8.5pt;
+	font-weight: bold
+}
+
+a:LINK.SubOutDatedNav {
+	color: C18445;
+	text-decoration: none;
+	font-family: arial;
+	font-weight: bold
+}
+
+a:VISITED.SubOutDatedNav {
+	color: C18445;
+	font-family: arial;
+	font-weight: bold
+}
+
+a:HOVER.SubOutDatedNav {
+	color: 000000;
+	text-decoration: underline;
+	font-family: arial;
+	font-weight: bold
+}
+
+.whiteText {
+	font-family: Arial, sans-serif;
+	font-size: 9pt;
+	text-decoration: none;
+	font-style: normal;
+	font-weight: bold;
+	color: #FFFFFF
+}
+
+a:LINK.whiteText {
+	font-family: Arial, sans-serif;
+	font-size: 7pt;
+	text-decoration: none;
+	font-style: normal;
+	font-weight: bold;
+	color: #FFFFFF
+}
+
+a:VISITED.whiteText {
+	font-family: Arial, sans-serif;
+	font-size: 7pt;
+	text-decoration: none;
+	font-style: normal;
+	font-weight: bold;
+	color: #FFFFFF
+}
+
+a:HOVER.whiteText {
+	font-family: Arial, sans-serif;
+	font-size: 7pt;
+	text-decoration: underline;
+	font-style: normal;
+	font-weight: bold;
+	color: #FFFFFF
+}
